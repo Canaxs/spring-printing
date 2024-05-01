@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: "/print"
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+
+  jpa:
+    show-sql: false
