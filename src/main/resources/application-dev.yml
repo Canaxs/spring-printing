@@ -1,9 +1,12 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//localhost:3306/print
+    url: jdbc:postresql://localhost:5432/print
     username: "root"
     password: "root"
-    driver-class-name: oracle.jdbc.OracleDriver
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
