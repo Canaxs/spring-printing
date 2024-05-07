@@ -88,9 +88,6 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public void printFlyingPdf(Document document) {
 
-        String inputFile = "path/to/your/input.html";
-        String outputFile = "path/to/your/output.pdf";
-
         try {
             document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
             String shortId = getRandomIdKey();
@@ -101,6 +98,8 @@ public class TemplateServiceImpl implements TemplateService {
             renderer.layout();
             renderer.createPDF(os,false);
             renderer.finishPDF();
+
+            openBrowser(shortId);
 
         }
         catch (Exception e) {
