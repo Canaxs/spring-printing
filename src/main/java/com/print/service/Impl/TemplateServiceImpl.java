@@ -60,7 +60,8 @@ public class TemplateServiceImpl implements TemplateService {
                     }
                 }
             }
-            printIronPdf(document);
+            //printIronPdf(document);
+            printFlyingPdf(document);
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
@@ -72,7 +73,8 @@ public class TemplateServiceImpl implements TemplateService {
         try {
             PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
 
-            String shortId = RandomStringUtils.random(8, randomIdKey);
+            String shortId = getRandomIdKey();
+
             //Save the PdfDocument to a file
             myPdf.saveAs(Path.of(Constants.folderPdfAddress,shortId + ".pdf"));
 
@@ -84,9 +86,32 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
+    public void printFlyingPdf(Document document) {
+
+        String inputFile = "path/to/your/input.html";
+        String outputFile = "path/to/your/output.pdf";
+
+        try {
+            document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
+            String shortId = getRandomIdKey();
+            OutputStream os = new FileOutputStream(getPath(shortId));
+
+            ITextRenderer renderer = new ITextRenderer();
+            renderer.setDocumentFromString(document.outerHtml());
+            renderer.layout();
+            renderer.createPDF(os,false);
+            renderer.finishPDF();
+
+        }
+        catch (Exception e) {
+            System.out.println("Exception: "+e.getMessage());
+        }
+    }
+
+    @Override
     public void openBrowser(String shortId) {
         try {
-            String path = new File(".").getCanonicalPath() + Constants.folderPdfAddress2 + shortId + ".pdf";
+            String path = getPath(shortId);
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "explorer "+path);
             processBuilder.start();
 
@@ -94,5 +119,18 @@ public class TemplateServiceImpl implements TemplateService {
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
         }
+    }
+
+    public String getRandomIdKey() {
+        return RandomStringUtils.random(8, randomIdKey);
+    }
+    public String getPath(String shortId) {
+        try {
+            return new File(".").getCanonicalPath() + Constants.folderPdfAddress2 + shortId + ".pdf";
+        }
+        catch (Exception e) {
+            System.out.println("Exception: "+e.getMessage());
+        }
+        return null;
     }
 }

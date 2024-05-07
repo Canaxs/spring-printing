@@ -11,5 +11,7 @@ public interface TemplateService {
 
     void printIronPdf(Document document);
 
+    void printFlyingPdf(Document document);
+
     void openBrowser(String shortId);
 }

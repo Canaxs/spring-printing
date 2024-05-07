@@ -11,3 +11,7 @@ spring:
     show-sql: false
 
 randomid: "0123456789abcdef"
+
+security:
+  username: "print"
+  password: "print"
