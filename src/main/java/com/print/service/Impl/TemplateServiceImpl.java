@@ -2,8 +2,10 @@ package com.print.service.Impl;
 
 import com.google.api.Logging;
 import com.ironsoftware.ironpdf.PdfDocument;
+import com.lowagie.text.pdf.BaseFont;
 import com.lowagie.text.pdf.PdfWriter;
 import com.print.common.Constants;
+import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.persistence.entity.Receipt;
 import com.print.service.TemplateService;
@@ -23,12 +25,14 @@ import org.xhtmlrenderer.simple.PDFRenderer;
 
 import java.awt.*;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -45,7 +49,8 @@ public class TemplateServiceImpl implements TemplateService {
     private String randomIdKey;
 
     @Override
-    public void htmlEditData(ReceiptDTO receiptDTO){
+    public GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO){
+        String shortId = null;
         try {
             Resource template = resourceLoader.getResource(Constants.folderAddress + receiptDTO.getTemplateName() + ".html");
             File file = new File(template.getURI());
@@ -60,12 +65,17 @@ public class TemplateServiceImpl implements TemplateService {
                     }
                 }
             }
+            shortId = getRandomIdKey();
             //printIronPdf(document);
-            printFlyingPdf(document);
+            printFlyingPdf(document,shortId);
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
         }
+        return GuestPdfDTO.builder()
+                .filename(getPath(shortId))
+                .array(printPDF(shortId)).
+                build();
     }
 
     @Override
@@ -86,20 +96,24 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public void printFlyingPdf(Document document) {
+    public void printFlyingPdf(Document document,String shortId) {
 
         try {
             document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
-            String shortId = getRandomIdKey();
+            document.outputSettings().charset(StandardCharsets.UTF_8);
+            document.charset(StandardCharsets.UTF_8);
             OutputStream os = new FileOutputStream(getPath(shortId));
 
             ITextRenderer renderer = new ITextRenderer();
+
+            renderer.getFontResolver().addFont(new File(".").getCanonicalPath()+"\\fonts\\JosefinSans-Regular.ttf", BaseFont.EMBEDDED);
+
             renderer.setDocumentFromString(document.outerHtml());
             renderer.layout();
             renderer.createPDF(os,false);
             renderer.finishPDF();
 
-            openBrowser(shortId);
+            //openBrowser(shortId);
 
         }
         catch (Exception e) {
@@ -113,11 +127,24 @@ public class TemplateServiceImpl implements TemplateService {
             String path = getPath(shortId);
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "explorer "+path);
             processBuilder.start();
-
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
         }
+    }
+
+    @Override
+    public byte[] printPDF(String shortId) {
+        try {
+            FileInputStream fis = new FileInputStream(new File(getPath(shortId)));
+            byte[] targetArray = new byte[fis.available()];
+            fis.read(targetArray);
+            return targetArray;
+        }
+        catch (Exception e) {
+            System.out.println("Exception: "+e.getMessage());
+        }
+        return null;
     }
 
     public String getRandomIdKey() {
