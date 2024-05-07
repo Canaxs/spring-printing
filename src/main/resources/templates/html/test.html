@@ -46,42 +46,27 @@
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial;width:110px">ŞUBE KODU/ADI</td>
                                                             <td style="font:11px/16px arial;width:12px">:</td>
-                                                            <td style="font:11px/16px arial;width:185px">00000</td>
+                                                            <td style="font:11px/16px arial;width:185px" id="branchName">00000</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial">IBAN</td>
                                                             <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">TR00 000</td>
+                                                            <td style="font:11px/16px arial" id="ibanNumber">TR00 000</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial">HESAP NUMARASI</td>
                                                             <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">00000</td>
+                                                            <td style="font:11px/16px arial" id="accountNumber">00000</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial">VERGİ DAİRESİ</td>
                                                             <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font:bold 11px/16px arial">VERGİ KİMLİK NO</td>
-                                                            <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">00000</td>
+                                                            <td style="font:11px/16px arial">İzmir Hatay</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial">İŞLEM TARİHİ</td>
                                                             <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">00000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font:bold 11px/16px arial">VALÖR</td>
-                                                            <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">00000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font:bold 11px/16px arial">İŞLEM YERİ</td>
-                                                            <td style="font:11px/16px arial">:</td>
-                                                            <td style="font:11px/16px arial">00000</td>
+                                                            <td style="font:11px/16px arial" id="createdDate">00000</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -100,7 +85,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td style="font:bold 11px/16px arial;float:left;padding:0;margin:0;width:100%">
-                                                                MERİÇ CANA
+                                                                <span id="name"></span><span id="surname"></span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -149,9 +134,7 @@
                                             <td style="font:11px/13px arial;padding:0 0 0 10px;margin:0;width:450px">
                                                 <br>
                                                 <table>
-                                                    <tbody><td>
-                                                        Hesabınızdan 00000 () Çekilmiştir.<br>
-                                                    </td></tbody>
+                                                    <tbody><td>Hesabınızdan <span id="paymentTotal">00000</span> () Çekilmiştir.<br></td></tbody>
                                                 </table>
                                                 00000
                                             </td>

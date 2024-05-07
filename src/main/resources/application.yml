@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: "/print"
+    context-path: "/printing"
   port: 8080
 
 spring:
@@ -9,3 +9,5 @@ spring:
 
   jpa:
     show-sql: false
+
+randomid: "0123456789abcdef"
