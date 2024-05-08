@@ -24,6 +24,8 @@ public class TemplateTable {
     @Enumerated(EnumType.STRING)
     private TemplateType templateType;
 
+    private String templateShortId;
+
     private Date effectiveStartDate;
 
     private Date effectiveEndDate;

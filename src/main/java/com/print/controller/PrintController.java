@@ -30,7 +30,7 @@ public class PrintController {
 
     @PostMapping("/getGuestPdf")
     public ResponseEntity<byte[]> getGuestPdf(@RequestBody ReceiptDTO receiptDTO) throws IOException {
-        GuestPdfDTO guestPdfDTO= templateService.htmlEditData(receiptDTO);
+        GuestPdfDTO guestPdfDTO= templateService.htmlReceiptEditData(receiptDTO);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_PDF);

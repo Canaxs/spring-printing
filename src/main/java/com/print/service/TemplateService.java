@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public interface TemplateService {
 
-    GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO) throws IOException;
+    GuestPdfDTO htmlReceiptEditData(ReceiptDTO receiptDTO) throws IOException;
 
     void printIronPdf(Document document);
 

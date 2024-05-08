@@ -49,10 +49,10 @@ public class TemplateServiceImpl implements TemplateService {
     private String randomIdKey;
 
     @Override
-    public GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO){
+    public GuestPdfDTO htmlReceiptEditData(ReceiptDTO receiptDTO){
         String shortId = null;
         try {
-            Resource template = resourceLoader.getResource(Constants.folderAddress + receiptDTO.getTemplateName() + ".html");
+            Resource template = resourceLoader.getResource(Constants.folderReceiptAddress +receiptDTO.getTemplateName() + ".html");
             File file = new File(template.getURI());
             Document document = Jsoup.parse(file, "UTF-8");
 
@@ -86,7 +86,7 @@ public class TemplateServiceImpl implements TemplateService {
             String shortId = getRandomIdKey();
 
             //Save the PdfDocument to a file
-            myPdf.saveAs(Path.of(Constants.folderPdfAddress,shortId + ".pdf"));
+            myPdf.saveAs(Path.of(Constants.folderReceiptPdfAddress,shortId + ".pdf"));
 
             openBrowser(shortId);
         }
@@ -152,7 +152,7 @@ public class TemplateServiceImpl implements TemplateService {
     }
     public String getPath(String shortId) {
         try {
-            return new File(".").getCanonicalPath() + Constants.folderPdfAddress2 + shortId + ".pdf";
+            return new File(".").getCanonicalPath() + Constants.folderReceiptPdfAddress2 + shortId + ".pdf";
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
