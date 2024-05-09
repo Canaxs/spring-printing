@@ -23,8 +23,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.nio.file.Files;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -47,19 +50,22 @@ public class UploadServiceImpl implements UploadService {
     public String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile) {
 
         if(!validateFile(htmlFile,cssFile)) {
-            if(fileControl(htmlFile,cssFile)) {
+            if(fileControl(htmlFile,cssFile,Constants.fileTempName)) {
                 String fileIdKey = getRandomIdKey();
                 if(saveFile(fileType,templateName,htmlFile,cssFile,fileIdKey)) {
-                    String returnString = " Your file has been uploaded successfully";
+                    String returnString = " Your file has been uploaded successfully. FileIdKey: "+fileIdKey;
                     return cssFile.isEmpty() ? htmlFile.getOriginalFilename() + returnString
                             : htmlFile.getOriginalFilename() + " " + cssFile.getOriginalFilename() + returnString;
                 }
+            }
+            else {
+                return "The file does not match the principles of the application, please change it and try again";
             }
         }
         else {
             throw new UploadException("Check your file and upload it again");
         }
-        return null;
+        return "Failed to load file";
     }
 
     @Override
@@ -78,21 +84,22 @@ public class UploadServiceImpl implements UploadService {
     }
 
     @Override
-    public boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile) {
+    public boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile,String fileType) {
         String fileIdKey = getRandomIdKey();
         saveFile(Constants.fileTempName,null,htmlFile,cssFile,fileIdKey);
+        boolean fileControlBool = true;
 
         //
         try {
-            Resource template = resourceLoader.getResource(Constants.folderTempClasspathAddress + fileIdKey + ".html");
-            File file = new File(template.getURI());
+            File file = new File(new File(".").getCanonicalPath()+Constants.folderTempUploadAddress+"html\\"+fileIdKey+".html");
             Document document = Jsoup.parse(file, "UTF-8");
 
             Class<Receipt> clz = Receipt.class;
             for (Method m : clz.getDeclaredMethods()) {
                 for (Parameter p : m.getParameters()) {
-                    if(document.getElementById(p.getName()) == null) {
-                        return false;
+                    System.out.println("Parameter: "+p.getName());
+                    if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
+                        fileControlBool = false;
                     }
                 }
             }
@@ -100,8 +107,10 @@ public class UploadServiceImpl implements UploadService {
         catch (Exception e) {
             throw new UploadException("The file does not match the principles of the application, please change it and try again: "+e.getMessage());
         }
+        deleteFile(fileIdKey,"html",fileType);
+        deleteFile(fileIdKey,"css",fileType);
 
-        return true;
+        return fileControlBool;
     }
 
     @Override
@@ -114,12 +123,19 @@ public class UploadServiceImpl implements UploadService {
             default -> null;
         };
         try {
-           // htmlFile.getOriginalFilename().replace(htmlFile.getOriginalFilename(),fileIdKey+".html");
-           // cssFile.getOriginalFilename().replace(cssFile.getOriginalFilename(), fileIdKey+".css");
+            File htmlIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"html\\"+fileIdKey+".html");
+            File cssIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"css\\"+fileIdKey+".css");
 
-            htmlFile.transferTo(new File(new File(".").getCanonicalPath()+ fileTypeAddress+"html\\"+fileIdKey+".html"));
+            FileOutputStream fosHtml = new FileOutputStream( htmlIdKeyFile );
+            fosHtml.write( htmlFile.getBytes() );
+            fosHtml.close();
 
-            cssFile.transferTo(new File(new File(".").getCanonicalPath()+ fileTypeAddress+"css\\"+fileIdKey+".css"));
+            FileOutputStream fosCss = new FileOutputStream( cssIdKeyFile );
+            fosCss.write( htmlFile.getBytes() );
+            fosCss.close();
+
+
+
         }
         catch (Exception e) {
             throw new UploadException("There was a problem saving the files, please try again: "+e.getMessage());
@@ -147,7 +163,7 @@ public class UploadServiceImpl implements UploadService {
         templateTable.setEffectiveStartDate(null);
         templateTable.setEffectiveEndDate(null);
         try {
-            templateRepository.save(templateTable);
+            //templateRepository.save(templateTable);
             return true;
         }
         catch (Exception e) {

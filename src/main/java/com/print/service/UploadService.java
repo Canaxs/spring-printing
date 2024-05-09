@@ -10,7 +10,7 @@ public interface UploadService {
 
     boolean validateFile(MultipartFile htmlFile,MultipartFile cssFile);
 
-    boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile);
+    boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile,String fileType);
 
     boolean saveFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String fileIdKey);
 

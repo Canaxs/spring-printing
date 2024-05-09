@@ -8,8 +8,10 @@ import com.print.common.Constants;
 import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.persistence.entity.Receipt;
+import com.print.persistence.repository.TemplateRepository;
 import com.print.service.TemplateService;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.hibernate.sql.Template;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -47,6 +49,12 @@ public class TemplateServiceImpl implements TemplateService {
 
     @Value("${randomid}")
     private String randomIdKey;
+
+    private TemplateRepository templateRepository;
+
+    public TemplateServiceImpl(TemplateRepository templateRepository) {
+        this.templateRepository = templateRepository;
+    }
 
     @Override
     public GuestPdfDTO htmlReceiptEditData(ReceiptDTO receiptDTO){
