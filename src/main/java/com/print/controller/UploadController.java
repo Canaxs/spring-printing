@@ -18,9 +18,11 @@ public class UploadController {
 
     @PostMapping
     public ResponseEntity<String> fileUploading(@RequestParam("fileType") String fileType,
+                                                @RequestParam("startDate") String startDate,
+                                                @RequestParam("endDate") String endDate,
                                                 @RequestParam("templateName") String templateName,
                                                 @RequestParam("html") MultipartFile htmlFile,
                                                 @RequestParam(value = "css",required = false) MultipartFile cssFile) {
-        return ResponseEntity.ok(uploadService.UploadFile(fileType,templateName,htmlFile,cssFile));
+        return ResponseEntity.ok(uploadService.UploadFile(fileType,templateName,htmlFile,cssFile,startDate,endDate));
     }
 }

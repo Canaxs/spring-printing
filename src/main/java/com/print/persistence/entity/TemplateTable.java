@@ -3,6 +3,9 @@ package com.print.persistence.entity;
 import com.print.enums.TemplateType;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
@@ -11,6 +14,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table
+@NoArgsConstructor
 public class TemplateTable {
 
     @Id
@@ -24,7 +28,10 @@ public class TemplateTable {
     @Enumerated(EnumType.STRING)
     private TemplateType templateType;
 
+    @Column(unique = true)
     private String templateShortId;
+
+    private Boolean isActive;
 
     private Date effectiveStartDate;
 

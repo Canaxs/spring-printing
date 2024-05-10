@@ -28,6 +28,12 @@ import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.file.Files;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -47,12 +53,12 @@ public class UploadServiceImpl implements UploadService {
     }
 
     @Override
-    public String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile) {
+    public String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String startDate,String endDate) {
 
         if(!validateFile(htmlFile,cssFile)) {
             if(fileControl(htmlFile,cssFile,Constants.fileTempName)) {
                 String fileIdKey = getRandomIdKey();
-                if(saveFile(fileType,templateName,htmlFile,cssFile,fileIdKey)) {
+                if(saveFile(fileType,templateName,htmlFile,cssFile,fileIdKey,startDate,endDate)) {
                     String returnString = " Your file has been uploaded successfully. FileIdKey: "+fileIdKey;
                     return cssFile.isEmpty() ? htmlFile.getOriginalFilename() + returnString
                             : htmlFile.getOriginalFilename() + " " + cssFile.getOriginalFilename() + returnString;
@@ -86,7 +92,7 @@ public class UploadServiceImpl implements UploadService {
     @Override
     public boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile,String fileType) {
         String fileIdKey = getRandomIdKey();
-        saveFile(Constants.fileTempName,null,htmlFile,cssFile,fileIdKey);
+        saveFile(Constants.fileTempName,null,htmlFile,cssFile,fileIdKey,"","");
         boolean fileControlBool = true;
 
         //
@@ -99,7 +105,7 @@ public class UploadServiceImpl implements UploadService {
                 for (Parameter p : m.getParameters()) {
                     System.out.println("Parameter: "+p.getName());
                     if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
-                        fileControlBool = false;
+                        fileControlBool = true;
                     }
                 }
             }
@@ -114,7 +120,8 @@ public class UploadServiceImpl implements UploadService {
     }
 
     @Override
-    public boolean saveFile(String fileType, String templateName, MultipartFile htmlFile, MultipartFile cssFile,String fileIdKey) {
+    public boolean saveFile(String fileType, String templateName, MultipartFile htmlFile, MultipartFile cssFile
+            ,String fileIdKey,String startDate, String endDate) {
 
         String fileTypeAddress = switch (fileType.toLowerCase()) {
             case "receipt" ->  Constants.folderReceiptUploadAddress;
@@ -146,6 +153,9 @@ public class UploadServiceImpl implements UploadService {
                     .fileType(fileType)
                     .templateName(templateName)
                     .templateShortId(fileIdKey)
+                    .effectiveStartDate(startDate)
+                    .effectiveEndDate(endDate)
+                    .isActive(true)
                     .build();
             saveDB(uploadDBDTO);
         }
@@ -160,10 +170,11 @@ public class UploadServiceImpl implements UploadService {
         templateTable.setTemplateType(TemplateType.convert(uploadDBDTO.getFileType().toLowerCase()));
         templateTable.setTemplateShortId(uploadDBDTO.getTemplateShortId());
         templateTable.setTemplateName(uploadDBDTO.getTemplateName().toUpperCase());
-        templateTable.setEffectiveStartDate(null);
-        templateTable.setEffectiveEndDate(null);
+        templateTable.setEffectiveStartDate(dateTimePatternEdit(uploadDBDTO.getEffectiveStartDate()));
+        templateTable.setEffectiveEndDate(dateTimePatternEdit(uploadDBDTO.getEffectiveEndDate()));
+        templateTable.setIsActive(uploadDBDTO.getIsActive());
         try {
-            //templateRepository.save(templateTable);
+            templateRepository.save(templateTable);
             return true;
         }
         catch (Exception e) {
@@ -197,4 +208,18 @@ public class UploadServiceImpl implements UploadService {
     public String getRandomIdKey() {
         return RandomStringUtils.random(8, randomIdKey);
     }
+
+    public Date dateTimePatternEdit(String effectiveDate) {
+        Date date = null;
+        try {
+            if(effectiveDate != null && !effectiveDate.isEmpty()) {
+                date = new SimpleDateFormat(Constants.dateTimeFormatPattern).parse(effectiveDate);
+            }
+        }
+        catch (Exception e) {
+            throw new UploadException("There was an error creating the date: "+e.getMessage());
+        }
+        return date;
+    }
+
 }

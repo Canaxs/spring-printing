@@ -6,13 +6,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface UploadService {
 
-    String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile);
+    String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String startDate,String endDate);
 
     boolean validateFile(MultipartFile htmlFile,MultipartFile cssFile);
 
     boolean fileControl(MultipartFile htmlFile, MultipartFile cssFile,String fileType);
 
-    boolean saveFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String fileIdKey);
+    boolean saveFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String fileIdKey,String startDate,String endDate);
 
     boolean saveDB(UploadDBDTO uploadDBDTO);
 
