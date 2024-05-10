@@ -178,7 +178,55 @@ public class TemplateServiceImpl implements TemplateService {
         List<TemplateTable> templateTables = templateRepository.getTemplateTableByTemplateName(templateName);
         Date todayDate = new Date();
         for (TemplateTable templateTable : templateTables) {
-
+            if(templateTable.getEffectiveStartDate() != null && templateTable.getEffectiveEndDate() != null) {
+                if(todayDate.compareTo(templateTable.getEffectiveStartDate()) > 0 && templateTable.getEffectiveEndDate().compareTo(todayDate) > 0) {
+                    return templateTable.getTemplateShortId();
+                }
+            }
+            else if(templateTable.getEffectiveEndDate() != null) {
+                if(returnTemplateShortId != null) {
+                    TemplateTable templateTableOnce = templateRepository.getByTemplateShortId(returnTemplateShortId);
+                    if(templateTableOnce.getEffectiveEndDate() == null && templateTable.getEffectiveEndDate().compareTo(todayDate) > 0 ) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                    else if (templateTableOnce.getEffectiveEndDate() != null
+                            && templateTableOnce.getEffectiveEndDate().compareTo(templateTable.getEffectiveEndDate()) > 0
+                            && templateTable.getEffectiveEndDate().compareTo(todayDate) > 0 ) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                }
+                else {
+                    if(templateTable.getEffectiveEndDate().compareTo(todayDate) > 0) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                }
+            }
+            else if (templateTable.getEffectiveStartDate() != null) {
+                if(returnTemplateShortId != null) {
+                    TemplateTable templateTableOnce = templateRepository.getByTemplateShortId(returnTemplateShortId);
+                    if(templateTableOnce.getEffectiveEndDate() == null
+                            && templateTableOnce.getEffectiveStartDate() != null
+                            && templateTable.getEffectiveStartDate().compareTo(templateTableOnce.getEffectiveStartDate()) > 0
+                            && todayDate.compareTo(templateTable.getEffectiveStartDate()) > 0) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                    else if (templateTableOnce.getEffectiveEndDate() == null
+                            && templateTableOnce.getEffectiveStartDate() == null
+                            && todayDate.compareTo(templateTable.getEffectiveStartDate()) > 0) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                }
+                else {
+                    if(todayDate.compareTo(templateTable.getEffectiveStartDate()) > 0) {
+                        returnTemplateShortId = templateTable.getTemplateShortId();
+                    }
+                }
+            }
+            else {
+                if(returnTemplateShortId == null) {
+                    returnTemplateShortId = templateTable.getTemplateShortId();
+                }
+            }
         }
 
         return returnTemplateShortId;
