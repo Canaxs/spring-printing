@@ -1,10 +1,9 @@
 package com.print.service.Impl;
 
-import com.google.api.Logging;
 import com.ironsoftware.ironpdf.PdfDocument;
 import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfWriter;
 import com.print.common.Constants;
+import com.print.enums.TemplateType;
 import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.persistence.entity.Receipt;
@@ -12,33 +11,24 @@ import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.TemplateService;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.hibernate.sql.Template;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.xhtmlrenderer.pdf.ITextRenderer;
-import com.lowagie.text.*;
-import org.xhtmlrenderer.simple.PDFRenderer;
 
-import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -53,26 +43,30 @@ public class TemplateServiceImpl implements TemplateService {
     @Value("${randomid}")
     private String randomIdKey;
 
-    private TemplateRepository templateRepository;
+    private final TemplateRepository templateRepository;
 
     public TemplateServiceImpl(TemplateRepository templateRepository) {
         this.templateRepository = templateRepository;
     }
 
     @Override
-    public GuestPdfDTO htmlReceiptEditData(ReceiptDTO receiptDTO){
+    public GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO){
         String shortId = null;
-        if(templateRepository.existsByTemplateName(receiptDTO.getTemplateName())) {
-            String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toUpperCase());
+
+        if(templateRepository.existsByTemplateNameAndTemplateType(receiptDTO.getTemplateName().toLowerCase(),TemplateType.convert(receiptDTO.getTemplateType().toLowerCase()))) {
+            String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toLowerCase() , TemplateType.convert(receiptDTO.getTemplateType().toLowerCase()));
             try {
-                Resource template = resourceLoader.getResource(Constants.folderReceiptAddress + templateShortId + ".html");
+                String folderAddress =  getFolderAddress(receiptDTO.getTemplateType().toLowerCase());
+                Resource template = resourceLoader.getResource(folderAddress + templateShortId + ".html");
                 File file = new File(template.getURI());
                 Document document = Jsoup.parse(file, "UTF-8");
 
-                Class<ReceiptDTO> clz = ReceiptDTO.class;
+                Class classObject = TemplateType.convertClass(receiptDTO.getTemplateType().toLowerCase());
+
+                Class<?> clz = classObject;
                 for (Method m : clz.getDeclaredMethods()) {
                     for (Parameter p : m.getParameters()) {
-                        if (document.getElementById(p.getName()) != null) {
+                        if (document.getElementById(p.getName()) != null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
                             Element div = document.getElementById(p.getName());
                             div.html(receiptDTO.convert(p.getName()).toString());
                         }
@@ -160,22 +154,10 @@ public class TemplateServiceImpl implements TemplateService {
         return null;
     }
 
-    public String getRandomIdKey() {
-        return RandomStringUtils.random(8, randomIdKey);
-    }
-    public String getPath(String shortId) {
-        try {
-            return new File(".").getCanonicalPath() + Constants.folderReceiptPdfAddress2 + shortId + ".pdf";
-        }
-        catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
-        }
-        return null;
-    }
-
-    public String getBringSuitableTemplate(String templateName) {
+    @Override
+    public String getBringSuitableTemplate(String templateName, TemplateType templateType) {
         String returnTemplateShortId = null;
-        List<TemplateTable> templateTables = templateRepository.getTemplateTableByTemplateName(templateName);
+        List<TemplateTable> templateTables = templateRepository.getTemplateTableByTemplateNameAndTemplateType(templateName,templateType);
         Date todayDate = new Date();
         for (TemplateTable templateTable : templateTables) {
             if(templateTable.getEffectiveStartDate() != null && templateTable.getEffectiveEndDate() != null) {
@@ -230,5 +212,26 @@ public class TemplateServiceImpl implements TemplateService {
         }
 
         return returnTemplateShortId;
+    }
+    public String getFolderAddress(String templateType) {
+        return switch (templateType) {
+            case "receipt" ->  Constants.folderReceiptAddress;
+            case "invoice" -> Constants.folderInvoiceAddress;
+            default -> null;
+        };
+    }
+
+    public String getPath(String shortId) {
+        try {
+            return new File(".").getCanonicalPath() + Constants.folderReceiptPdfAddress2 + shortId + ".pdf";
+        }
+        catch (Exception e) {
+            System.out.println("Exception: "+e.getMessage());
+        }
+        return null;
+    }
+
+    public String getRandomIdKey() {
+        return RandomStringUtils.random(8, randomIdKey);
     }
 }

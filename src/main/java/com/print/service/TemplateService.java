@@ -1,5 +1,6 @@
 package com.print.service;
 
+import com.print.enums.TemplateType;
 import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.ReceiptDTO;
 import org.jsoup.nodes.Document;
@@ -8,7 +9,7 @@ import java.io.IOException;
 
 public interface TemplateService {
 
-    GuestPdfDTO htmlReceiptEditData(ReceiptDTO receiptDTO) throws IOException;
+    GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO) throws IOException;
 
     void printIronPdf(Document document);
 
@@ -17,4 +18,6 @@ public interface TemplateService {
     void openBrowser(String shortId);
 
     byte[] printPDF(String shortId);
+
+    String getBringSuitableTemplate(String templateName, TemplateType templateType);
 }

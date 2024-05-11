@@ -3,37 +3,26 @@ package com.print.service.Impl;
 import com.print.common.Constants;
 import com.print.common.exception.UploadException;
 import com.print.enums.TemplateType;
-import com.print.models.dto.ReceiptDTO;
 import com.print.models.dto.UploadDBDTO;
-import com.print.models.request.FileRequest;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.UploadService;
-import jakarta.servlet.ServletContext;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.nio.file.Files;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -46,7 +35,7 @@ public class UploadServiceImpl implements UploadService {
     @Value("${randomid}")
     private String randomIdKey;
 
-    private TemplateRepository templateRepository;
+    private final TemplateRepository templateRepository;
 
     public UploadServiceImpl(TemplateRepository templateRepository) {
         this.templateRepository = templateRepository;
@@ -123,26 +112,14 @@ public class UploadServiceImpl implements UploadService {
     public boolean saveFile(String fileType, String templateName, MultipartFile htmlFile, MultipartFile cssFile
             ,String fileIdKey,String startDate, String endDate) {
 
-        String fileTypeAddress = switch (fileType.toLowerCase()) {
-            case "receipt" ->  Constants.folderReceiptUploadAddress;
-            case "invoice" -> Constants.folderInvoiceUploadAddress;
-            case "temp" -> Constants.folderTempUploadAddress;
-            default -> null;
-        };
+        String fileTypeAddress = getFileTypeAddress(fileType.toLowerCase());
+
         try {
             File htmlIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"html\\"+fileIdKey+".html");
             File cssIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"css\\"+fileIdKey+".css");
 
-            FileOutputStream fosHtml = new FileOutputStream( htmlIdKeyFile );
-            fosHtml.write( htmlFile.getBytes() );
-            fosHtml.close();
-
-            FileOutputStream fosCss = new FileOutputStream( cssIdKeyFile );
-            fosCss.write( htmlFile.getBytes() );
-            fosCss.close();
-
-
-
+            fileOutputWriting(htmlFile,htmlIdKeyFile);
+            fileOutputWriting(cssFile,cssIdKeyFile);
         }
         catch (Exception e) {
             throw new UploadException("There was a problem saving the files, please try again: "+e.getMessage());
@@ -166,10 +143,11 @@ public class UploadServiceImpl implements UploadService {
 
     @Override
     public boolean saveDB(UploadDBDTO uploadDBDTO) {
+
         TemplateTable templateTable = new TemplateTable();
+        templateTable.setTemplateName(uploadDBDTO.getTemplateName().toLowerCase());
         templateTable.setTemplateType(TemplateType.convert(uploadDBDTO.getFileType().toLowerCase()));
         templateTable.setTemplateShortId(uploadDBDTO.getTemplateShortId());
-        templateTable.setTemplateName(uploadDBDTO.getTemplateName().toUpperCase());
         templateTable.setEffectiveStartDate(dateTimePatternEdit(uploadDBDTO.getEffectiveStartDate()));
         templateTable.setEffectiveEndDate(dateTimePatternEdit(uploadDBDTO.getEffectiveEndDate()));
         templateTable.setIsActive(uploadDBDTO.getIsActive());
@@ -205,10 +183,7 @@ public class UploadServiceImpl implements UploadService {
         return false;
     }
 
-    public String getRandomIdKey() {
-        return RandomStringUtils.random(8, randomIdKey);
-    }
-
+    @Override
     public Date dateTimePatternEdit(String effectiveDate) {
         Date date = null;
         try {
@@ -220,6 +195,31 @@ public class UploadServiceImpl implements UploadService {
             throw new UploadException("There was an error creating the date: "+e.getMessage());
         }
         return date;
+    }
+
+    @Override
+    public void fileOutputWriting(MultipartFile mpFile, File file) {
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+            fos.write(mpFile.getBytes());
+            fos.close();
+        }
+        catch (Exception e) {
+            throw new UploadException("Write Error: "+e.getMessage());
+        }
+    }
+
+    public String getRandomIdKey() {
+        return RandomStringUtils.random(8, randomIdKey);
+    }
+
+    public String getFileTypeAddress(String fileType) {
+        return switch (fileType.toLowerCase()) {
+            case "receipt" ->  Constants.folderReceiptUploadAddress;
+            case "invoice" -> Constants.folderInvoiceUploadAddress;
+            case "temp" -> Constants.folderTempUploadAddress;
+            default -> null;
+        };
     }
 
 }

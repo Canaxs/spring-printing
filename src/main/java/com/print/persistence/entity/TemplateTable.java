@@ -23,10 +23,10 @@ public class TemplateTable {
             pkColumnValue="task_gen", initialValue=1000, allocationSize=10)
     private Long Id;
 
-    private String templateName;
-
     @Enumerated(EnumType.STRING)
     private TemplateType templateType;
+
+    private String templateName;
 
     @Column(unique = true)
     private String templateShortId;

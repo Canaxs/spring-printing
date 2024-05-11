@@ -9,7 +9,9 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Table
 @Data
-public class Receipt extends BaseEntity {
+public class Invoice extends BaseEntity {
+
+    // It was made for testing and will be arranged in accordance with the invoice information later.
 
     private String name;
 

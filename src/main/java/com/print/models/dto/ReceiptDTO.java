@@ -12,6 +12,7 @@ public class ReceiptDTO {
     private Long accountNumber;
     private Long paymentTotal;
     private String templateName;
+    private String templateType;
 
     public Object convert(String step) {
         return switch (step) {
