@@ -16,7 +16,7 @@ public enum TemplateType {
             default -> null;
         };
     }
-    public static Class convertClass(String step) {
+    public static Class<?> convertClass(String step) {
         return switch (step) {
             case "receipt" -> Receipt.class;
             case "invoice" -> Invoice.class;

@@ -61,9 +61,8 @@ public class TemplateServiceImpl implements TemplateService {
                 File file = new File(template.getURI());
                 Document document = Jsoup.parse(file, "UTF-8");
 
-                Class classObject = TemplateType.convertClass(receiptDTO.getTemplateType().toLowerCase());
+                Class<?> clz = TemplateType.convertClass(receiptDTO.getTemplateType().toLowerCase());
 
-                Class<?> clz = classObject;
                 for (Method m : clz.getDeclaredMethods()) {
                     for (Parameter p : m.getParameters()) {
                         if (document.getElementById(p.getName()) != null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
