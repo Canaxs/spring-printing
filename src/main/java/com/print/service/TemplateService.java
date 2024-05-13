@@ -2,22 +2,28 @@ package com.print.service;
 
 import com.print.enums.TemplateType;
 import com.print.models.dto.GuestPdfDTO;
+import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
+import com.print.models.request.CreatedPdfRequest;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
 public interface TemplateService {
 
-    GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO) throws IOException;
+    GuestPdfDTO htmlEditDataReceipt(ReceiptDTO receiptDTO) throws IOException;
 
-    void printIronPdf(Document document);
+    GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO) throws IOException;
 
-    void printFlyingPdf(Document document,String shortId);
+    GuestPdfDTO getCreatedPdf(CreatedPdfRequest CreatedPdfRequest);
 
-    void openBrowser(String shortId);
+    void printIronPdf(Document document,String templateType);
 
-    byte[] printPDF(String shortId);
+    void printFlyingPdf(Document document,String shortId,String templateType);
+
+    void openBrowser(String shortId,String templateType);
+
+    byte[] printPDF(String shortId,String templateType);
 
     String getBringSuitableTemplate(String templateName, TemplateType templateType);
 }

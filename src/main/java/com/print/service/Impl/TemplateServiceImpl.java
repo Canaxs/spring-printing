@@ -3,11 +3,16 @@ package com.print.service.Impl;
 import com.ironsoftware.ironpdf.PdfDocument;
 import com.lowagie.text.pdf.BaseFont;
 import com.print.common.Constants;
+import com.print.common.exception.TemplateException;
 import com.print.enums.TemplateType;
 import com.print.models.dto.GuestPdfDTO;
+import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
+import com.print.models.request.CreatedPdfRequest;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
+import com.print.persistence.repository.InvoiceRepository;
+import com.print.persistence.repository.ReceiptRepository;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.TemplateService;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -21,10 +26,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.charset.StandardCharsets;
@@ -50,18 +52,17 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public GuestPdfDTO htmlEditData(ReceiptDTO receiptDTO){
+    public GuestPdfDTO htmlEditDataReceipt(ReceiptDTO receiptDTO){
         String shortId = null;
 
-        if(templateRepository.existsByTemplateNameAndTemplateType(receiptDTO.getTemplateName().toLowerCase(),TemplateType.convert(receiptDTO.getTemplateType().toLowerCase()))) {
-            String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toLowerCase() , TemplateType.convert(receiptDTO.getTemplateType().toLowerCase()));
+        if(templateRepository.existsByTemplateNameAndTemplateType(receiptDTO.getTemplateName().toLowerCase(),TemplateType.RECEIPT)) {
+            String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toLowerCase() , TemplateType.RECEIPT);
             try {
-                String folderAddress =  getFolderAddress(receiptDTO.getTemplateType().toLowerCase());
-                Resource template = resourceLoader.getResource(folderAddress + templateShortId + ".html");
+                Resource template = resourceLoader.getResource(Constants.folderReceiptAddress + templateShortId + ".html");
                 File file = new File(template.getURI());
                 Document document = Jsoup.parse(file, "UTF-8");
 
-                Class<?> clz = TemplateType.convertClass(receiptDTO.getTemplateType().toLowerCase());
+                Class<?> clz = TemplateType.convertClass(TemplateType.convertString(TemplateType.RECEIPT));
 
                 for (Method m : clz.getDeclaredMethods()) {
                     for (Parameter p : m.getParameters()) {
@@ -73,19 +74,69 @@ public class TemplateServiceImpl implements TemplateService {
                 }
                 shortId = getRandomIdKey();
                 //printIronPdf(document);
-                printFlyingPdf(document, shortId);
+                printFlyingPdf(document, shortId,"receipt");
             } catch (Exception e) {
                 System.out.println("Exception: " + e.getMessage());
             }
         }
         return GuestPdfDTO.builder()
-                .filename(getPath(shortId))
-                .array(printPDF(shortId)).
+                .filename(getPath(shortId,"receipt"))
+                .array(printPDF(shortId,"receipt")).
                 build();
     }
 
     @Override
-    public void printIronPdf(Document document) {
+    public GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO) throws IOException {
+        String shortId = null;
+
+        if(templateRepository.existsByTemplateNameAndTemplateType(invoiceDTO.getTemplateName().toLowerCase(),TemplateType.INVOICE)) {
+            String templateShortId = getBringSuitableTemplate(invoiceDTO.getTemplateName().toLowerCase() , TemplateType.INVOICE);
+            try {
+                Resource template = resourceLoader.getResource(Constants.folderInvoiceAddress + templateShortId + ".html");
+                File file = new File(template.getURI());
+                Document document = Jsoup.parse(file, "UTF-8");
+
+                Class<?> clz = TemplateType.convertClass(TemplateType.convertString(TemplateType.INVOICE));
+
+                for (Method m : clz.getDeclaredMethods()) {
+                    for (Parameter p : m.getParameters()) {
+                        if (document.getElementById(p.getName()) != null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
+                            Element div = document.getElementById(p.getName());
+                            div.html(invoiceDTO.convert(p.getName()).toString());
+                        }
+                    }
+                }
+                shortId = getRandomIdKey();
+                //printIronPdf(document);
+                printFlyingPdf(document, shortId,"invoice");
+            } catch (Exception e) {
+                System.out.println("Exception: " + e.getMessage());
+            }
+        }
+        return GuestPdfDTO.builder()
+                .filename(getPath(shortId,"invoice"))
+                .array(printPDF(shortId,"invoice")).
+                build();
+    }
+
+    @Override
+    public GuestPdfDTO getCreatedPdf(CreatedPdfRequest createdPdfRequest) {
+        ReceiptDTO receiptDTO;
+        try {
+            switch (createdPdfRequest.getTemplateType().toLowerCase()) {
+                case "receipt" : {
+
+                }
+            }
+        }
+        catch (Exception e) {
+            throw new TemplateException("An error occurred: "+e.getMessage());
+        }
+        return GuestPdfDTO.builder().build();
+    }
+
+    @Override
+    public void printIronPdf(Document document,String templateType) {
         try {
             PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
 
@@ -94,7 +145,7 @@ public class TemplateServiceImpl implements TemplateService {
             //Save the PdfDocument to a file
             myPdf.saveAs(Path.of(Constants.folderReceiptPdfAddress,shortId + ".pdf"));
 
-            openBrowser(shortId);
+            openBrowser(shortId,templateType);
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());
@@ -102,13 +153,13 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public void printFlyingPdf(Document document,String shortId) {
+    public void printFlyingPdf(Document document,String shortId,String templateType) {
 
         try {
             document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
             document.outputSettings().charset(StandardCharsets.UTF_8);
             document.charset(StandardCharsets.UTF_8);
-            OutputStream os = new FileOutputStream(getPath(shortId));
+            OutputStream os = new FileOutputStream(getPath(shortId,templateType));
 
             ITextRenderer renderer = new ITextRenderer();
 
@@ -128,9 +179,9 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public void openBrowser(String shortId) {
+    public void openBrowser(String shortId,String templateType) {
         try {
-            String path = getPath(shortId);
+            String path = getPath(shortId,templateType);
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "explorer "+path);
             processBuilder.start();
         }
@@ -140,9 +191,9 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public byte[] printPDF(String shortId) {
+    public byte[] printPDF(String shortId,String templateType) {
         try {
-            FileInputStream fis = new FileInputStream(new File(getPath(shortId)));
+            FileInputStream fis = new FileInputStream(new File(getPath(shortId,templateType)));
             byte[] targetArray = new byte[fis.available()];
             fis.read(targetArray);
             return targetArray;
@@ -212,17 +263,15 @@ public class TemplateServiceImpl implements TemplateService {
 
         return returnTemplateShortId;
     }
-    public String getFolderAddress(String templateType) {
-        return switch (templateType) {
-            case "receipt" ->  Constants.folderReceiptAddress;
-            case "invoice" -> Constants.folderInvoiceAddress;
-            default -> null;
-        };
-    }
 
-    public String getPath(String shortId) {
+    public String getPath(String shortId,String templateType) {
         try {
-            return new File(".").getCanonicalPath() + Constants.folderReceiptPdfAddress2 + shortId + ".pdf";
+            if(Objects.equals(templateType, "receipt")) {
+                return new File(".").getCanonicalPath() + Constants.folderReceiptPdfAddress2 + shortId + ".pdf";
+            }
+            else {
+                return new File(".").getCanonicalPath() + Constants.folderInvoicePdfAddress2 + shortId + ".pdf";
+            }
         }
         catch (Exception e) {
             System.out.println("Exception: "+e.getMessage());

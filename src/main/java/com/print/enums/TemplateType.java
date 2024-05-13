@@ -23,4 +23,12 @@ public enum TemplateType {
             default -> null;
         };
     }
+
+    public static String convertString(TemplateType templateType) {
+        return switch (templateType) {
+            case RECEIPT -> "receipt";
+            case INVOICE -> "invoice";
+            default -> null;
+        };
+    }
 }

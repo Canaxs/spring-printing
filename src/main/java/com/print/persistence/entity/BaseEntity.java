@@ -1,6 +1,7 @@
 package com.print.persistence.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -12,6 +13,7 @@ import java.util.Date;
 
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
+@Getter
 public class BaseEntity implements Serializable {
 
     @Id

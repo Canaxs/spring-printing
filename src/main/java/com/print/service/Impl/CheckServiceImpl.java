@@ -1,6 +1,7 @@
 package com.print.service.Impl;
 
 import com.print.common.exception.CheckException;
+import com.print.models.request.DeleteCheck;
 import com.print.models.request.InvoiceRequest;
 import com.print.models.request.ReceiptRequest;
 import com.print.models.response.InvoiceResponse;
@@ -80,5 +81,31 @@ public class CheckServiceImpl implements CheckService {
                 .accountNumber(invoice.getAccountNumber())
                 .paymentTotal(invoice.getPaymentTotal())
                 .build();
+    }
+
+    @Override
+    public String deleteReceipt(DeleteCheck deleteCheck) {
+        Receipt receipt;
+        try {
+            receipt = receiptRepository.getReferenceById(deleteCheck.getCheckId());
+            receiptRepository.delete(receipt);
+        }
+        catch (Exception e) {
+            throw new CheckException("");
+        }
+        return "Receipt has been deleted: "+receipt.getName()+" "+receipt.getSurname()+" Id: "+receipt.getId();
+    }
+
+    @Override
+    public String deleteInvoice(DeleteCheck deleteCheck) {
+        Invoice invoice;
+        try {
+            invoice = invoiceRepository.getReferenceById(deleteCheck.getCheckId());
+            invoiceRepository.delete(invoice);
+        }
+        catch (Exception e) {
+            throw new CheckException("");
+        }
+        return "Invoice has been deleted: "+invoice.getName()+" "+invoice.getSurname()+" Id: "+invoice.getId();
     }
 }

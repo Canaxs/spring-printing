@@ -1,14 +1,12 @@
 package com.print.controller;
 
+import com.print.models.request.DeleteCheck;
 import com.print.models.request.InvoiceRequest;
 import com.print.models.request.ReceiptRequest;
 import com.print.models.response.ResultResponse;
 import com.print.service.CheckService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -34,5 +32,13 @@ public class CheckController {
         return ResponseEntity.ok(ResultResponse.builder()
                 .result(new ArrayList<>((Collection<?>) checkService.createInvoice(invoiceRequest)))
                 .build());
+    }
+    @DeleteMapping("/receipt/delete")
+    public ResponseEntity<String> deleteReceipt(@RequestBody DeleteCheck deleteCheck) {
+        return ResponseEntity.ok(checkService.deleteReceipt(deleteCheck));
+    }
+    @DeleteMapping("/invoice/delete")
+    public ResponseEntity<String> deleteInvoice(@RequestBody DeleteCheck deleteCheck) {
+        return ResponseEntity.ok(checkService.deleteInvoice(deleteCheck));
     }
 }
