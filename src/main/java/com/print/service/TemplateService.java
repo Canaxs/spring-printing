@@ -11,9 +11,9 @@ import java.io.IOException;
 
 public interface TemplateService {
 
-    GuestPdfDTO htmlEditDataReceipt(ReceiptDTO receiptDTO) throws IOException;
+    GuestPdfDTO htmlEditDataReceipt(ReceiptDTO receiptDTO);
 
-    GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO) throws IOException;
+    GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO);
 
     GuestPdfDTO getCreatedPdf(CreatedPdfRequest CreatedPdfRequest);
 

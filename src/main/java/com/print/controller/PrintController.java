@@ -31,7 +31,7 @@ public class PrintController {
 
 
     @PostMapping("/getGuestReceiptPdf")
-    public ResponseEntity<byte[]> getGuestReceiptPdf(@RequestBody ReceiptDTO receiptDTO) throws IOException {
+    public ResponseEntity<byte[]> getGuestReceiptPdf(@RequestBody ReceiptDTO receiptDTO){
         GuestPdfDTO guestPdfDTO= templateService.htmlEditDataReceipt(receiptDTO);
 
         HttpHeaders headers = new HttpHeaders();
@@ -44,7 +44,7 @@ public class PrintController {
         return response;
     }
     @PostMapping("/getGuestInvoicePdf")
-    public ResponseEntity<byte[]> getGuestInvoicePdf(@RequestBody InvoiceDTO invoiceDTO) throws IOException {
+    public ResponseEntity<byte[]> getGuestInvoicePdf(@RequestBody InvoiceDTO invoiceDTO){
         GuestPdfDTO guestPdfDTO= templateService.htmlEditDataInvoice(invoiceDTO);
 
         HttpHeaders headers = new HttpHeaders();

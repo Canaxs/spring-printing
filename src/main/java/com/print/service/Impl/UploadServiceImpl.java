@@ -89,7 +89,7 @@ public class UploadServiceImpl implements UploadService {
             File file = new File(new File(".").getCanonicalPath()+Constants.folderTempUploadAddress+"html\\"+fileIdKey+".html");
             Document document = Jsoup.parse(file, "UTF-8");
 
-            Class<Receipt> clz = Receipt.class;
+            Class<?> clz = TemplateType.convertClass(fileType.toLowerCase());
             for (Method m : clz.getDeclaredMethods()) {
                 for (Parameter p : m.getParameters()) {
                     System.out.println("Parameter: "+p.getName());

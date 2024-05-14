@@ -86,7 +86,7 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO) throws IOException {
+    public GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO){
         String shortId = null;
 
         if(templateRepository.existsByTemplateNameAndTemplateType(invoiceDTO.getTemplateName().toLowerCase(),TemplateType.INVOICE)) {
