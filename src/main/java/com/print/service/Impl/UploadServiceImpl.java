@@ -93,8 +93,14 @@ public class UploadServiceImpl implements UploadService {
             for (Method m : clz.getDeclaredMethods()) {
                 for (Parameter p : m.getParameters()) {
                     System.out.println("Parameter: "+p.getName());
-                    if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
-                        fileControlBool = true;
+                    if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other")
+                            && !Objects.equals(p.getName(), "o")) {
+                        if(!p.getName().contains("writingArea")) {
+                            if(!p.getName().contains("products")) {
+                                fileControlBool = false;
+                            }
+
+                        }
                     }
                 }
             }

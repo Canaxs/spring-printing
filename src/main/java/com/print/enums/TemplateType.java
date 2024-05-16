@@ -1,5 +1,7 @@
 package com.print.enums;
 
+import com.print.models.dto.InvoiceDTO;
+import com.print.models.dto.ReceiptDTO;
 import com.print.persistence.entity.Invoice;
 import com.print.persistence.entity.Receipt;
 
@@ -18,8 +20,8 @@ public enum TemplateType {
     }
     public static Class<?> convertClass(String step) {
         return switch (step) {
-            case "receipt" -> Receipt.class;
-            case "invoice" -> Invoice.class;
+            case "receipt" -> ReceiptDTO.class;
+            case "invoice" -> InvoiceDTO.class;
             default -> null;
         };
     }

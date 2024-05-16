@@ -1,33 +1,55 @@
 package com.print.models.dto;
 
+import com.print.persistence.entity.InvoiceProduct;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class InvoiceDTO {
-    private String name;
-    private String surname;
-    private String address;
-    private Long ibanNumber;
-    private String branchName;
-    private Long accountNumber;
-    private Long paymentTotal;
+    private String dealerCompanyName;
+    private String dealerAddressCity;
+    private String dealerAddressCounty;
+    private String dealerAddress;
+    private String dealerPhoneNumber;
+    private String dealerMailAddress;
+    private String dealerVKN;
+    private String dealerTradeNumber;
+
+    private String customerName;
+    private String customerSurname;
+    private String customerAddressCity;
+    private String customerAddressCounty;
+    private String customerAddress;
+    private String customerPhoneNumber;
+    private String customerTCKN;
+
+    private List<InvoiceProduct> products;
     private String templateName;
 
     public Object convert(String step) {
         return switch (step) {
-            case "name" -> name;
-            case "surname" -> surname;
-            case "address" -> address;
-            case "ibanNumber" -> ibanNumber;
-            case "branchName" -> branchName;
-            case "accountNumber" -> accountNumber;
-            case "paymentTotal" -> paymentTotal;
+            case "dealerCompanyName" -> dealerCompanyName;
+            case "dealerAddressCity" -> dealerAddressCity;
+            case "dealerAddressCounty" -> dealerAddressCounty;
+            case "dealerAddress" -> dealerAddress;
+            case "dealerPhoneNumber" -> dealerPhoneNumber;
+            case "dealerMailAddress" -> dealerMailAddress;
+            case "dealerVKN" -> dealerVKN;
+            case "dealerTradeNumber" -> dealerTradeNumber;
+            case "customerName" -> customerName;
+            case "customerSurname" -> customerSurname;
+            case "customerAddressCity" -> customerAddressCity;
+            case "customerAddressCounty" -> customerAddressCounty;
+            case "customerAddress" -> customerAddress;
+            case "customerPhoneNumber" -> customerPhoneNumber;
+            case "customerTCKN" -> customerTCKN;
             default -> null;
         };
     }

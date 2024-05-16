@@ -110,7 +110,7 @@ public class TemplateServiceImpl implements TemplateService {
                 //printIronPdf(document);
                 printFlyingPdf(document, shortId,"invoice");
             } catch (Exception e) {
-                System.out.println("Exception: " + e.getMessage());
+                throw new TemplateException("Exception: "+e.getMessage());
             }
         }
         return GuestPdfDTO.builder()
@@ -148,7 +148,7 @@ public class TemplateServiceImpl implements TemplateService {
             openBrowser(shortId,templateType);
         }
         catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
+            throw new TemplateException("Exception: "+e.getMessage());
         }
     }
 
@@ -174,7 +174,7 @@ public class TemplateServiceImpl implements TemplateService {
 
         }
         catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
+            throw new TemplateException("Exception: "+e.getMessage());
         }
     }
 
@@ -186,7 +186,7 @@ public class TemplateServiceImpl implements TemplateService {
             processBuilder.start();
         }
         catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
+            throw new TemplateException("Exception: "+e.getMessage());
         }
     }
 
@@ -199,7 +199,7 @@ public class TemplateServiceImpl implements TemplateService {
             return targetArray;
         }
         catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
+            throw new TemplateException("Exception: "+e.getMessage());
         }
         return null;
     }
@@ -274,7 +274,7 @@ public class TemplateServiceImpl implements TemplateService {
             }
         }
         catch (Exception e) {
-            System.out.println("Exception: "+e.getMessage());
+            throw new TemplateException("Exception: "+e.getMessage());
         }
         return null;
     }
