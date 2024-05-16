@@ -1,17 +1,19 @@
 package com.print.persistence.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.io.Serializable;
 import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
+@Data
 @Entity
 @Table
-@Data
-public class Invoice extends BaseEntity {
+public class Invoice extends BaseEntity implements Serializable {
 
     // It was made for testing and will be arranged in accordance with the invoice information later.
 

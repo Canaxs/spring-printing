@@ -28,6 +28,7 @@ public class InvoiceDTO {
     private String customerAddressCounty;
     private String customerAddress;
     private String customerPhoneNumber;
+    private String customerMailAddress;
     private String customerTCKN;
 
     private List<InvoiceProduct> products;
@@ -50,6 +51,7 @@ public class InvoiceDTO {
             case "customerAddress" -> customerAddress;
             case "customerPhoneNumber" -> customerPhoneNumber;
             case "customerTCKN" -> customerTCKN;
+            case "customerMailAddress" -> customerMailAddress;
             default -> null;
         };
     }

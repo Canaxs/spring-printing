@@ -9,10 +9,9 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.persistence.entity.InvoiceProduct;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
-import com.print.persistence.repository.InvoiceRepository;
-import com.print.persistence.repository.ReceiptRepository;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.TemplateService;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -101,13 +100,23 @@ public class TemplateServiceImpl implements TemplateService {
                 for (Method m : clz.getDeclaredMethods()) {
                     for (Parameter p : m.getParameters()) {
                         if (document.getElementById(p.getName()) != null && !Objects.equals(p.getName(), "other") && !Objects.equals(p.getName(), "o")) {
-                            Element div = document.getElementById(p.getName());
-                            div.html(invoiceDTO.convert(p.getName()).toString());
+                            if(Objects.equals(p.getName(), "products")) {
+                                int index = 1;
+                                for(InvoiceProduct invoiceProduct : invoiceDTO.getProducts()) {
+                                    Element div = document.getElementById(p.getName());
+                                    div.append(tableProducts(invoiceProduct,index));
+                                    index++;
+                                }
+                            }
+                            else {
+                                Element div = document.getElementById(p.getName());
+                                div.html(invoiceDTO.convert(p.getName()).toString());
+                            }
                         }
                     }
                 }
                 shortId = getRandomIdKey();
-                //printIronPdf(document);
+                //printIronPdf(document,"invoice",shortId);
                 printFlyingPdf(document, shortId,"invoice");
             } catch (Exception e) {
                 throw new TemplateException("Exception: "+e.getMessage());
@@ -136,11 +145,9 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public void printIronPdf(Document document,String templateType) {
+    public void printIronPdf(Document document,String templateType,String shortId) {
         try {
             PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
-
-            String shortId = getRandomIdKey();
 
             //Save the PdfDocument to a file
             myPdf.saveAs(Path.of(Constants.folderReceiptPdfAddress,shortId + ".pdf"));
@@ -201,7 +208,6 @@ public class TemplateServiceImpl implements TemplateService {
         catch (Exception e) {
             throw new TemplateException("Exception: "+e.getMessage());
         }
-        return null;
     }
 
     @Override
@@ -276,10 +282,27 @@ public class TemplateServiceImpl implements TemplateService {
         catch (Exception e) {
             throw new TemplateException("Exception: "+e.getMessage());
         }
-        return null;
     }
 
     public String getRandomIdKey() {
         return RandomStringUtils.random(8, randomIdKey);
+    }
+
+    public String tableProducts(InvoiceProduct invoiceProduct,Integer productNo) {
+        return "<tr>" +
+                "<td>" +productNo.toString()+"</td>"+
+                "<td>" +invoiceProduct.getName()+"</td>"+
+                "<td>" +invoiceProduct.getAmount()+"</td>"+
+                "<td>" +invoiceProduct.getUnitPrice()+"</td>"+
+                "<td>"+Constants.KDVAmount.toString()+"%"+"</td>"+
+                "<td>"+KDVCalculation(invoiceProduct.getUnitPrice())+"</td>"+
+                "<td>"+KDVTotal(KDVCalculation(invoiceProduct.getUnitPrice()),invoiceProduct.getUnitPrice())+"</td>"+
+                "</tr>";
+    }
+    public Double KDVCalculation(Double unitPrice) {
+        return (unitPrice /100) * Constants.KDVAmount;
+    }
+    public Double KDVTotal(Double unitPrice,Double KDVCalc) {
+        return unitPrice+KDVCalc;
     }
 }

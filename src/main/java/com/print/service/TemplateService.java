@@ -17,7 +17,7 @@ public interface TemplateService {
 
     GuestPdfDTO getCreatedPdf(CreatedPdfRequest CreatedPdfRequest);
 
-    void printIronPdf(Document document,String templateType);
+    void printIronPdf(Document document,String templateType,String shortId);
 
     void printFlyingPdf(Document document,String shortId,String templateType);
 

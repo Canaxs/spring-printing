@@ -11,6 +11,7 @@ import com.print.service.UploadService;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
@@ -45,7 +46,7 @@ public class UploadServiceImpl implements UploadService {
     public String UploadFile(String fileType,String templateName,MultipartFile htmlFile, MultipartFile cssFile,String startDate,String endDate) {
 
         if(!validateFile(htmlFile,cssFile)) {
-            if(fileControl(htmlFile,cssFile,Constants.fileTempName)) {
+            if(fileControl(htmlFile,cssFile,fileType)) {
                 String fileIdKey = getRandomIdKey();
                 if(saveFile(fileType,templateName,htmlFile,cssFile,fileIdKey,startDate,endDate)) {
                     String returnString = " Your file has been uploaded successfully. FileIdKey: "+fileIdKey;
@@ -97,7 +98,7 @@ public class UploadServiceImpl implements UploadService {
                             && !Objects.equals(p.getName(), "o")) {
                         if(!p.getName().contains("writingArea")) {
                             if(!p.getName().contains("products")) {
-                                fileControlBool = false;
+                                fileControlBool = true;
                             }
 
                         }
@@ -126,6 +127,10 @@ public class UploadServiceImpl implements UploadService {
 
             fileOutputWriting(htmlFile,htmlIdKeyFile);
             fileOutputWriting(cssFile,cssIdKeyFile);
+
+            //Document document = Jsoup.parse(htmlIdKeyFile, "UTF-8");
+            //Element head = document.getElementsByTag("head").get(0);
+            //head.append(stylesheetAdd(fileIdKey));
         }
         catch (Exception e) {
             throw new UploadException("There was a problem saving the files, please try again: "+e.getMessage());
@@ -226,6 +231,9 @@ public class UploadServiceImpl implements UploadService {
             case "temp" -> Constants.folderTempUploadAddress;
             default -> null;
         };
+    }
+    public String stylesheetAdd(String shortId) {
+        return "<link rel=\"stylesheet\" href=\"../css/"+shortId+".css\"";
     }
 
 }

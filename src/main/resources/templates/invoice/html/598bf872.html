@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel=stylesheet" type="text/css" href="invoice.css" />
+        <title>E-ARŞİV</title>
+    </head>
+    <style type="text/css">
+        html , body {
+            width: 100%;
+        }
+        .inv-top {
+            margin-top: 5px;
+            display: flex;
+        }
+        .inv-bottom {
+            margin-top: 10px;
+            display: flex;
+        }
+        .inv-top div:nth-child(1){
+            width: 30%;
+        }
+        .inv-top div {
+            width: 20%;
+            margin: 10px;
+        }
+        .inv-bottom div {
+            width: 30%;
+            margin: 10px;
+        }
+        .inv-info {
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .section-top {
+            width: 100%;
+            height: 100%;
+        }
+        .section-div-top {
+        }
+        .section-div-bottom {
+        }
+        .kase-div {
+            text-align: center;
+        }
+        .fatura-özel {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .fatura-özel td, .fatura-özel th {
+            border: 1px solid black;
+            margin:0;
+        }
+        .hizmet td , .hizmet th {
+            border: 1px solid black;
+            margin:0;
+        }
+    </style>
+    <body>
+
+        <section class="section-top">
+            <div class="section-div-top">
+                <div class="inv-top">
+                    <div class="inv-info">
+                        <span><span id="dealerCompanyName">000</span><br></span>
+                        <span><span id="dealerAddress">00</span></span>
+                        <span><span id="dealerAddressCounty">00</span><span id="dealerAddressCity">00</span><br></span>
+                        <span>Tel: <span id="dealerPhoneNumber">00</span><br></span>
+                        <span>E-Posta: <span id="dealerMailAddress">00</span><br></span>
+                        <span>Web Sitesi: <br></span>
+                        <span>Vergi Dairesi: İzmir / KONAK<br></span>
+                        <span>VKN: <span id="dealerVKN"></span><br></span>
+                        <span>Mersis No: 0000-0000-0000-0000<br></span>
+                        <span>Ticaret Sicil No: <span id="dealerTradeNumber">00</span><br></span>
+                    </div>
+                    <div>
+                        <p style="font-size: 20px;font-weight: 700; margin-top: 40%;text-align: center;color: dimgray;">e-Arşiv Fatura</p>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center">
+                        <img width="100" height="100" src="https://www.cdnlogo.com/logos/j/2/java.svg" alt="java"/>
+                    </div>
+                    <div>
+                        <img width="150" height="150" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="qr-kod" />
+                    </div>
+                </div>
+                <div class="inv-bottom">
+                    <div class="inv-info">
+                        <span>SAYIN<br></span>
+                        <span><span id="customerName">00</span> <span id="customerSurname">00</span><br></span>
+                        <span><span id="customerAddressCounty">00</span> <span id="customerAddressCity">00</span><br></span>
+                        <span>Web Sitesi: <br></span>
+                        <span>E-Posta: <span id="customerMailAddress">00</span><br></span>
+                        <span>Tel: <span id="customerPhoneNumber">00</span><br></span>
+                        <span>Vergi Dairesi: <br></span>
+                        <span>TCKN: <span id="customerTCKN">00</span><br></span>
+                    </div>
+                    <div class="kase-div">
+                        <p>KAŞE</p>
+                    </div>
+                    <div class="fatura-özel">
+                        <table>
+                            <tr>
+                                <td>Özelleştirme No: </td>
+                                <td>TR0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Senaryo: </td>
+                                <td>FATURA</td>
+                            </tr>
+                            <tr>
+                                <td>Fatura Tipi: </td>
+                                <td>SATIS</td>
+                            </tr>
+                            <tr>
+                                <td>Fatura No: </td>
+                                <td>00000000000</td>
+                            </tr>
+                            <tr>
+                                <td>Fatura Tarihi</td>
+                                <td>0000000</td>
+                            </tr>
+                            <tr>
+                                <td>Fatura Saati</td>
+                                <td>00:00:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-div-bottom">
+                <div class="hizmet">
+                    <table id="products">
+                        <tr>
+                            <td>Sıra No</td>
+                            <td width="500px">Malzeme / Hizmet Açıklaması</td>
+                            <td>Miktar</td>
+                            <td>Birim Fiyatı</td>
+                            <td>KDV Oranı</td>
+                            <td>KDV Tutarı</td>
+                            <td>Mal Hizmet Tutarı</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="display: flex;justify-content: flex-end;margin: 10px;margin-right: 5%">
+                    <table border="1">
+                        <tr>
+                            <td>Mal Hizmet Toplam Tutarı </td>
+                            <td> 00,00 TL</td>
+                        </tr>
+                        <tr>
+                            <td>Hesaplanan KDV(%00.00)</td>
+                            <td>00,00 TL</td>
+                        </tr>
+                        <tr>
+                            <td>Vergiler Dahil Toplam Tutar</td>
+                            <td>00,00 TL</td>
+                        </tr>
+                        <tr>
+                            <td>Ödenecek Tutar</td>
+                            <td>00,00 TL</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

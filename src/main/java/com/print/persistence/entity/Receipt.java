@@ -5,11 +5,13 @@ import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.io.Serializable;
+
 @EqualsAndHashCode(callSuper = true)
+@Data
 @Entity
 @Table
-@Data
-public class Receipt extends BaseEntity {
+public class Receipt extends BaseEntity implements Serializable {
 
     private String name;
     private String surname;

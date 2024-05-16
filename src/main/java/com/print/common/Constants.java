@@ -14,4 +14,5 @@ public class Constants {
     public static final String folderReceiptUploadAddress = "\\src\\main\\resources\\templates\\receipt\\";
     public static final String folderInvoiceUploadAddress = "\\src\\main\\resources\\templates\\invoice\\";
     public static final String dateTimeFormatPattern = "dd-MM-yyyy HH:mm:ss";
+    public static final Integer KDVAmount = 20;
 }
