@@ -5206,3 +5206,997 @@ Max Header Height: 200, Max Footer Height : 200
 [2024-05-16 19:21:40] No license key detected, applying trial watermark
 [2024-05-16 19:21:40] 19:21:40 (13080): Generating bytes for document 00000280FA163800
 [2024-05-16 19:21:40] 19:21:40 (13080): Successfully generated 120377 bytes for document 00000280FA163800
+[2024-05-18 13:28:54] ---------- Windows v10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:28:54] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:54] Creating deployments for win-x64
+[2024-05-18 13:28:54] Attempting deployment for 'Chrome' v2022.10.0.9530 using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:54] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:55] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:28:55] Using deployment instructions for 'default' v
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'ucrtbase' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'vcruntime140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'vcruntime140_1' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'msvcp140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'dxva2' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'chrome_elf' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'libcef' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:28:55] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:28:55] Successfully loaded native library 'IronInterop' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:28:55] Successfully loaded 'IronInterop' version '2022.10.0.9530' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:55] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:55] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngine, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:28:55] 13:28:55 (10356): Detected operating system windows
+[2024-05-18 13:28:55] 13:28:55 (10356): ~ Chrome renderer v2022.10.0.9530~
+[2024-05-18 13:28:55] 13:28:55 (10356): IsSingleProcess: 0
+[2024-05-18 13:28:55] 13:28:55 (10356): Creating Cef proxy controller
+[2024-05-18 13:28:55] 13:28:55 (10356): Creating Cef interface
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new lifespan events
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new browser process handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new load handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new render handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new render process handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new print handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new dev tools handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new dev tools registration factory
+[2024-05-18 13:28:55] 13:28:55 (10356): Created new lifespan handler
+[2024-05-18 13:28:55] 13:28:55 (10356): Assigning Cef proxy controller events...
+[2024-05-18 13:28:55] 13:28:55 (10356): Assigning Cef proxy controller stream provider...
+[2024-05-18 13:28:55] 13:28:55 (10356): Initializing Cef proxy controller
+[2024-05-18 13:28:55] 13:28:55 (10356): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:28:55] 13:28:55 (10356): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:55] 13:28:55 (10356): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales'
+[2024-05-18 13:28:55] 13:28:55 (10356): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:28:55] 13:28:55 (10356): Process os_name: 'windows'
+[2024-05-18 13:28:55] 13:28:55 (10356): gpu_mode: '0'
+[2024-05-18 13:28:55] 13:28:55 (10356): Launching Main process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronPdfEngine.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests host=127.0.0.1 port=51234 enable_debug=false log_path=ironpdfengine.log'
+[2024-05-18 13:28:55] 13:28:55 (19504): Process os_name: 'windows'
+[2024-05-18 13:28:55] 13:28:55 (19504): gpu_mode: '0'
+[2024-05-18 13:28:55] 13:28:55 (19504): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:2'
+[2024-05-18 13:28:55] 13:28:55 (10356): Cef initialization succeeded
+[2024-05-18 13:28:55] 13:28:55 (19504): Cef context initialized
+[2024-05-18 13:28:55] 13:28:55 (19504): Registering custom scheme for rendering raw html
+[2024-05-18 13:28:55] 13:28:55 (19504): Successfully registered custom scheme
+[2024-05-18 13:28:55] 13:28:55 (19504): Cef engine initialization complete
+[2024-05-18 13:28:55] 13:28:55 (19504): Process os_name: 'windows'
+[2024-05-18 13:28:55] 13:28:55 (19504): gpu_mode: '0'
+[2024-05-18 13:28:55] 13:28:55 (19504): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:8'
+[2024-05-18 13:28:56] 13:28:56 (23268): Generating pdf from html
+[2024-05-18 13:28:56] 13:28:56 (23268): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+
+[2024-05-18 13:28:56] 13:28:56 (23268): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0
+Scale: 100
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 3
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 0
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:28:56] 13:28:56 (23268): Created new job group 0 for new document
+[2024-05-18 13:28:56] 13:28:56 (23268): Created job group 0
+[2024-05-18 13:28:56] 13:28:56 (23268): Queuing job 0
+[2024-05-18 13:28:56] 13:28:56 (23268): Checking for browser availability (0/30)
+[2024-05-18 13:28:56] 13:28:56 (23268): Creating new browser after waiting 0 seconds
+[2024-05-18 13:28:56] 13:28:56 (19504): Created browser id 1, 1 exist
+[2024-05-18 13:28:56] 13:28:56 (19504): Browser 1 created and ready for assignment
+[2024-05-18 13:28:56] 13:28:56 (19504): Assigning job 0 to browser 1
+[2024-05-18 13:28:56] 13:28:56 (19504): Processing job for html content on browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Process os_name: 'windows'
+[2024-05-18 13:28:57] 13:28:57 (19504): gpu_mode: '0'
+[2024-05-18 13:28:57] 13:28:57 (19504): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:28:57] 13:28:57 (19504): Process os_name: 'windows'
+[2024-05-18 13:28:57] 13:28:57 (19504): gpu_mode: '0'
+[2024-05-18 13:28:57] 13:28:57 (19504): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:28:57] 13:28:57 (15348): Received resource request from null for http://ironsoftwarescheme.com/ on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:28:57] 13:28:57 (15348): Resolved resource request using default handler
+[2024-05-18 13:28:57] 13:28:57 (15348): Creating resource handler for custom scheme http using url http://ironsoftwarescheme.com/ on browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser 1 frame 17179869185 started loading http://ironsoftwarescheme.com/
+[2024-05-18 13:28:57] 13:28:57 (15348): Received resource request from http://ironsoftwarescheme.com for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:28:57] 13:28:57 (15348): Resolved resource request using default handler
+[2024-05-18 13:28:57] 13:28:57 (15348): Received resource request from http://ironsoftwarescheme.com for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:28:57] 13:28:57 (15348): Resolved resource request using default handler
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser process received message: 'OnBrowserCreated'
+[2024-05-18 13:28:57] 13:28:57 (19504): Received message from render process with values '' (0)
+[2024-05-18 13:28:57] 13:28:57 (15348): Received resource request from http://ironsoftwarescheme.com for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:28:57] 13:28:57 (15348): Resolved resource request using default handler
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser 1 frame 17179869185 ended loading http://ironsoftwarescheme.com/
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser 1 loading state changed to 0 for url 'http://ironsoftwarescheme.com/'
+[2024-05-18 13:28:57] 13:28:57 (19504): Frame loaded for job 0 on browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:28:57] 13:28:57 (19504): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:28:57] 13:28:57 (19504): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:28:57] 13:28:57 (19504): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:28:57] 13:28:57 (19504): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:28:57] 13:28:57 (19504): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser process received message: 'OnDomVisited'
+[2024-05-18 13:28:57] 13:28:57 (19504): Received message from render process with values 'AQAAAE4AAAAAAAAAAgAAACoAAAAQAAAAAAAAAAAAAAABAAAAHgAAAAEAAAANAAAAZABvAGMAdQBtAGUAbgB0AHQAaQB0AGwAZQABAAAABAAAAAEAAAAAAAAA' (120)
+[2024-05-18 13:28:57] 13:28:57 (19504): Processed html for browser 1
+[2024-05-18 13:28:57] 13:28:57 (16668): Finished waiting for render delay
+[2024-05-18 13:28:57] 13:28:57 (16668): Scaling content to paper using a factor of 100
+[2024-05-18 13:28:57] 13:28:57 (16668): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\8B39.tmp'
+[2024-05-18 13:28:57] 13:28:57 (19504): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\8B39.tmp' (1)
+[2024-05-18 13:28:57] 13:28:57 (19504): Print finished for browser 1(success: 1)
+[2024-05-18 13:28:57] 13:28:57 (19504): Resolving job for browser 1 with 37832 bytes
+[2024-05-18 13:28:57] 13:28:57 (19504): PdfDocumentFactory created document 0000020A6A8E5640 from 37832 bytes
+[2024-05-18 13:28:57] 13:28:57 (19504): Resolving job for browser 1 with 1 page document
+[2024-05-18 13:28:57] 13:28:57 (19504): No document title found
+[2024-05-18 13:28:57] 13:28:57 (19504): Retrieve Html title: 
+[2024-05-18 13:28:57] 13:28:57 (19504): Generating form fields
+[2024-05-18 13:28:57] 13:28:57 (19504): Adding default font for form fields
+[2024-05-18 13:28:57] 13:28:57 (19504): Initializing forms for document
+[2024-05-18 13:28:57] 13:28:57 (19504): Generating bytes for document 0000020A6A8E5640
+[2024-05-18 13:28:57] 13:28:57 (19504): Successfully generated 38045 bytes for document 0000020A6A8E5640
+[2024-05-18 13:28:57] 13:28:57 (19504): PdfDocumentFactory closed document 0000020A6A8E5640
+[2024-05-18 13:28:57] 13:28:57 (23120): Closing browser 1
+[2024-05-18 13:28:57] 13:28:57 (19504): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:28:57] 13:28:57 (19504): Destroying browser id 1, 0 remain
+[2024-05-18 13:28:57] 13:28:57 (19504): Browser 1 closed for job 0
+[2024-05-18 13:28:57] 13:28:57 (19504): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:28:57] 13:28:57 (19504): Job group 0 finished
+[2024-05-18 13:28:57] 13:28:57 (19504): CefMessagePumpStd::Quit()
+[2024-05-18 13:28:57] 13:28:57 (23268): PdfDocumentFactory created document 0000020A6A8E5AA0 from 38045 bytes
+[2024-05-18 13:28:57] 13:28:57 (23268): Storing new document 0
+[2024-05-18 13:28:58] No license key detected, applying trial watermark
+[2024-05-18 13:28:58] 13:28:58 (23268): Generating bytes for document 0000020A6A8E5AA0
+[2024-05-18 13:28:58] 13:28:58 (23268): Successfully generated 100826 bytes for document 0000020A6A8E5AA0
+[2024-05-18 13:35:36] ---------- Windows v10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:35:36] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] Creating deployments for win-x64
+[2024-05-18 13:35:36] Attempting deployment for 'Chrome' v2022.10.0.9530 using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:35:36] Using deployment instructions for 'default' v
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'ucrtbase' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'vcruntime140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'vcruntime140_1' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'msvcp140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'dxva2' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'chrome_elf' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'libcef' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:35:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:35:36] Successfully loaded native library 'IronInterop' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:35:36] Successfully loaded 'IronInterop' version '2022.10.0.9530' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngine, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:35:36] 13:35:36 (6836): Detected operating system windows
+[2024-05-18 13:35:36] 13:35:36 (6836): ~ Chrome renderer v2022.10.0.9530~
+[2024-05-18 13:35:36] 13:35:36 (6836): IsSingleProcess: 0
+[2024-05-18 13:35:36] 13:35:36 (6836): Creating Cef proxy controller
+[2024-05-18 13:35:36] 13:35:36 (6836): Creating Cef interface
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new lifespan events
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new browser process handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new load handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new render handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new render process handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new print handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new dev tools handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new dev tools registration factory
+[2024-05-18 13:35:36] 13:35:36 (6836): Created new lifespan handler
+[2024-05-18 13:35:36] 13:35:36 (6836): Assigning Cef proxy controller events...
+[2024-05-18 13:35:36] 13:35:36 (6836): Assigning Cef proxy controller stream provider...
+[2024-05-18 13:35:36] 13:35:36 (6836): Initializing Cef proxy controller
+[2024-05-18 13:35:36] 13:35:36 (6836): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:35:36] 13:35:36 (6836): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] 13:35:36 (6836): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales'
+[2024-05-18 13:35:36] 13:35:36 (6836): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:35:36] 13:35:36 (6836): Process os_name: 'windows'
+[2024-05-18 13:35:36] 13:35:36 (6836): gpu_mode: '0'
+[2024-05-18 13:35:36] 13:35:36 (6836): Launching Main process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronPdfEngine.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests host=127.0.0.1 port=51622 enable_debug=false log_path=ironpdfengine.log license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-18 13:35:37] 13:35:37 (1428): Process os_name: 'windows'
+[2024-05-18 13:35:37] 13:35:37 (1428): gpu_mode: '0'
+[2024-05-18 13:35:37] 13:35:37 (1428): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:2'
+[2024-05-18 13:35:37] 13:35:37 (6836): Cef initialization succeeded
+[2024-05-18 13:35:37] 13:35:37 (1428): Cef context initialized
+[2024-05-18 13:35:37] 13:35:37 (1428): Registering custom scheme for rendering raw html
+[2024-05-18 13:35:37] 13:35:37 (1428): Successfully registered custom scheme
+[2024-05-18 13:35:37] 13:35:37 (1428): Cef engine initialization complete
+[2024-05-18 13:35:37] 13:35:37 (1428): Process os_name: 'windows'
+[2024-05-18 13:35:37] 13:35:37 (1428): gpu_mode: '0'
+[2024-05-18 13:35:37] 13:35:37 (1428): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:8'
+[2024-05-18 13:35:38] 13:35:38 (10404): Generating pdf from html
+[2024-05-18 13:35:38] 13:35:38 (10404): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+
+[2024-05-18 13:35:38] 13:35:38 (10404): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0
+Scale: 100
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 3
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 0
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:35:38] 13:35:38 (10404): Created new job group 0 for new document
+[2024-05-18 13:35:38] 13:35:38 (10404): Created job group 0
+[2024-05-18 13:35:38] 13:35:38 (10404): Queuing job 0
+[2024-05-18 13:35:38] 13:35:38 (10404): Checking for browser availability (0/30)
+[2024-05-18 13:35:38] 13:35:38 (10404): Creating new browser after waiting 0 seconds
+[2024-05-18 13:35:38] 13:35:38 (1428): Created browser id 1, 1 exist
+[2024-05-18 13:35:38] 13:35:38 (1428): Browser 1 created and ready for assignment
+[2024-05-18 13:35:38] 13:35:38 (1428): Assigning job 0 to browser 1
+[2024-05-18 13:35:38] 13:35:38 (1428): Processing job for html content on browser 1
+[2024-05-18 13:35:38] 13:35:38 (1428): Process os_name: 'windows'
+[2024-05-18 13:35:38] 13:35:38 (1428): gpu_mode: '0'
+[2024-05-18 13:35:38] 13:35:38 (1428): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:35:38] 13:35:38 (1428): Process os_name: 'windows'
+[2024-05-18 13:35:38] 13:35:38 (1428): gpu_mode: '0'
+[2024-05-18 13:35:38] 13:35:38 (1428): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:35:38] 13:35:38 (1428): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:35:38] 13:35:38 (11872): Received resource request from null for http://ironsoftwarescheme.com/ on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:35:38] 13:35:38 (11872): Resolved resource request using default handler
+[2024-05-18 13:35:38] 13:35:38 (11872): Creating resource handler for custom scheme http using url http://ironsoftwarescheme.com/ on browser 1
+[2024-05-18 13:35:38] 13:35:38 (1428): Browser 1 frame 17179869185 started loading http://ironsoftwarescheme.com/
+[2024-05-18 13:35:38] 13:35:38 (11872): Received resource request from http://ironsoftwarescheme.com for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:35:38] 13:35:38 (11872): Resolved resource request using default handler
+[2024-05-18 13:35:38] 13:35:38 (11872): Received resource request from http://ironsoftwarescheme.com for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:35:38] 13:35:38 (11872): Resolved resource request using default handler
+[2024-05-18 13:35:38] 13:35:38 (1428): Browser process received message: 'OnBrowserCreated'
+[2024-05-18 13:35:38] 13:35:38 (1428): Received message from render process with values '' (0)
+[2024-05-18 13:35:39] 13:35:39 (11872): Received resource request from http://ironsoftwarescheme.com for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:35:39] 13:35:39 (11872): Resolved resource request using default handler
+[2024-05-18 13:35:39] 13:35:39 (1428): Browser 1 frame 17179869185 ended loading http://ironsoftwarescheme.com/
+[2024-05-18 13:35:39] 13:35:39 (1428): Browser 1 loading state changed to 0 for url 'http://ironsoftwarescheme.com/'
+[2024-05-18 13:35:39] 13:35:39 (1428): Frame loaded for job 0 on browser 1
+[2024-05-18 13:35:39] 13:35:39 (1428): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:35:39] 13:35:39 (1428): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:35:39] 13:35:39 (1428): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:35:39] 13:35:39 (1428): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:35:39] 13:35:39 (1428): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:35:39] 13:35:39 (1428): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:35:39] 13:35:39 (1428): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:35:39] 13:35:39 (1428): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:35:39] 13:35:39 (1428): Browser process received message: 'OnDomVisited'
+[2024-05-18 13:35:39] 13:35:39 (1428): Received message from render process with values 'AQAAAE4AAAAAAAAAAgAAACoAAAAQAAAAAAAAAAAAAAABAAAAHgAAAAEAAAANAAAAZABvAGMAdQBtAGUAbgB0AHQAaQB0AGwAZQABAAAABAAAAAEAAAAAAAAA' (120)
+[2024-05-18 13:35:39] 13:35:39 (1428): Processed html for browser 1
+[2024-05-18 13:35:39] 13:35:39 (23140): Finished waiting for render delay
+[2024-05-18 13:35:39] 13:35:39 (23140): Scaling content to paper using a factor of 100
+[2024-05-18 13:35:39] 13:35:39 (23140): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\AAE9.tmp'
+[2024-05-18 13:35:39] 13:35:39 (1428): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\AAE9.tmp' (1)
+[2024-05-18 13:35:39] 13:35:39 (1428): Print finished for browser 1(success: 1)
+[2024-05-18 13:35:39] 13:35:39 (1428): Resolving job for browser 1 with 37832 bytes
+[2024-05-18 13:35:39] 13:35:39 (1428): PdfDocumentFactory created document 00000125D2602760 from 37832 bytes
+[2024-05-18 13:35:39] 13:35:39 (1428): Resolving job for browser 1 with 1 page document
+[2024-05-18 13:35:39] 13:35:39 (1428): No document title found
+[2024-05-18 13:35:39] 13:35:39 (1428): Retrieve Html title: 
+[2024-05-18 13:35:39] 13:35:39 (1428): Generating form fields
+[2024-05-18 13:35:39] 13:35:39 (1428): Adding default font for form fields
+[2024-05-18 13:35:39] 13:35:39 (1428): Initializing forms for document
+[2024-05-18 13:35:39] 13:35:39 (1428): Generating bytes for document 00000125D2602760
+[2024-05-18 13:35:39] 13:35:39 (1428): Successfully generated 38045 bytes for document 00000125D2602760
+[2024-05-18 13:35:39] 13:35:39 (1428): PdfDocumentFactory closed document 00000125D2602760
+[2024-05-18 13:35:39] 13:35:39 (5668): Closing browser 1
+[2024-05-18 13:35:39] 13:35:39 (1428): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:35:39] 13:35:39 (1428): Destroying browser id 1, 0 remain
+[2024-05-18 13:35:39] 13:35:39 (1428): Browser 1 closed for job 0
+[2024-05-18 13:35:39] 13:35:39 (1428): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:35:39] 13:35:39 (1428): Job group 0 finished
+[2024-05-18 13:35:39] 13:35:39 (1428): CefMessagePumpStd::Quit()
+[2024-05-18 13:35:39] 13:35:39 (10404): PdfDocumentFactory created document 00000125D2602760 from 38045 bytes
+[2024-05-18 13:35:39] 13:35:39 (10404): Storing new document 0
+[2024-05-18 13:35:39] Retrieved license key from inline variable
+[2024-05-18 13:35:39] Error 0x01 while validating license key
+[2024-05-18 13:35:39] No license key detected, applying trial watermark
+[2024-05-18 13:35:39] 13:35:39 (10404): Generating bytes for document 00000125D2602760
+[2024-05-18 13:35:39] 13:35:39 (10404): Successfully generated 100826 bytes for document 00000125D2602760
+[2024-05-18 13:38:53] ---------- Windows v10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:38:53] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:53] Creating deployments for win-x64
+[2024-05-18 13:38:53] Attempting deployment for 'Chrome' v2022.10.0.9530 using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:53] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:53] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:38:53] Using deployment instructions for 'default' v
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'ucrtbase' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'vcruntime140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'vcruntime140_1' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'msvcp140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'dxva2' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'chrome_elf' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'libcef' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:38:53] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:38:53] Successfully loaded native library 'IronInterop' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:38:53] Successfully loaded 'IronInterop' version '2022.10.0.9530' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:53] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:53] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngine, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:38:54] 13:38:54 (8464): Detected operating system windows
+[2024-05-18 13:38:54] 13:38:54 (8464): ~ Chrome renderer v2022.10.0.9530~
+[2024-05-18 13:38:54] 13:38:54 (8464): IsSingleProcess: 0
+[2024-05-18 13:38:54] 13:38:54 (8464): Creating Cef proxy controller
+[2024-05-18 13:38:54] 13:38:54 (8464): Creating Cef interface
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new lifespan events
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new browser process handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new load handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new render handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new render process handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new print handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new dev tools handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new dev tools registration factory
+[2024-05-18 13:38:54] 13:38:54 (8464): Created new lifespan handler
+[2024-05-18 13:38:54] 13:38:54 (8464): Assigning Cef proxy controller events...
+[2024-05-18 13:38:54] 13:38:54 (8464): Assigning Cef proxy controller stream provider...
+[2024-05-18 13:38:54] 13:38:54 (8464): Initializing Cef proxy controller
+[2024-05-18 13:38:54] 13:38:54 (8464): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:38:54] 13:38:54 (8464): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:54] 13:38:54 (8464): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales'
+[2024-05-18 13:38:54] 13:38:54 (8464): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:38:54] 13:38:54 (8464): Process os_name: 'windows'
+[2024-05-18 13:38:54] 13:38:54 (8464): gpu_mode: '0'
+[2024-05-18 13:38:54] 13:38:54 (8464): Launching Main process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronPdfEngine.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests host=127.0.0.1 port=52061 enable_debug=false log_path=ironpdfengine.log license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-18 13:38:54] 13:38:54 (640): Process os_name: 'windows'
+[2024-05-18 13:38:54] 13:38:54 (640): gpu_mode: '0'
+[2024-05-18 13:38:54] 13:38:54 (640): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:2'
+[2024-05-18 13:38:54] 13:38:54 (8464): Cef initialization succeeded
+[2024-05-18 13:38:54] 13:38:54 (640): Cef context initialized
+[2024-05-18 13:38:54] 13:38:54 (640): Registering custom scheme for rendering raw html
+[2024-05-18 13:38:54] 13:38:54 (640): Successfully registered custom scheme
+[2024-05-18 13:38:54] 13:38:54 (640): Cef engine initialization complete
+[2024-05-18 13:38:54] 13:38:54 (640): Process os_name: 'windows'
+[2024-05-18 13:38:54] 13:38:54 (640): gpu_mode: '0'
+[2024-05-18 13:38:54] 13:38:54 (640): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:8'
+[2024-05-18 13:38:56] 13:38:56 (3168): Generating pdf from html
+[2024-05-18 13:38:56] 13:38:56 (3168): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+
+[2024-05-18 13:38:56] 13:38:56 (3168): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0
+Scale: 100
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 3
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 0
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:38:56] 13:38:56 (3168): Created new job group 0 for new document
+[2024-05-18 13:38:56] 13:38:56 (3168): Created job group 0
+[2024-05-18 13:38:56] 13:38:56 (3168): Queuing job 0
+[2024-05-18 13:38:56] 13:38:56 (3168): Checking for browser availability (0/30)
+[2024-05-18 13:38:56] 13:38:56 (3168): Creating new browser after waiting 0 seconds
+[2024-05-18 13:38:56] 13:38:56 (640): Created browser id 1, 1 exist
+[2024-05-18 13:38:56] 13:38:56 (640): Browser 1 created and ready for assignment
+[2024-05-18 13:38:56] 13:38:56 (640): Assigning job 0 to browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Processing job for html content on browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Process os_name: 'windows'
+[2024-05-18 13:38:56] 13:38:56 (640): gpu_mode: '0'
+[2024-05-18 13:38:56] 13:38:56 (640): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:38:56] 13:38:56 (640): Process os_name: 'windows'
+[2024-05-18 13:38:56] 13:38:56 (640): gpu_mode: '0'
+[2024-05-18 13:38:56] 13:38:56 (640): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:38:56] 13:38:56 (640): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:38:56] 13:38:56 (14024): Received resource request from null for http://ironsoftwarescheme.com/ on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:38:56] 13:38:56 (14024): Resolved resource request using default handler
+[2024-05-18 13:38:56] 13:38:56 (14024): Creating resource handler for custom scheme http using url http://ironsoftwarescheme.com/ on browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Browser 1 frame 17179869185 started loading http://ironsoftwarescheme.com/
+[2024-05-18 13:38:56] 13:38:56 (14024): Received resource request from http://ironsoftwarescheme.com for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:38:56] 13:38:56 (14024): Resolved resource request using default handler
+[2024-05-18 13:38:56] 13:38:56 (14024): Received resource request from http://ironsoftwarescheme.com for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:38:56] 13:38:56 (14024): Resolved resource request using default handler
+[2024-05-18 13:38:56] 13:38:56 (640): Browser process received message: 'OnBrowserCreated'
+[2024-05-18 13:38:56] 13:38:56 (640): Received message from render process with values '' (0)
+[2024-05-18 13:38:56] 13:38:56 (14024): Received resource request from http://ironsoftwarescheme.com for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:38:56] 13:38:56 (14024): Resolved resource request using default handler
+[2024-05-18 13:38:56] 13:38:56 (640): Browser 1 frame 17179869185 ended loading http://ironsoftwarescheme.com/
+[2024-05-18 13:38:56] 13:38:56 (640): Browser 1 loading state changed to 0 for url 'http://ironsoftwarescheme.com/'
+[2024-05-18 13:38:56] 13:38:56 (640): Frame loaded for job 0 on browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:38:56] 13:38:56 (640): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:38:56] 13:38:56 (640): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:38:56] 13:38:56 (640): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:38:56] 13:38:56 (640): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:38:56] 13:38:56 (640): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:38:56] 13:38:56 (640): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:38:56] 13:38:56 (640): Browser process received message: 'OnDomVisited'
+[2024-05-18 13:38:56] 13:38:56 (640): Received message from render process with values 'AQAAAE4AAAAAAAAAAgAAACoAAAAQAAAAAAAAAAAAAAABAAAAHgAAAAEAAAANAAAAZABvAGMAdQBtAGUAbgB0AHQAaQB0AGwAZQABAAAABAAAAAEAAAAAAAAA' (120)
+[2024-05-18 13:38:56] 13:38:56 (640): Processed html for browser 1
+[2024-05-18 13:38:56] 13:38:56 (12940): Finished waiting for render delay
+[2024-05-18 13:38:56] 13:38:56 (12940): Scaling content to paper using a factor of 100
+[2024-05-18 13:38:56] 13:38:56 (12940): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\AFAD.tmp'
+[2024-05-18 13:38:57] 13:38:57 (640): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\AFAD.tmp' (1)
+[2024-05-18 13:38:57] 13:38:57 (640): Print finished for browser 1(success: 1)
+[2024-05-18 13:38:57] 13:38:57 (640): Resolving job for browser 1 with 37832 bytes
+[2024-05-18 13:38:57] 13:38:57 (640): PdfDocumentFactory created document 000002297552FBA0 from 37832 bytes
+[2024-05-18 13:38:57] 13:38:57 (640): Resolving job for browser 1 with 1 page document
+[2024-05-18 13:38:57] 13:38:57 (640): No document title found
+[2024-05-18 13:38:57] 13:38:57 (640): Retrieve Html title: 
+[2024-05-18 13:38:57] 13:38:57 (640): Generating form fields
+[2024-05-18 13:38:57] 13:38:57 (640): Adding default font for form fields
+[2024-05-18 13:38:57] 13:38:57 (640): Initializing forms for document
+[2024-05-18 13:38:57] 13:38:57 (640): Generating bytes for document 000002297552FBA0
+[2024-05-18 13:38:57] 13:38:57 (640): Successfully generated 38045 bytes for document 000002297552FBA0
+[2024-05-18 13:38:57] 13:38:57 (640): PdfDocumentFactory closed document 000002297552FBA0
+[2024-05-18 13:38:57] 13:38:57 (11428): Closing browser 1
+[2024-05-18 13:38:57] 13:38:57 (640): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:38:57] 13:38:57 (640): Destroying browser id 1, 0 remain
+[2024-05-18 13:38:57] 13:38:57 (640): Browser 1 closed for job 0
+[2024-05-18 13:38:57] 13:38:57 (640): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:38:57] 13:38:57 (640): Job group 0 finished
+[2024-05-18 13:38:57] 13:38:57 (640): CefMessagePumpStd::Quit()
+[2024-05-18 13:38:57] 13:38:57 (3168): PdfDocumentFactory created document 0000022975491050 from 38045 bytes
+[2024-05-18 13:38:57] 13:38:57 (3168): Storing new document 0
+[2024-05-18 13:38:57] Retrieved license key from inline variable
+[2024-05-18 13:38:57] Error 0x01 while validating license key
+[2024-05-18 13:38:57] No license key detected, applying trial watermark
+[2024-05-18 13:38:57] 13:38:57 (3168): Generating bytes for document 0000022975491050
+[2024-05-18 13:38:57] 13:38:57 (3168): Successfully generated 100826 bytes for document 0000022975491050
+[2024-05-18 13:40:39] ---------- Windows v10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:40:39] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] Creating deployments for win-x64
+[2024-05-18 13:40:39] Attempting deployment for 'Chrome' v2022.10.0.9530 using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:40:39] Using deployment instructions for 'default' v
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'ucrtbase' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'vcruntime140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'vcruntime140_1' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'msvcp140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'dxva2' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'chrome_elf' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'libcef' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:40:39] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:40:39] Successfully loaded native library 'IronInterop' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:40:39] Successfully loaded 'IronInterop' version '2022.10.0.9530' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngine, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:40:39] 13:40:39 (3076): Detected operating system windows
+[2024-05-18 13:40:39] 13:40:39 (3076): ~ Chrome renderer v2022.10.0.9530~
+[2024-05-18 13:40:39] 13:40:39 (3076): IsSingleProcess: 0
+[2024-05-18 13:40:39] 13:40:39 (3076): Creating Cef proxy controller
+[2024-05-18 13:40:39] 13:40:39 (3076): Creating Cef interface
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new lifespan events
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new browser process handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new load handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new render handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new render process handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new print handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new dev tools handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new dev tools registration factory
+[2024-05-18 13:40:39] 13:40:39 (3076): Created new lifespan handler
+[2024-05-18 13:40:39] 13:40:39 (3076): Assigning Cef proxy controller events...
+[2024-05-18 13:40:39] 13:40:39 (3076): Assigning Cef proxy controller stream provider...
+[2024-05-18 13:40:39] 13:40:39 (3076): Initializing Cef proxy controller
+[2024-05-18 13:40:39] 13:40:39 (3076): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:40:39] 13:40:39 (3076): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] 13:40:39 (3076): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales'
+[2024-05-18 13:40:39] 13:40:39 (3076): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:40:39] 13:40:39 (3076): Process os_name: 'windows'
+[2024-05-18 13:40:39] 13:40:39 (3076): gpu_mode: '0'
+[2024-05-18 13:40:39] 13:40:39 (3076): Launching Main process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronPdfEngine.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests host=127.0.0.1 port=52190 enable_debug=false log_path=ironpdfengine.log license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-18 13:40:39] 13:40:39 (11032): Process os_name: 'windows'
+[2024-05-18 13:40:39] 13:40:39 (11032): gpu_mode: '0'
+[2024-05-18 13:40:39] 13:40:39 (11032): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:2'
+[2024-05-18 13:40:39] 13:40:39 (3076): Cef initialization succeeded
+[2024-05-18 13:40:39] 13:40:39 (11032): Cef context initialized
+[2024-05-18 13:40:39] 13:40:39 (11032): Registering custom scheme for rendering raw html
+[2024-05-18 13:40:39] 13:40:39 (11032): Successfully registered custom scheme
+[2024-05-18 13:40:39] 13:40:39 (11032): Cef engine initialization complete
+[2024-05-18 13:40:39] 13:40:39 (11032): Process os_name: 'windows'
+[2024-05-18 13:40:39] 13:40:39 (11032): gpu_mode: '0'
+[2024-05-18 13:40:39] 13:40:39 (11032): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:8'
+[2024-05-18 13:40:40] 13:40:40 (16476): Generating pdf from html
+[2024-05-18 13:40:40] 13:40:40 (16476): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+
+[2024-05-18 13:40:40] 13:40:40 (16476): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0
+Scale: 100
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 3
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 0
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:40:40] 13:40:40 (16476): Created new job group 0 for new document
+[2024-05-18 13:40:40] 13:40:40 (16476): Created job group 0
+[2024-05-18 13:40:40] 13:40:40 (16476): Queuing job 0
+[2024-05-18 13:40:40] 13:40:40 (16476): Checking for browser availability (0/30)
+[2024-05-18 13:40:40] 13:40:40 (16476): Creating new browser after waiting 0 seconds
+[2024-05-18 13:40:40] 13:40:40 (11032): Created browser id 1, 1 exist
+[2024-05-18 13:40:40] 13:40:40 (11032): Browser 1 created and ready for assignment
+[2024-05-18 13:40:40] 13:40:40 (11032): Assigning job 0 to browser 1
+[2024-05-18 13:40:40] 13:40:40 (11032): Processing job for html content on browser 1
+[2024-05-18 13:40:40] 13:40:40 (11032): Process os_name: 'windows'
+[2024-05-18 13:40:40] 13:40:40 (11032): gpu_mode: '0'
+[2024-05-18 13:40:40] 13:40:40 (11032): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:40:40] 13:40:40 (11032): Process os_name: 'windows'
+[2024-05-18 13:40:40] 13:40:40 (11032): gpu_mode: '0'
+[2024-05-18 13:40:40] 13:40:40 (11032): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:40:40] 13:40:40 (11032): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:40:40] 13:40:40 (11272): Received resource request from null for http://ironsoftwarescheme.com/ on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:40:40] 13:40:40 (11272): Resolved resource request using default handler
+[2024-05-18 13:40:40] 13:40:40 (11272): Creating resource handler for custom scheme http using url http://ironsoftwarescheme.com/ on browser 1
+[2024-05-18 13:40:40] 13:40:40 (11032): Browser 1 frame 17179869185 started loading http://ironsoftwarescheme.com/
+[2024-05-18 13:40:40] 13:40:40 (11272): Received resource request from http://ironsoftwarescheme.com for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:40:40] 13:40:40 (11272): Resolved resource request using default handler
+[2024-05-18 13:40:40] 13:40:40 (11272): Received resource request from http://ironsoftwarescheme.com for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:40:40] 13:40:40 (11272): Resolved resource request using default handler
+[2024-05-18 13:40:40] 13:40:40 (11032): Browser process received message: 'OnBrowserCreated'
+[2024-05-18 13:40:40] 13:40:40 (11032): Received message from render process with values '' (0)
+[2024-05-18 13:40:41] 13:40:41 (11272): Received resource request from http://ironsoftwarescheme.com for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:40:41] 13:40:41 (11272): Resolved resource request using default handler
+[2024-05-18 13:40:41] 13:40:41 (11032): Browser 1 frame 17179869185 ended loading http://ironsoftwarescheme.com/
+[2024-05-18 13:40:41] 13:40:41 (11032): Browser 1 loading state changed to 0 for url 'http://ironsoftwarescheme.com/'
+[2024-05-18 13:40:41] 13:40:41 (11032): Frame loaded for job 0 on browser 1
+[2024-05-18 13:40:41] 13:40:41 (11032): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:40:41] 13:40:41 (11032): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:40:41] 13:40:41 (11032): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:40:41] 13:40:41 (11032): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:40:41] 13:40:41 (11032): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:40:41] 13:40:41 (11032): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:40:41] 13:40:41 (11032): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:40:41] 13:40:41 (11032): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:40:41] 13:40:41 (11032): Browser process received message: 'OnDomVisited'
+[2024-05-18 13:40:41] 13:40:41 (11032): Received message from render process with values 'AQAAAE4AAAAAAAAAAgAAACoAAAAQAAAAAAAAAAAAAAABAAAAHgAAAAEAAAANAAAAZABvAGMAdQBtAGUAbgB0AHQAaQB0AGwAZQABAAAABAAAAAEAAAAAAAAA' (120)
+[2024-05-18 13:40:41] 13:40:41 (11032): Processed html for browser 1
+[2024-05-18 13:40:41] 13:40:41 (17576): Finished waiting for render delay
+[2024-05-18 13:40:41] 13:40:41 (17576): Scaling content to paper using a factor of 100
+[2024-05-18 13:40:41] 13:40:41 (17576): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\4699.tmp'
+[2024-05-18 13:40:41] 13:40:41 (11032): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\4699.tmp' (1)
+[2024-05-18 13:40:41] 13:40:41 (11032): Print finished for browser 1(success: 1)
+[2024-05-18 13:40:41] 13:40:41 (11032): Resolving job for browser 1 with 37832 bytes
+[2024-05-18 13:40:41] 13:40:41 (11032): PdfDocumentFactory created document 000001BFB8C592A0 from 37832 bytes
+[2024-05-18 13:40:41] 13:40:41 (11032): Resolving job for browser 1 with 1 page document
+[2024-05-18 13:40:41] 13:40:41 (11032): No document title found
+[2024-05-18 13:40:41] 13:40:41 (11032): Retrieve Html title: 
+[2024-05-18 13:40:41] 13:40:41 (11032): Generating form fields
+[2024-05-18 13:40:41] 13:40:41 (11032): Adding default font for form fields
+[2024-05-18 13:40:41] 13:40:41 (11032): Initializing forms for document
+[2024-05-18 13:40:41] 13:40:41 (11032): Generating bytes for document 000001BFB8C592A0
+[2024-05-18 13:40:41] 13:40:41 (11032): Successfully generated 38045 bytes for document 000001BFB8C592A0
+[2024-05-18 13:40:41] 13:40:41 (11032): PdfDocumentFactory closed document 000001BFB8C592A0
+[2024-05-18 13:40:41] 13:40:41 (5668): Closing browser 1
+[2024-05-18 13:40:41] 13:40:41 (11032): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:40:41] 13:40:41 (11032): Destroying browser id 1, 0 remain
+[2024-05-18 13:40:41] 13:40:41 (11032): Browser 1 closed for job 0
+[2024-05-18 13:40:41] 13:40:41 (11032): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:40:41] 13:40:41 (11032): Job group 0 finished
+[2024-05-18 13:40:41] 13:40:41 (11032): CefMessagePumpStd::Quit()
+[2024-05-18 13:40:41] 13:40:41 (16476): PdfDocumentFactory created document 000001BFB8C59FC0 from 38045 bytes
+[2024-05-18 13:40:41] 13:40:41 (16476): Storing new document 0
+[2024-05-18 13:40:41] Retrieved license key from inline variable
+[2024-05-18 13:40:41] Error 0x01 while validating license key
+[2024-05-18 13:40:41] No license key detected, applying trial watermark
+[2024-05-18 13:40:41] 13:40:41 (16476): Generating bytes for document 000001BFB8C59FC0
+[2024-05-18 13:40:41] 13:40:41 (16476): Successfully generated 100826 bytes for document 000001BFB8C59FC0
+[2024-05-18 13:45:33] ---------- Windows v10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:45:33] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] Creating deployments for win-x64
+[2024-05-18 13:45:33] Attempting deployment for 'Chrome' v2022.10.0.9530 using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:45:33] Using deployment instructions for 'default' v
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'ucrtbase' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\ucrtbase.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'vcruntime140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'vcruntime140_1' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\vcruntime140_1.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'msvcp140' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\msvcp140.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'dxva2' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\dxva2.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'chrome_elf' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\chrome_elf.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'libcef' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\libcef.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:45:33] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:45:33] Successfully loaded native library 'IronInterop' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronInterop.dll'
+[2024-05-18 13:45:33] Successfully loaded 'IronInterop' version '2022.10.0.9530' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngine, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:45:33] 13:45:33 (13676): Detected operating system windows
+[2024-05-18 13:45:33] 13:45:33 (13676): ~ Chrome renderer v2022.10.0.9530~
+[2024-05-18 13:45:33] 13:45:33 (13676): IsSingleProcess: 0
+[2024-05-18 13:45:33] 13:45:33 (13676): Creating Cef proxy controller
+[2024-05-18 13:45:33] 13:45:33 (13676): Creating Cef interface
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new lifespan events
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new browser process handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new load handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new render handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new render process handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new print handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new dev tools handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new dev tools registration factory
+[2024-05-18 13:45:33] 13:45:33 (13676): Created new lifespan handler
+[2024-05-18 13:45:33] 13:45:33 (13676): Assigning Cef proxy controller events...
+[2024-05-18 13:45:33] 13:45:33 (13676): Assigning Cef proxy controller stream provider...
+[2024-05-18 13:45:33] 13:45:33 (13676): Initializing Cef proxy controller
+[2024-05-18 13:45:33] 13:45:33 (13676): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:45:33] 13:45:33 (13676): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] 13:45:33 (13676): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales'
+[2024-05-18 13:45:33] 13:45:33 (13676): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\'
+[2024-05-18 13:45:33] 13:45:33 (13676): Process os_name: 'windows'
+[2024-05-18 13:45:33] 13:45:33 (13676): gpu_mode: '0'
+[2024-05-18 13:45:33] 13:45:33 (13676): Launching Main process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronPdfEngine.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests host=127.0.0.1 port=52892 enable_debug=false log_path=ironpdfengine.log license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-18 13:45:33] 13:45:33 (14664): Process os_name: 'windows'
+[2024-05-18 13:45:33] 13:45:33 (14664): gpu_mode: '0'
+[2024-05-18 13:45:33] 13:45:33 (14664): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:2'
+[2024-05-18 13:45:33] 13:45:33 (13676): Cef initialization succeeded
+[2024-05-18 13:45:33] 13:45:33 (14664): Cef context initialized
+[2024-05-18 13:45:33] 13:45:33 (14664): Registering custom scheme for rendering raw html
+[2024-05-18 13:45:33] 13:45:33 (14664): Successfully registered custom scheme
+[2024-05-18 13:45:33] 13:45:33 (14664): Cef engine initialization complete
+[2024-05-18 13:45:33] 13:45:33 (14664): Process os_name: 'windows'
+[2024-05-18 13:45:33] 13:45:33 (14664): gpu_mode: '0'
+[2024-05-18 13:45:33] 13:45:33 (14664): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests /prefetch:8'
+[2024-05-18 13:45:35] 13:45:35 (4840): Generating pdf from html
+[2024-05-18 13:45:35] 13:45:35 (4840): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+
+[2024-05-18 13:45:35] 13:45:35 (4840): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0
+Scale: 100
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 3
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 0
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:45:35] 13:45:35 (4840): Created new job group 0 for new document
+[2024-05-18 13:45:35] 13:45:35 (4840): Created job group 0
+[2024-05-18 13:45:35] 13:45:35 (4840): Queuing job 0
+[2024-05-18 13:45:35] 13:45:35 (4840): Checking for browser availability (0/30)
+[2024-05-18 13:45:35] 13:45:35 (4840): Creating new browser after waiting 0 seconds
+[2024-05-18 13:45:35] 13:45:35 (14664): Created browser id 1, 1 exist
+[2024-05-18 13:45:35] 13:45:35 (14664): Browser 1 created and ready for assignment
+[2024-05-18 13:45:35] 13:45:35 (14664): Assigning job 0 to browser 1
+[2024-05-18 13:45:35] 13:45:35 (14664): Processing job for html content on browser 1
+[2024-05-18 13:45:35] 13:45:35 (14664): Process os_name: 'windows'
+[2024-05-18 13:45:35] 13:45:35 (14664): gpu_mode: '0'
+[2024-05-18 13:45:35] 13:45:35 (14664): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:45:35] 13:45:35 (14664): Process os_name: 'windows'
+[2024-05-18 13:45:35] 13:45:35 (14664): gpu_mode: '0'
+[2024-05-18 13:45:35] 13:45:35 (14664): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64\\locales" --log-severity=disable --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2022.11.10413.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp" --disable-web-security --disable-component-update --disable-background-downloads --disable-delta-updates --disable-pings --headless --hide-scrollbars --mute-audio --disable-gpu --disable-gpu-compositing --disable-software-rasterizer --disable-gpu-shader-disk-cache --disable-dev-shm-usage --enable-media-stream --no-sandbox --ignore-certificate-errors --ignore-ssl-errors --ignore-urlfetcher-cert-requests'
+[2024-05-18 13:45:35] 13:45:35 (14664): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:45:35] 13:45:35 (9144): Received resource request from null for http://ironsoftwarescheme.com/ on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:45:35] 13:45:35 (9144): Resolved resource request using default handler
+[2024-05-18 13:45:35] 13:45:35 (9144): Creating resource handler for custom scheme http using url http://ironsoftwarescheme.com/ on browser 1
+[2024-05-18 13:45:35] 13:45:35 (14664): Browser 1 frame 17179869185 started loading http://ironsoftwarescheme.com/
+[2024-05-18 13:45:35] 13:45:35 (9144): Received resource request from http://ironsoftwarescheme.com for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:45:35] 13:45:35 (9144): Resolved resource request using default handler
+[2024-05-18 13:45:35] 13:45:35 (9144): Received resource request from http://ironsoftwarescheme.com for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:45:35] 13:45:35 (9144): Resolved resource request using default handler
+[2024-05-18 13:45:35] 13:45:35 (14664): Browser process received message: 'OnBrowserCreated'
+[2024-05-18 13:45:35] 13:45:35 (14664): Received message from render process with values '' (0)
+[2024-05-18 13:45:36] 13:45:36 (9144): Received resource request from http://ironsoftwarescheme.com for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:45:36] 13:45:36 (9144): Resolved resource request using default handler
+[2024-05-18 13:45:36] 13:45:36 (14664): Browser 1 frame 17179869185 ended loading http://ironsoftwarescheme.com/
+[2024-05-18 13:45:36] 13:45:36 (14664): Browser 1 loading state changed to 0 for url 'http://ironsoftwarescheme.com/'
+[2024-05-18 13:45:36] 13:45:36 (14664): Frame loaded for job 0 on browser 1
+[2024-05-18 13:45:36] 13:45:36 (14664): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:45:36] 13:45:36 (14664): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:45:36] 13:45:36 (14664): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:45:36] 13:45:36 (14664): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:45:36] 13:45:36 (14664): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:45:36] 13:45:36 (14664): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:45:36] 13:45:36 (14664): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:45:36] 13:45:36 (14664): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:45:36] 13:45:36 (14664): Browser process received message: 'OnDomVisited'
+[2024-05-18 13:45:36] 13:45:36 (14664): Received message from render process with values 'AQAAAE4AAAAAAAAAAgAAACoAAAAQAAAAAAAAAAAAAAABAAAAHgAAAAEAAAANAAAAZABvAGMAdQBtAGUAbgB0AHQAaQB0AGwAZQABAAAABAAAAAEAAAAAAAAA' (120)
+[2024-05-18 13:45:36] 13:45:36 (14664): Processed html for browser 1
+[2024-05-18 13:45:36] 13:45:36 (8664): Finished waiting for render delay
+[2024-05-18 13:45:36] 13:45:36 (8664): Scaling content to paper using a factor of 100
+[2024-05-18 13:45:36] 13:45:36 (8664): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\C6E1.tmp'
+[2024-05-18 13:45:36] 13:45:36 (14664): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\C6E1.tmp' (1)
+[2024-05-18 13:45:36] 13:45:36 (14664): Print finished for browser 1(success: 1)
+[2024-05-18 13:45:36] 13:45:36 (14664): Resolving job for browser 1 with 37832 bytes
+[2024-05-18 13:45:36] 13:45:36 (14664): PdfDocumentFactory created document 000001A96E256270 from 37832 bytes
+[2024-05-18 13:45:36] 13:45:36 (14664): Resolving job for browser 1 with 1 page document
+[2024-05-18 13:45:36] 13:45:36 (14664): No document title found
+[2024-05-18 13:45:36] 13:45:36 (14664): Retrieve Html title: 
+[2024-05-18 13:45:36] 13:45:36 (14664): Generating form fields
+[2024-05-18 13:45:36] 13:45:36 (14664): Adding default font for form fields
+[2024-05-18 13:45:36] 13:45:36 (14664): Initializing forms for document
+[2024-05-18 13:45:36] 13:45:36 (14664): Generating bytes for document 000001A96E256270
+[2024-05-18 13:45:36] 13:45:36 (14664): Successfully generated 38045 bytes for document 000001A96E256270
+[2024-05-18 13:45:36] 13:45:36 (14664): PdfDocumentFactory closed document 000001A96E256270
+[2024-05-18 13:45:36] 13:45:36 (16840): Closing browser 1
+[2024-05-18 13:45:36] 13:45:36 (14664): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:45:36] 13:45:36 (14664): Destroying browser id 1, 0 remain
+[2024-05-18 13:45:36] 13:45:36 (14664): Browser 1 closed for job 0
+[2024-05-18 13:45:36] 13:45:36 (14664): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:45:36] 13:45:36 (14664): Job group 0 finished
+[2024-05-18 13:45:36] 13:45:36 (14664): CefMessagePumpStd::Quit()
+[2024-05-18 13:45:36] 13:45:36 (4840): PdfDocumentFactory created document 000001A96E257070 from 38045 bytes
+[2024-05-18 13:45:36] 13:45:36 (4840): Storing new document 0
+[2024-05-18 13:45:36] Retrieved license key from inline variable
+[2024-05-18 13:45:36] Error 0x01 while validating license key
+[2024-05-18 13:45:36] No license key detected, applying trial watermark
+[2024-05-18 13:45:36] 13:45:36 (14224): Generating bytes for document 000001A96E257070
+[2024-05-18 13:45:36] 13:45:36 (14224): Successfully generated 100826 bytes for document 000001A96E257070
+[2024-05-18 13:54:21] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-18 13:54:21] Initializing 'AppAnalytics' module
+[2024-05-18 13:54:21] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-18 13:54:21] Uploading usage data to 'IronAppInsights' server
+[2024-05-18 13:54:21] Attempting to load all 'ApiUsage' caches
+[2024-05-18 13:54:21] Created directory 'C:\Users\meroc\AppData\Local\IronSoftware\Cache'
+[2024-05-18 13:54:21] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-18 13:54:21] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:21] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-18 13:54:21] Creating folder deployments for win-x64
+[2024-05-18 13:54:21] Creating embedded deployments for win-x64
+[2024-05-18 13:54:21] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:54:22] Using deployment instructions for 'default' v
+[2024-05-18 13:54:22] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-18 13:54:22] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-18 13:54:22] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-18 13:54:22] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Creating new job collection resource
+[2024-05-18 13:54:22] Creating new document collection resource
+[2024-05-18 13:54:22] Successfully initialized local pdf client
+[2024-05-18 13:54:22] Initializing local Chrome client...
+[2024-05-18 13:54:22] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-18 13:54:22] Creating folder deployments for win-x64
+[2024-05-18 13:54:22] Creating embedded deployments for win-x64
+[2024-05-18 13:54:22] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-18 13:54:22] Using deployment instructions for 'default' v
+[2024-05-18 13:54:22] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-18 13:54:22] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-18 13:54:22] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-18 13:54:22] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-18 13:54:22] 13:54:22 (14644): ~ Chrome renderer v2024.4.0.18~
+[2024-05-18 13:54:22] 13:54:22 (14644): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-18 13:54:22] 13:54:22 (14644): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-18 13:54:22] 13:54:22 (14644): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-18 13:54:22] 13:54:22 (14644): IsSingleProcess: 0
+[2024-05-18 13:54:22] 13:54:22 (14644): Creating Cef proxy controller
+[2024-05-18 13:54:22] 13:54:22 (14644): Creating Cef interface
+[2024-05-18 13:54:22] 13:54:22 (14644): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-18 13:54:22] 13:54:22 (14644): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-18 13:54:22] 13:54:22 (14644): Destroying Cef proxy event handler
+[2024-05-18 13:54:22] 13:54:22 (14644): Initializing Cef proxy controller
+[2024-05-18 13:54:22] 13:54:22 (14644): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-18 13:54:22] 13:54:22 (14644): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] 13:54:22 (14644): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-18 13:54:22] 13:54:22 (14644): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-18 13:54:22] 13:54:22 (14644): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-18 13:54:22] 13:54:22 (14644): gpu_mode: '0'
+[2024-05-18 13:54:23] 13:54:23 (12544): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-18 13:54:23] 13:54:23 (12544): gpu_mode: '0'
+[2024-05-18 13:54:23] 13:54:23 (14644): Cef initialization succeeded
+[2024-05-18 13:54:23] Successfully initialized local Chrome client
+[2024-05-18 13:54:23] 13:54:23 (12544): Cef context initialized
+[2024-05-18 13:54:23] 13:54:23 (12544): Registering custom scheme for rendering raw html
+[2024-05-18 13:54:23] 13:54:23 (12544): Successfully registered custom scheme
+[2024-05-18 13:54:23] 13:54:23 (12544): Cef engine initialization complete
+[2024-05-18 13:54:23] 13:54:23 (12544): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-18 13:54:23] 13:54:23 (12544): gpu_mode: '0'
+[2024-05-18 13:54:25] A valid license has been set
+[2024-05-18 13:54:25] 13:54:25 (10724): Generating pdf from html
+[2024-05-18 13:54:25] 13:54:25 (10724): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-18 13:54:25] 13:54:25 (10724): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 1, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 25, Right: 25, Bottom: 25, Left: 25
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-18 13:54:25] 13:54:25 (10724): Created new job group 0 for new document
+[2024-05-18 13:54:25] 13:54:25 (10724): Created job group 0
+[2024-05-18 13:54:25] 13:54:25 (10724): Queuing job 0
+[2024-05-18 13:54:25] 13:54:25 (10724): Checking for browser availability (0/30)
+[2024-05-18 13:54:25] 13:54:25 (10724): Creating new browser after waiting 0 seconds
+[2024-05-18 13:54:25] 13:54:25 (12544): Created browser id 1, 1 exist
+[2024-05-18 13:54:25] 13:54:25 (12544): Browser 1 created and ready for assignment
+[2024-05-18 13:54:25] 13:54:25 (12544): Assigning job 0 to browser 1
+[2024-05-18 13:54:25] 13:54:25 (12544): Processing job for html content on browser 1
+[2024-05-18 13:54:25] 13:54:25 (12544): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-18 13:54:25] 13:54:25 (12544): gpu_mode: '0'
+[2024-05-18 13:54:25] 13:54:25 (12544): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-18 13:54:25] 13:54:25 (12544): gpu_mode: '0'
+[2024-05-18 13:54:25] 13:54:25 (12544): Browser 1 loading state changed to 1 for url ''
+[2024-05-18 13:54:25] 13:54:25 (14524): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:54:25] 13:54:25 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:25] 13:54:25 (14524): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-18 13:54:25] 13:54:25 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:25] 13:54:25 (14524): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-18 13:54:25] 13:54:25 (12544): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-18 13:54:25] 13:54:25 (12544): Browser 1 status: 
+[2024-05-18 13:54:25] 13:54:25 (14524): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:25] 13:54:25 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (14524): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:26] 13:54:26 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (14524): Received resource request from [internal] for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:26] 13:54:26 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (14524): Received resource request from [internal] for https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:26] 13:54:26 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (12544): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-18 13:54:26] 13:54:26 (12544): Received message from render process with 0 bytes
+[2024-05-18 13:54:26] 13:54:26 (12544): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-18 13:54:26] 13:54:26 (14524): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:26] 13:54:26 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (14524): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-18 13:54:26] 13:54:26 (14524): Resolved resource request using default handler
+[2024-05-18 13:54:26] 13:54:26 (12544): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-18 13:54:26] 13:54:26 (12544): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-18 13:54:26] 13:54:26 (12544): Frame loaded for job 0 on browser 1
+[2024-05-18 13:54:26] 13:54:26 (12544): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:54:26] 13:54:26 (12544): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-18 13:54:26] 13:54:26 (12544): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-18 13:54:26] 13:54:26 (12544): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-18 13:54:26] 13:54:26 (12544): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-18 13:54:26] 13:54:26 (12544): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-18 13:54:26] 13:54:26 (12544): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-18 13:54:26] 13:54:26 (12544): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-18 13:54:26] 13:54:26 (12544): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-18 13:54:26] 13:54:26 (12544): Received message from render process with 56 bytes
+[2024-05-18 13:54:26] 13:54:26 (12544): Processed html for browser 1
+[2024-05-18 13:54:26] 13:54:26 (12544): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-18 13:54:26] 13:54:26 (8232): Apply render delay for : 20 ms
+[2024-05-18 13:54:26] 13:54:26 (8232): Finished waiting for render delay
+[2024-05-18 13:54:26] 13:54:26 (8232): Scaling content to paper using a scale of 1
+[2024-05-18 13:54:26] 13:54:26 (8232): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\DE7A.tmp'
+[2024-05-18 13:54:26] 13:54:26 (12544): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\DE7A.tmp' (1)
+[2024-05-18 13:54:26] 13:54:26 (12544): Print finished for browser 1(success: 1)
+[2024-05-18 13:54:26] 13:54:26 (12544): Resolving job for browser 1 with 37689 bytes
+[2024-05-18 13:54:26] 13:54:26 (20348): Closing browser 1
+[2024-05-18 13:54:26] 13:54:26 (12544): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-18 13:54:26] 13:54:26 (12544): Destroying browser id 1, 0 remain
+[2024-05-18 13:54:26] 13:54:26 (12544): Browser 1 closed for job 0
+[2024-05-18 13:54:26] 13:54:26 (12544): Found job 0 in group 0 (of 1 groups)
+[2024-05-18 13:54:26] 13:54:26 (12544): Job group 0 finished
+[2024-05-18 13:54:26] 13:54:26 (12544): CefMessagePumpStd::Quit()
+[2024-05-18 13:54:26] 13:54:26 (10724): Storing new job result 0
+[2024-05-18 13:54:26] Received job result 0
+[2024-05-18 13:54:26] 13:54:26 (10724): Opening document from job result 0
+[2024-05-18 13:54:26] 13:54:26 (10724): Releasing job result 0
+[2024-05-18 13:54:26] 13:54:26 (10724): PdfDocumentFactory created document 0000021DAE49B760 from 37689 bytes
+[2024-05-18 13:54:26] 13:54:26 (10724): Document opened from pointer
+[2024-05-18 13:54:26] 13:54:26 (10724): Storing new document 0
+[2024-05-18 13:54:26] Created document 0 from job result 0
+[2024-05-18 13:54:26] Document 0 has 1 references remaining (+1)
+[2024-05-18 13:54:26] Retrieving binary data for document cd416c07-90e6-4902-a089-ba24dd001966 with 0 signatures
+[2024-05-18 13:54:26] In-memory object store fetching document cd416c07-90e6-4902-a089-ba24dd001966
+[2024-05-18 13:54:26] 13:54:26 (19084): Generating bytes for document 0000021DAE49B760
+[2024-05-18 13:54:26] 13:54:26 (19084): Successfully generated 40344 bytes for document 0000021DAE49B760
+[2024-05-18 13:54:26] Chunking 40344 document bytes into 1 chunks
+[2024-05-18 13:54:51] Saving app analytics to file
+[2024-05-18 13:54:51] Caching api usage to file

@@ -1,5 +1,6 @@
 package com.print.service.Impl;
 
+import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
 import com.lowagie.text.pdf.BaseFont;
 import com.print.common.Constants;
@@ -24,12 +25,18 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.xhtmlrenderer.pdf.ITextRenderer;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -43,6 +50,9 @@ public class TemplateServiceImpl implements TemplateService {
 
     @Value("${randomid}")
     private String randomIdKey;
+
+    @Value("${ironpdfKEY}")
+    private String ironPdfKey;
 
     private final TemplateRepository templateRepository;
 
@@ -72,8 +82,8 @@ public class TemplateServiceImpl implements TemplateService {
                     }
                 }
                 shortId = getRandomIdKey();
-                //printIronPdf(document);
-                printFlyingPdf(document, shortId,"receipt");
+                printIronPdf(document,"receipt",shortId);
+                //printFlyingPdf(document, shortId,"receipt");
             } catch (Exception e) {
                 System.out.println("Exception: " + e.getMessage());
             }
@@ -116,8 +126,8 @@ public class TemplateServiceImpl implements TemplateService {
                     }
                 }
                 shortId = getRandomIdKey();
-                //printIronPdf(document,"invoice",shortId);
-                printFlyingPdf(document, shortId,"invoice");
+                printIronPdf(document,"invoice",shortId);
+                //printFlyingPdf(document, shortId,"invoice");
             } catch (Exception e) {
                 throw new TemplateException("Exception: "+e.getMessage());
             }
@@ -147,12 +157,14 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public void printIronPdf(Document document,String templateType,String shortId) {
         try {
+            System.out.println(License.getLicenseKey());
+
             PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
 
             //Save the PdfDocument to a file
-            myPdf.saveAs(Path.of(Constants.folderReceiptPdfAddress,shortId + ".pdf"));
+            myPdf.saveAs(Path.of(Constants.folderInvoicePdfAddress,shortId + ".pdf"));
 
-            openBrowser(shortId,templateType);
+            //openBrowser(shortId,templateType);
         }
         catch (Exception e) {
             throw new TemplateException("Exception: "+e.getMessage());
@@ -163,19 +175,42 @@ public class TemplateServiceImpl implements TemplateService {
     public void printFlyingPdf(Document document,String shortId,String templateType) {
 
         try {
+            final DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            builder.setEntityResolver(new EntityResolver() {
+                @Override
+                public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
+                    if (systemId.contains("xhtml1-transitional.dtd")) {
+                        return new InputSource(new FileReader(getRealPath() + "/WEB-INF/dtd/xhtml1-transitional.dtd"));
+                    } else if (systemId.contains("xhtml-lat1.ent")) {
+                        return new InputSource(new FileReader(getRealPath() + "/WEB-INF/dtd/xhtml-lat1.ent"));
+                    } else if (systemId.contains("xhtml-symbol.ent")) {
+                        return new InputSource(new FileReader(getRealPath() + "/WEB-INF/dtd/xhtml-symbol.ent"));
+                    } else if (systemId.contains("xhtml-special.ent")) {
+                        return new InputSource(new FileReader(getRealPath() + "/WEB-INF/dtd/xhtml-special.ent"));
+                    } else {
+                        return null;
+                    }
+                }
+            });
             document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
-            document.outputSettings().charset(StandardCharsets.UTF_8);
-            document.charset(StandardCharsets.UTF_8);
+            //document.outputSettings().charset(StandardCharsets.UTF_8);
+            //document.charset(StandardCharsets.UTF_8);
             OutputStream os = new FileOutputStream(getPath(shortId,templateType));
 
-            ITextRenderer renderer = new ITextRenderer();
+            ITextRenderer renderer = new ITextRenderer(26f * 4f / 3f, 26);
 
-            renderer.getFontResolver().addFont(new File(".").getCanonicalPath()+"\\fonts\\JosefinSans-Regular.ttf", BaseFont.EMBEDDED);
 
-            renderer.setDocumentFromString(document.outerHtml());
+            renderer.getFontResolver().addFont(new File(".").getCanonicalPath()+"\\fonts\\OpenSans-Light.ttf",BaseFont.IDENTITY_H ,BaseFont.NOT_EMBEDDED);
+
+            final ByteArrayInputStream inputStream = new ByteArrayInputStream(document.outerHtml().getBytes(StandardCharsets.UTF_8));
+            final org.w3c.dom.Document doc = builder.parse(inputStream);
+            inputStream.close();
+            renderer.setDocument(doc,null);
             renderer.layout();
             renderer.createPDF(os,false);
             renderer.finishPDF();
+
+            os.close();
 
             //openBrowser(shortId);
 
@@ -304,5 +339,9 @@ public class TemplateServiceImpl implements TemplateService {
     }
     public Double KDVTotal(Double unitPrice,Double KDVCalc) {
         return unitPrice+KDVCalc;
+    }
+
+    public String getRealPath() throws IOException {
+        return new File(".").getCanonicalPath();
     }
 }

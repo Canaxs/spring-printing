@@ -23,7 +23,6 @@ public class Receipt extends BaseEntity implements Serializable {
     private String branchName;
     private Long accountNumber;
     private Long paymentTotal;
-    private String templateName;
 
     private String writingAreaTitle;
     private String writingArea1;

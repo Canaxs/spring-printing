@@ -21,7 +21,7 @@ public class CheckController {
         this.checkService = checkService;
     }
 
-    /*
+
     @PostMapping("/receipt/create")
     public ResponseEntity<ResultResponse> createReceipt(@RequestBody ReceiptRequest receiptRequest) {
         return ResponseEntity.ok(ResultResponse.builder()
@@ -42,5 +42,4 @@ public class CheckController {
     public ResponseEntity<String> deleteInvoice(@RequestBody DeleteCheck deleteCheck) {
         return ResponseEntity.ok(checkService.deleteInvoice(deleteCheck));
     }
-     */
 }

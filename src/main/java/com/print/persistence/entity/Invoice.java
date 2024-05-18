@@ -1,7 +1,7 @@
 package com.print.persistence.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -34,6 +34,7 @@ public class Invoice extends BaseEntity implements Serializable {
     private String customerPhoneNumber;
     private String customerTCKN;
 
+    @OneToMany
     private List<InvoiceProduct> products;
 
 }

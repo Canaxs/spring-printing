@@ -8,6 +8,8 @@ import com.print.models.response.InvoiceResponse;
 import com.print.models.response.ReceiptResponse;
 import com.print.persistence.entity.Invoice;
 import com.print.persistence.entity.Receipt;
+import com.print.persistence.repository.InvoiceRepository;
+import com.print.persistence.repository.ReceiptRepository;
 import com.print.service.CheckService;
 import org.springframework.stereotype.Service;
 
@@ -18,18 +20,39 @@ public class CheckServiceImpl implements CheckService {
     // I did not choose to use the mapper class because I often get errors during the install and run phases.
     // Kurulum ve çalıştırma aşamalarında sıklıkla hata aldığım için mapper sınıfını kullanmayı tercih etmedim.
 
+    private final ReceiptRepository receiptRepository;
+    private final InvoiceRepository invoiceRepository;
+
+    public CheckServiceImpl(ReceiptRepository receiptRepository, InvoiceRepository invoiceRepository) {
+        this.receiptRepository = receiptRepository;
+        this.invoiceRepository = invoiceRepository;
+    }
+
 
     @Override
     public ReceiptResponse createReceipt(ReceiptRequest receiptRequest) {
-        /*
         Receipt receipt = new Receipt();
         receipt.setName(receiptRequest.getName());
         receipt.setSurname(receiptRequest.getSurname());
-        receipt.setAddress(receiptRequest.getAddress());
-        receipt.setIbanNumber(receiptRequest.getIbanNumber());
-        receipt.setBranchName(receiptRequest.getBranchName());
-        receipt.setAccountNumber(receiptRequest.getAccountNumber());
         receipt.setPaymentTotal(receiptRequest.getPaymentTotal());
+        receipt.setAddress(receiptRequest.getAddress());
+        receipt.setAccountNumber(receiptRequest.getAccountNumber());
+        receipt.setBranchName(receiptRequest.getBranchName());
+        receipt.setIbanNumber(receiptRequest.getIbanNumber());
+        receipt.setAddressStreet(receiptRequest.getAddressStreet());
+        receipt.setAddressCity(receiptRequest.getAddressCity());
+        receipt.setAddressCounty(receiptRequest.getAddressCounty());
+
+        receipt.setWritingAreaTitle(receiptRequest.getWritingAreaTitle());
+        receipt.setWritingArea1(receiptRequest.getWritingArea1());
+        receipt.setWritingArea2(receiptRequest.getWritingArea2());
+        receipt.setWritingArea3(receiptRequest.getWritingArea3());
+        receipt.setWritingArea4(receiptRequest.getWritingArea4());
+        receipt.setWritingArea5(receiptRequest.getWritingArea5());
+        receipt.setWritingArea6(receiptRequest.getWritingArea6());
+        receipt.setWritingArea7(receiptRequest.getWritingArea7());
+        receipt.setWritingArea8(receiptRequest.getWritingArea8());
+        receipt.setWritingArea9(receiptRequest.getWritingArea9());
         try {
             receiptRepository.save(receipt);
         }
@@ -45,22 +68,31 @@ public class CheckServiceImpl implements CheckService {
                 .accountNumber(receipt.getAccountNumber())
                 .paymentTotal(receipt.getPaymentTotal())
                 .build();
-
-         */
-        return null;
     }
 
     @Override
     public InvoiceResponse createInvoice(InvoiceRequest invoiceRequest) {
-        /*
+
         Invoice invoice = new Invoice();
-        invoice.setName(invoiceRequest.getName());
-        invoice.setSurname(invoiceRequest.getSurname());
-        invoice.setAddress(invoiceRequest.getAddress());
-        invoice.setIbanNumber(invoiceRequest.getIbanNumber());
-        invoice.setBranchName(invoiceRequest.getBranchName());
-        invoice.setAccountNumber(invoiceRequest.getAccountNumber());
-        invoice.setPaymentTotal(invoiceRequest.getPaymentTotal());
+        invoice.setDealerAddress(invoiceRequest.getDealerAddress());
+        invoice.setDealerVKN(invoiceRequest.getDealerVKN());
+        invoice.setDealerAddressCity(invoiceRequest.getDealerAddressCity());
+        invoice.setDealerMailAddress(invoiceRequest.getDealerMailAddress());
+        invoice.setDealerCompanyName(invoiceRequest.getDealerCompanyName());
+        invoice.setDealerPhoneNumber(invoiceRequest.getDealerPhoneNumber());
+        invoice.setDealerTradeNumber(invoiceRequest.getDealerTradeNumber());
+        invoice.setDealerAddressCounty(invoiceRequest.getDealerAddressCounty());
+
+        invoice.setCustomerAddress(invoiceRequest.getCustomerAddress());
+        invoice.setCustomerName(invoiceRequest.getCustomerName());
+        invoice.setCustomerTCKN(invoiceRequest.getCustomerTCKN());
+        invoice.setCustomerSurname(invoiceRequest.getCustomerSurname());
+        invoice.setCustomerPhoneNumber(invoiceRequest.getCustomerPhoneNumber());
+        invoice.setCustomerAddressCounty(invoiceRequest.getCustomerAddressCounty());
+        invoice.setCustomerAddressCity(invoiceRequest.getCustomerAddressCity());
+
+        invoice.setProducts(invoiceRequest.getProducts());
+
         try {
             invoiceRepository.save(invoice);
         }
@@ -68,38 +100,35 @@ public class CheckServiceImpl implements CheckService {
             throw new CheckException("");
         }
         return InvoiceResponse.builder()
-                .name(invoice.getName())
-                .surname(invoice.getSurname())
-                .address(invoice.getAddress())
-                .ibanNumber(invoice.getIbanNumber())
-                .branchName(invoice.getBranchName())
-                .accountNumber(invoice.getAccountNumber())
-                .paymentTotal(invoice.getPaymentTotal())
+                .customerSurname(invoice.getCustomerSurname())
+                .customerName(invoice.getCustomerName())
+                .products(invoice.getProducts())
+                .dealerTradeNumber(invoice.getDealerTradeNumber())
+                .dealerCompanyName(invoice.getDealerCompanyName())
                 .build();
-
-         */
-        return null;
     }
 
     @Override
     public String deleteReceipt(DeleteCheck deleteCheck) {
-        /*
-        Receipt receipt;
         try {
-            receipt = receiptRepository.getReferenceById(deleteCheck.getCheckId());
+            Receipt receipt = receiptRepository.getReferenceById(deleteCheck.getCheckId());
             receiptRepository.delete(receipt);
         }
         catch (Exception e) {
-            throw new CheckException("");
+            throw new CheckException("Error occurred while deleting receipt");
         }
-        return null;
-
-        */
-        return null;
+        return "Successfully deleted";
     }
 
     @Override
     public String deleteInvoice(DeleteCheck deleteCheck) {
-        return null;
+        try {
+            Invoice invoice = invoiceRepository.getReferenceById(deleteCheck.getCheckId());
+            invoiceRepository.delete(invoice);
+        }
+        catch (Exception e) {
+            throw new CheckException("Error occurred while deleting invoice");
+        }
+        return "Successfully deleted";
     }
 }
