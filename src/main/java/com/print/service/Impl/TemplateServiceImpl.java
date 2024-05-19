@@ -17,6 +17,7 @@ import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.PrintLogService;
 import com.print.service.TemplateService;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -333,7 +334,7 @@ public class TemplateServiceImpl implements TemplateService {
                 ImageResponse imageResponse = new ImageResponse();
                 String suitableTemplate = getBringSuitableTemplate(templateName, TemplateType.convert(templateType.toLowerCase()));
                 File file = new File(new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType.toLowerCase()) + suitableTemplate + ".jpg");
-                imageResponse.setImageByte(Files.readAllBytes(file.toPath()));
+                imageResponse.setImageByte(FileUtils.readFileToByteArray(file));
                 imageResponse.setTemplateName(templateName);
                 imageResponse.setShortId(suitableTemplate);
                 imageResponses.add(imageResponse);
