@@ -40,3 +40,183 @@
 [0518/135433.074:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=00000158000597B8}, {new_limit=65})
 [0518/135434.081:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=00000158000597B8}, {new_limit=67})
 [0518/135436.106:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=00000158000597B8}, {new_limit=100})
+[0518/164332.739:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000160000D4600: set chrome proxy config service to 00000160000BC380
+[0518/164332.755:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0518/164332.755:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000016000071680])
+[0518/164332.755:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0518/164332.755:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000016000071680]))
+[0518/164332.773:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0518/164332.848:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0518/164333.007:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164334.135:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000160000D7300: set chrome proxy config service to 00000160001D8280
+[0518/164334.157:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164334.207:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164334.207:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164334.329:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/164334.330:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0518/164334.330:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0518/164334.361:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000002470020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/164334.362:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/164334.362:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/164334.368:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164334.455:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164334.861:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0518/164713.262:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000160000D7C00: set chrome proxy config service to 00000160000BD180
+[0518/164713.278:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164713.328:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164713.451:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/164713.452:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0518/164713.452:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0518/164713.487:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000005B10020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/164713.487:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/164713.488:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/164713.496:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164713.573:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164713.973:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0518/164718.067:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000160000D7300: set chrome proxy config service to 00000160001DAAC0
+[0518/164718.082:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164718.133:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164718.161:VERBOSE1:frame_impl.cc(503)] frame 30064771073 [7,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/164718.161:VERBOSE1:frame_host_impl.cc(659)] frame 30064771073 [7,1] (main) connected
+[0518/164718.162:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=7, frame_id=1]
+[0518/164718.170:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000001C50020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/164718.170:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/164718.170:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/164718.175:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164718.229:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164718.673:VERBOSE1:frame_host_impl.cc(492)] frame 30064771073 [7,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0518/164855.417:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000003BC000D4600: set chrome proxy config service to 000003BC000BC380
+[0518/164855.429:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0518/164855.429:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000003BC00049680])
+[0518/164855.429:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0518/164855.429:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000003BC00049680]))
+[0518/164855.444:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0518/164855.477:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0518/164855.541:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164857.778:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000003BC000D7300: set chrome proxy config service to 000003BC000BD180
+[0518/164857.799:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/164857.845:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164857.861:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/164857.875:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/164857.876:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0518/164857.876:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0518/164857.888:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000000FB0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/164857.888:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/164857.889:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/164857.894:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164857.945:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/164858.381:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0518/165258.434:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 0000022C000D0600: set chrome proxy config service to 0000022C000A4380
+[0518/165258.474:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0518/165258.475:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000022C00035680])
+[0518/165258.476:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0518/165258.476:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000022C00035680]))
+[0518/165258.544:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0518/165258.596:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0518/165258.739:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/165259.946:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 0000022C000D3300: set chrome proxy config service to 0000022C001D4280
+[0518/165259.992:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/165300.088:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/165300.139:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/165300.140:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0518/165300.140:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0518/165300.149:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/165300.151:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000000D30020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/165300.153:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/165300.153:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/165300.158:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/165300.216:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/165300.642:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0518/174741.334:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005E0000D4600: set chrome proxy config service to 000005E0000BC380
+[0518/174741.355:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0518/174741.355:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000005E000035680])
+[0518/174741.355:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0518/174741.355:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000005E000035680]))
+[0518/174741.377:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0518/174741.433:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0518/174741.554:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/174742.870:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005E0000D7000: set chrome proxy config service to 000005E0001D8280
+[0518/174742.914:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0518/174742.967:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/174742.990:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0518/174742.994:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0518/174742.994:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0518/174742.997:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000006B30020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0518/174742.996:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0518/174742.998:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0518/174742.998:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0518/174743.001:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/174743.045:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0518/174743.213:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)

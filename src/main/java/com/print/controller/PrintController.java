@@ -4,6 +4,7 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.service.PrintLogService;
 import com.print.service.TemplateService;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
@@ -23,7 +24,7 @@ import java.nio.file.Paths;
 @RequestMapping("/print")
 public class PrintController {
 
-    private TemplateService templateService;
+    private final TemplateService templateService;
 
     public PrintController(TemplateService templateService) {
         this.templateService = templateService;

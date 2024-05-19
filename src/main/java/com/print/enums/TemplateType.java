@@ -1,5 +1,6 @@
 package com.print.enums;
 
+import com.print.common.Constants;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.persistence.entity.Invoice;
@@ -25,11 +26,31 @@ public enum TemplateType {
             default -> null;
         };
     }
-
     public static String convertString(TemplateType templateType) {
         return switch (templateType) {
             case RECEIPT -> "receipt";
             case INVOICE -> "invoice";
+            default -> null;
+        };
+    }
+    public static String convertPathOf(String step) {
+        return switch (step) {
+            case "receipt" -> Constants.folderReceiptPdfAddress;
+            case "invoice" -> Constants.folderInvoicePdfAddress;
+            default -> null;
+        };
+    }
+    public static String convertPath(String step) {
+        return switch (step) {
+            case "receipt" -> Constants.folderReceiptAddress2;
+            case "invoice" -> Constants.folderInvoiceAddress2;
+            default -> null;
+        };
+    }
+    public static String convertImagePath(String step) {
+        return switch (step) {
+            case "receipt" -> Constants.folderReceiptImageAddress;
+            case "invoice" -> Constants.folderInvoiceImageAddress;
             default -> null;
         };
     }

@@ -1,5 +1,6 @@
 package com.print.models.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,28 +11,28 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ReceiptDTO {
-    private String name;
-    private String surname;
-    private String addressCity;
-    private String addressCounty;
-    private String addressStreet;
-    private String address;
-    private Long ibanNumber;
-    private String branchName;
-    private Long accountNumber;
-    private Long paymentTotal;
+    private String name= "";
+    private String surname= "";
+    private String addressCity= "";
+    private String addressCounty= "";
+    private String addressStreet= "";
+    private String address= "";
+    private Long ibanNumber=0L;
+    private String branchName= "";
+    private Long accountNumber = 0L;
+    private Long paymentTotal= 0L;
     private String templateName;
 
-    private String writingAreaTitle;
-    private String writingArea1;
-    private String writingArea2;
-    private String writingArea3;
-    private String writingArea4;
-    private String writingArea5;
-    private String writingArea6;
-    private String writingArea7;
-    private String writingArea8;
-    private String writingArea9;
+    private String writingAreaTitle= "";
+    private String writingArea1= "";
+    private String writingArea2= "";
+    private String writingArea3= "";
+    private String writingArea4= "";
+    private String writingArea5= "";
+    private String writingArea6= "";
+    private String writingArea7= "";
+    private String writingArea8= "";
+    private String writingArea9 = "";
 
     public Object convert(String step) {
         return switch (step) {

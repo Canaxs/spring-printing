@@ -8,6 +8,7 @@ import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
 import com.print.service.UploadService;
+import gui.ava.html.image.generator.HtmlImageGenerator;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -18,10 +19,13 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.print.Doc;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
@@ -93,7 +97,6 @@ public class UploadServiceImpl implements UploadService {
             Class<?> clz = TemplateType.convertClass(fileType.toLowerCase());
             for (Method m : clz.getDeclaredMethods()) {
                 for (Parameter p : m.getParameters()) {
-                    System.out.println("Parameter: "+p.getName());
                     if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other")
                             && !Objects.equals(p.getName(), "o")) {
                         if(!p.getName().contains("writingArea")) {
@@ -120,7 +123,6 @@ public class UploadServiceImpl implements UploadService {
             ,String fileIdKey,String startDate, String endDate) {
 
         String fileTypeAddress = getFileTypeAddress(fileType.toLowerCase());
-
         try {
             File htmlIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"html\\"+fileIdKey+".html");
             File cssIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"css\\"+fileIdKey+".css");
@@ -146,10 +148,28 @@ public class UploadServiceImpl implements UploadService {
                     .isActive(true)
                     .build();
             saveDB(uploadDBDTO);
+            saveImage(fileIdKey,fileType.toLowerCase());
         }
 
 
         return true;
+    }
+
+    @Override
+    public void saveImage(String shortId,String templateType)  {
+        try {
+            String path = new File(".").getCanonicalPath() + TemplateType.convertPath(templateType);
+            String path2 = new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType);
+            File file = new File(path+"html\\"+shortId+".html");
+            com.aspose.words.Document document = new com.aspose.words.Document(file.getPath());
+            for(int page=0;page < document.getPageCount();page++) {
+                com.aspose.words.Document extractedPage = document.extractPages(page,1);
+                extractedPage.save(String.format(path2+shortId+"_%d.jpg",page+1));
+            }
+        }
+        catch (Exception e) {
+            throw new UploadException("There was a problem saving image: "+e.getMessage());
+        }
     }
 
     @Override
@@ -210,10 +230,8 @@ public class UploadServiceImpl implements UploadService {
 
     @Override
     public void fileOutputWriting(MultipartFile mpFile, File file) {
-        try {
-            FileOutputStream fos = new FileOutputStream(file);
+        try(FileOutputStream fos = new FileOutputStream(file)) {
             fos.write(mpFile.getBytes());
-            fos.close();
         }
         catch (Exception e) {
             throw new UploadException("Write Error: "+e.getMessage());

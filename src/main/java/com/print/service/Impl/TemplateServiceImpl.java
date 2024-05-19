@@ -14,6 +14,7 @@ import com.print.persistence.entity.InvoiceProduct;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
+import com.print.service.PrintLogService;
 import com.print.service.TemplateService;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
@@ -36,6 +37,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -56,13 +58,17 @@ public class TemplateServiceImpl implements TemplateService {
 
     private final TemplateRepository templateRepository;
 
-    public TemplateServiceImpl(TemplateRepository templateRepository) {
+    private final PrintLogService printLogService;
+
+    public TemplateServiceImpl(TemplateRepository templateRepository, PrintLogService printLogService) {
         this.templateRepository = templateRepository;
+        this.printLogService = printLogService;
     }
 
     @Override
     public GuestPdfDTO htmlEditDataReceipt(ReceiptDTO receiptDTO){
         String shortId = null;
+        printLogService.createLog(receiptDTO.getTemplateName(),"receipt");
 
         if(templateRepository.existsByTemplateNameAndTemplateType(receiptDTO.getTemplateName().toLowerCase(),TemplateType.RECEIPT)) {
             String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toLowerCase() , TemplateType.RECEIPT);
@@ -97,6 +103,7 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public GuestPdfDTO htmlEditDataInvoice(InvoiceDTO invoiceDTO){
         String shortId = null;
+        printLogService.createLog(invoiceDTO.getTemplateName(),"invoice");
 
         if(templateRepository.existsByTemplateNameAndTemplateType(invoiceDTO.getTemplateName().toLowerCase(),TemplateType.INVOICE)) {
             String templateShortId = getBringSuitableTemplate(invoiceDTO.getTemplateName().toLowerCase() , TemplateType.INVOICE);
@@ -125,6 +132,18 @@ public class TemplateServiceImpl implements TemplateService {
                         }
                     }
                 }
+                Date date = new Date();
+                if(document.getElementById("createdDate") != null) {
+                    SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPattern);
+                    Element div = document.getElementById("createdDate");
+                    div.html(formatter.format(date));
+                }
+                if(document.getElementById("valor") != null) {
+                    SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPatternValor);
+                    Element div = document.getElementById("valor");
+                    div.html(formatter.format(date));
+                }
+
                 shortId = getRandomIdKey();
                 printIronPdf(document,"invoice",shortId);
                 //printFlyingPdf(document, shortId,"invoice");
@@ -162,7 +181,7 @@ public class TemplateServiceImpl implements TemplateService {
             PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
 
             //Save the PdfDocument to a file
-            myPdf.saveAs(Path.of(Constants.folderInvoicePdfAddress,shortId + ".pdf"));
+            myPdf.saveAs(Path.of(TemplateType.convertPathOf(templateType),shortId + ".pdf"));
 
             //openBrowser(shortId,templateType);
         }
