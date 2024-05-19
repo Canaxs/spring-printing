@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class EditDataDTO {
-    String templateName;
-    String templateType;
+    private String templateName;
+    private String templateType;
 }

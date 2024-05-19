@@ -10,9 +10,9 @@ import java.util.List;
 @Builder
 public class InvoiceResponse {
     // It was made for testing and will be arranged in accordance with the invoice information later.
-    String dealerCompanyName;
-    String dealerTradeNumber;
-    String customerName;
-    String customerSurname;
-    List<InvoiceProduct> products;
+    private String dealerCompanyName;
+    private String dealerTradeNumber;
+    private String customerName;
+    private String customerSurname;
+    private List<InvoiceProduct> products;
 }

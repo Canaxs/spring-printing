@@ -8,10 +8,10 @@ import java.util.Date;
 @Data
 @Builder
 public class UploadDBDTO {
-    String fileType;
-    String templateName;
-    String templateShortId;
-    String effectiveStartDate;
-    String effectiveEndDate;
-    Boolean isActive;
+    private String fileType;
+    private String templateName;
+    private String templateShortId;
+    private String effectiveStartDate;
+    private String effectiveEndDate;
+    private Boolean isActive;
 }

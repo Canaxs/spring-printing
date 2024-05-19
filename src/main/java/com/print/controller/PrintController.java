@@ -4,6 +4,7 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.models.response.ImageResponse;
 import com.print.service.PrintLogService;
 import com.print.service.TemplateService;
 import org.springframework.core.io.InputStreamResource;
@@ -19,6 +20,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 @RestController
 @RequestMapping("/print")
@@ -71,4 +73,10 @@ public class PrintController {
         ResponseEntity<byte[]> response = new ResponseEntity<>(guestPdfDTO.getArray(), headers, HttpStatus.OK);
         return response;
     }
+
+    @GetMapping(value = "/getImages/{templateType}", produces = MediaType.IMAGE_JPEG_VALUE)
+    public List<ImageResponse> getImagesTemplateType(@PathVariable("templateType") String templateType) {
+        return templateService.getImagesTemplateType(templateType.toLowerCase());
+    }
+
 }

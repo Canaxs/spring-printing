@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CreatedPdfRequest {
-    Long checkId;
-    String templateName;
-    String templateType;
+    private Long checkId;
+    private String templateName;
+    private String templateType;
 }

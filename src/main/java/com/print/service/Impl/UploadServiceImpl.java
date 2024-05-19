@@ -164,7 +164,7 @@ public class UploadServiceImpl implements UploadService {
             com.aspose.words.Document document = new com.aspose.words.Document(file.getPath());
             for(int page=0;page < document.getPageCount();page++) {
                 com.aspose.words.Document extractedPage = document.extractPages(page,1);
-                extractedPage.save(String.format(path2+shortId+"_%d.jpg",page+1));
+                extractedPage.save(path2+shortId+".jpg");
             }
         }
         catch (Exception e) {

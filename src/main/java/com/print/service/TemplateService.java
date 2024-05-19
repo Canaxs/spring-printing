@@ -5,9 +5,11 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.models.response.ImageResponse;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface TemplateService {
 
@@ -26,4 +28,6 @@ public interface TemplateService {
     byte[] printPDF(String shortId,String templateType);
 
     String getBringSuitableTemplate(String templateName, TemplateType templateType);
+
+    List<ImageResponse> getImagesTemplateType(String templateType);
 }

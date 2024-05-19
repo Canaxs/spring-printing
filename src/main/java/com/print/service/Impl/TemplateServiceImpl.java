@@ -10,6 +10,7 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.models.response.ImageResponse;
 import com.print.persistence.entity.InvoiceProduct;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
@@ -36,12 +37,10 @@ import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Service
 public class TemplateServiceImpl implements TemplateService {
@@ -322,6 +321,28 @@ public class TemplateServiceImpl implements TemplateService {
         }
 
         return returnTemplateShortId;
+    }
+
+    @Override
+    public List<ImageResponse> getImagesTemplateType(String templateType) {
+        List<ImageResponse> imageResponses = new ArrayList<>();
+        List<String> templateNames = templateRepository.bringNamesOfTheSameTypeAlone(templateType.toUpperCase());
+
+        try {
+            for (String templateName : templateNames) {
+                ImageResponse imageResponse = new ImageResponse();
+                String suitableTemplate = getBringSuitableTemplate(templateName, TemplateType.convert(templateType.toLowerCase()));
+                File file = new File(new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType.toLowerCase()) + suitableTemplate + ".jpg");
+                imageResponse.setImageByte(Files.readAllBytes(file.toPath()));
+                imageResponse.setTemplateName(templateName);
+                imageResponse.setShortId(suitableTemplate);
+                imageResponses.add(imageResponse);
+            }
+        }
+        catch (Exception e) {
+            throw new TemplateException("An error occurred in the images template type service: "+e.getMessage());
+        }
+        return imageResponses;
     }
 
     public String getPath(String shortId,String templateType) {

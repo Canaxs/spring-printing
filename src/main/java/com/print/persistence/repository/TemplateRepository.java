@@ -16,6 +16,8 @@ public interface TemplateRepository extends JpaRepository<TemplateTable, Long> {
 
     List<TemplateTable> getTemplateTableByTemplateNameAndTemplateType (String templateName,TemplateType templateType);
 
-
     TemplateTable getByTemplateShortId(String templateShortId);
+
+    @Query("SELECT t.templateName FROM TemplateTable t WHERE t.templateType = :templateType GROUP BY t.templateName")
+    List<String> bringNamesOfTheSameTypeAlone(String templateType);
 }

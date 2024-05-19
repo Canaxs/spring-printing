@@ -6,11 +6,11 @@ import lombok.Data;
 @Data
 @Builder
 public class ReceiptResponse {
-    String name;
-    String surname;
-    String address;
-    Long ibanNumber;
-    String branchName;
-    Long accountNumber;
-    Long paymentTotal;
+    private String name;
+    private String surname;
+    private String address;
+    private Long ibanNumber;
+    private String branchName;
+    private Long accountNumber;
+    private Long paymentTotal;
 }
