@@ -23,6 +23,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/print")
 public class PrintController {
 
@@ -74,7 +75,7 @@ public class PrintController {
         return response;
     }
 
-    @GetMapping(value = "/getImages/{templateType}", produces = MediaType.IMAGE_JPEG_VALUE)
+    @GetMapping("/getImages/{templateType}")
     public List<ImageResponse> getImagesTemplateType(@PathVariable("templateType") String templateType) {
         return templateService.getImagesTemplateType(templateType.toLowerCase());
     }

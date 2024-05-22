@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Table
 public class Receipt extends BaseEntity implements Serializable {
 
+    private String title;
     private String name;
     private String surname;
     private String addressCity;

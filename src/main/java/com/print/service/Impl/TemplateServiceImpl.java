@@ -91,7 +91,7 @@ public class TemplateServiceImpl implements TemplateService {
                 printIronPdf(document,"receipt",shortId);
                 //printFlyingPdf(document, shortId,"receipt");
             } catch (Exception e) {
-                System.out.println("Exception: " + e.getMessage());
+                System.out.println("Exception:e " + e.getMessage());
             }
         }
         return GuestPdfDTO.builder()
@@ -327,7 +327,7 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public List<ImageResponse> getImagesTemplateType(String templateType) {
         List<ImageResponse> imageResponses = new ArrayList<>();
-        List<String> templateNames = templateRepository.bringNamesOfTheSameTypeAlone(templateType.toUpperCase());
+        List<String> templateNames = templateRepository.bringNamesOfTheSameTypeAlone(TemplateType.convert(templateType.toLowerCase()));
 
         try {
             for (String templateName : templateNames) {

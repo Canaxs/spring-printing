@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ReceiptDTO {
+    private String title="";
     private String name= "";
     private String surname= "";
     private String addressCity= "";
@@ -36,6 +37,7 @@ public class ReceiptDTO {
 
     public Object convert(String step) {
         return switch (step) {
+            case "title" -> title;
             case "name" -> name;
             case "surname" -> surname;
             case "addressCity" -> addressCity;
@@ -56,7 +58,7 @@ public class ReceiptDTO {
             case "writingArea7" -> writingArea7;
             case "writingArea8" -> writingArea8;
             case "writingArea9" -> writingArea9;
-            default -> null;
+            default -> "";
         };
     }
 }

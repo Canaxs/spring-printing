@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/check")
 public class CheckController {
 
