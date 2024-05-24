@@ -124,6 +124,7 @@ public class TemplateServiceImpl implements TemplateService {
                                     div.append(tableProducts(invoiceProduct,index));
                                     index++;
                                 }
+                                amountsHtml(document,invoiceDTO.getProducts());
                             }
                             else {
                                 Element div = document.getElementById(p.getName());
@@ -132,17 +133,7 @@ public class TemplateServiceImpl implements TemplateService {
                         }
                     }
                 }
-                Date date = new Date();
-                if(document.getElementById("createdDate") != null) {
-                    SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPattern);
-                    Element div = document.getElementById("createdDate");
-                    div.html(formatter.format(date));
-                }
-                if(document.getElementById("valor") != null) {
-                    SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPatternValor);
-                    Element div = document.getElementById("valor");
-                    div.html(formatter.format(date));
-                }
+                timeHtml(document);
 
                 shortId = getRandomIdKey();
                 printIronPdf(document,"invoice",shortId);
@@ -372,17 +363,67 @@ public class TemplateServiceImpl implements TemplateService {
                 "<td>" +invoiceProduct.getUnitPrice()+"</td>"+
                 "<td>"+Constants.KDVAmount.toString()+"%"+"</td>"+
                 "<td>"+KDVCalculation(invoiceProduct.getUnitPrice())+"</td>"+
-                "<td>"+KDVTotal(KDVCalculation(invoiceProduct.getUnitPrice()),invoiceProduct.getUnitPrice())+"</td>"+
+                "<td>"+serviceAmount(invoiceProduct.getUnitPrice(),invoiceProduct.getAmount())+"</td>"+
                 "</tr>";
     }
     public Double KDVCalculation(Double unitPrice) {
         return (unitPrice /100) * Constants.KDVAmount;
     }
-    public Double KDVTotal(Double unitPrice,Double KDVCalc) {
-        return unitPrice+KDVCalc;
+    public Double KDVTotal(Double unitPrice,Double KDVCalc,Integer amount) {
+        return (unitPrice+KDVCalc) * amount;
+    }
+    public Double serviceAmount(Double num1,Integer num2) {
+        return num1 * num2;
     }
 
     public String getRealPath() throws IOException {
         return new File(".").getCanonicalPath();
+    }
+    public void timeHtml(Document document) {
+        Date date = new Date();
+        if(document.getElementById("createdDate") != null) {
+            SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPattern);
+            Element div = document.getElementById("createdDate");
+            div.html(formatter.format(date));
+        }
+        if(document.getElementById("valor") != null) {
+            SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPatternValor);
+            Element div = document.getElementById("valor");
+            div.html(formatter.format(date));
+        }
+        if(document.getElementById("invoiceTime") != null) {
+            SimpleDateFormat formatter = new SimpleDateFormat(Constants.dateTimeFormatPatternTime);
+            Element div = document.getElementById("invoiceTime");
+            div.html(formatter.format(date));
+        }
+    }
+
+    public void amountsHtml(Document document, List<InvoiceProduct> products) {
+        Double serviceAmount = 0.0;
+        Double calculateKDV = 0.0;
+        Double amountTaxes = 0.0;
+
+        for(InvoiceProduct product : products) {
+            serviceAmount = serviceAmount + serviceAmount(product.getUnitPrice(),product.getAmount());
+            calculateKDV = calculateKDV + KDVCalculation(product.getUnitPrice() * product.getAmount());
+            amountTaxes = amountTaxes + ( (KDVCalculation(product.getUnitPrice()) + product.getUnitPrice()) * product.getAmount());
+        }
+
+        if(document.getElementById("serviceAmount") != null) {
+            Element div = document.getElementById("serviceAmount");
+            div.html(serviceAmount.toString());
+        }
+        if(document.getElementById("calculateKDV") != null) {
+            Element div = document.getElementById("calculateKDV");
+            div.html(calculateKDV.toString());
+        }
+        if(document.getElementById("amountTaxes") != null) {
+            Element div = document.getElementById("amountTaxes");
+            div.html(amountTaxes.toString());
+        }
+        if(document.getElementById("amountPaid") != null) {
+            Element div = document.getElementById("amountPaid");
+            div.html(amountTaxes.toString());
+        }
     }
 }

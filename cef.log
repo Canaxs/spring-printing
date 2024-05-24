@@ -345,3 +345,465 @@
 [0523/020306.082:VERBOSE1:frame_host_impl.cc(492)] frame 34359738369 [8,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
 [0523/020342.541:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000BC000397B8}, {new_limit=61})
 [0523/020343.556:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000BC000397B8}, {new_limit=100})
+[0523/193904.484:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005FC000C0600: set chrome proxy config service to 000005FC000A4380
+[0523/193904.517:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0523/193904.519:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000005FC00059680])
+[0523/193904.519:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0523/193904.519:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000005FC00059680]))
+[0523/193904.542:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0523/193904.596:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0523/193904.743:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0523/193906.299:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005FC000C1500: set chrome proxy config service to 000005FC001D4280
+[0523/193906.342:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0523/193906.403:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0523/193906.403:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0523/193906.558:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0523/193906.559:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0523/193906.560:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0523/193906.619:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000001810020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0523/193906.620:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0523/193906.621:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0523/193906.640:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0523/193906.643:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0523/193906.645:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/193906.708:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 00000181001266D8:LayoutNGTable TABLE moved from 435.406,204 207.75x90 to 435.406,182 207.75x134 (visible from 435,204 208x90 to 435,182 208x134)
+[0523/193906.710:VERBOSE1:layout_shift_tracker.cc(545)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", viewport was 2.12646% impacted with distance fraction 0.0171875 and subframe weighting factor 1
+[0523/193906.710:VERBOSE1:layout_shift_tracker.cc(627)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", layout shift of 0.000365486 reported; cumulative score is 0.000365486
+[0523/193906.936:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0523/193907.047:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/193907.232:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0523/200313.811:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSuspend([this=000005FC000597B8])
+[0523/200620.226:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnResume([this=000005FC000597B8])
+[0523/203458.232:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005FC000597B8}, {new_limit=56})
+[0523/203459.230:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005FC000597B8}, {new_limit=54})
+[0523/203500.241:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005FC000597B8}, {new_limit=100})
+[0523/203657.066:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005FC000C1500: set chrome proxy config service to 000005FC000A5180
+[0523/203657.277:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0523/203657.403:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0523/203657.692:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0523/203657.693:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0523/203657.694:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0523/203657.771:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000005FF0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0523/203657.772:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0523/203657.773:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0523/203657.799:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0523/203657.800:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/203657.801:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0523/203657.902:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF001268B8:LayoutText #text moved from 769.812,210.75 113.75x17 to 769.812,206 113.75x17 (visible from 770,211 114x17 to 770,206 114x17)
+[0523/203657.904:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,210.75 to 771.812,206)
+[0523/203657.904:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00126A68:LayoutText #text moved from 885.562,210.75 92x17 to 885.562,206 92x17 (visible from 886,211 92x17 to 886,206 92x17)
+[0523/203657.904:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,210.75 to 887.562,206)
+[0523/203657.904:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00126B08:LayoutNGTableRow TR moved from 769.812,237.5 207.75x31.5 to 769.812,228 207.75x22 (visible from 770,238 208x31 to 770,228 208x22)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00126CF8:LayoutText #text moved from 769.812,244.25 113.75x17 to 769.812,230 113.75x17 (visible from 770,244 114x17 to 770,230 114x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,244.25 to 771.812,230)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00126EA8:LayoutText #text moved from 885.562,244.25 92x17 to 885.562,230 92x17 (visible from 886,244 92x17 to 886,230 92x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,244.25 to 887.562,230)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00126F48:LayoutNGTableRow TR moved from 769.812,271 207.75x31.5 to 769.812,252 207.75x22 (visible from 770,271 208x32 to 770,252 208x22)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00127138:LayoutText #text moved from 769.812,277.75 113.75x17 to 769.812,254 113.75x17 (visible from 770,278 114x17 to 770,254 114x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,277.75 to 771.812,254)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF001272E8:LayoutText #text moved from 885.562,277.75 92x17 to 885.562,254 92x17 (visible from 886,278 92x17 to 886,254 92x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,277.75 to 887.562,254)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00127388:LayoutNGTableRow TR moved from 769.812,304.5 207.75x31.5 to 769.812,276 207.75x22 (visible from 770,305 208x31 to 770,276 208x22)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00127578:LayoutText #text moved from 769.812,311.25 113.75x17 to 769.812,278 113.75x17 (visible from 770,311 114x17 to 770,278 114x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,311.25 to 771.812,278)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005FF00127728:LayoutText #text moved from 885.562,311.25 92x17 to 885.562,278 92x17 (visible from 886,311 92x17 to 886,278 92x17)
+[0523/203657.905:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,311.25 to 887.562,278)
+[0523/203657.906:VERBOSE1:layout_shift_tracker.cc(545)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", viewport was 2.05519% impacted with distance fraction 0.0263262 and subframe weighting factor 1
+[0523/203657.906:VERBOSE1:layout_shift_tracker.cc(627)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", layout shift of 0.000541053 reported; cumulative score is 0.000541053
+[0523/203658.070:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0523/203658.182:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/203658.422:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0523/204106.820:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000238000D4600: set chrome proxy config service to 00000238000BC380
+[0523/204106.833:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0523/204106.835:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000023800049680])
+[0523/204106.835:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0523/204106.835:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000023800049680]))
+[0523/204106.883:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0523/204106.913:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0523/204107.072:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0523/204108.386:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000238000D7000: set chrome proxy config service to 00000238001E8980
+[0523/204108.422:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0523/204108.510:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0523/204108.587:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0523/204108.587:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0523/204108.587:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0523/204108.600:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000022D0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0523/204108.601:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0523/204108.602:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0523/204108.615:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0523/204108.617:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0523/204108.619:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/204108.633:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0523/204108.890:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0523/204109.001:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0523/204109.171:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/012051.856:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005DC000D0600: set chrome proxy config service to 000005DC000A4380
+[0524/012051.904:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0524/012051.907:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000005DC00061680])
+[0524/012051.907:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0524/012051.907:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000005DC00061680]))
+[0524/012052.003:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0524/012052.045:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0524/012052.243:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/012054.278:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005DC000D1500: set chrome proxy config service to 000005DC000A5180
+[0524/012054.328:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/012054.414:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/012054.453:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/012054.642:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/012054.643:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0524/012054.644:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0524/012054.693:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000005C50020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/012054.695:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/012054.696:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/012054.714:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/012054.717:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/012054.720:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/012054.806:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C5001268B8:LayoutText #text moved from 769.812,210.75 113.75x17 to 769.812,206 113.75x17 (visible from 770,211 114x17 to 770,206 114x17)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,210.75 to 771.812,206)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500126A68:LayoutText #text moved from 885.562,210.75 92x17 to 885.562,206 92x17 (visible from 886,211 92x17 to 886,206 92x17)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,210.75 to 887.562,206)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500126B08:LayoutNGTableRow TR moved from 769.812,237.5 207.75x31.5 to 769.812,228 207.75x22 (visible from 770,238 208x31 to 770,228 208x22)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500126CF8:LayoutText #text moved from 769.812,244.25 113.75x17 to 769.812,230 113.75x17 (visible from 770,244 114x17 to 770,230 114x17)
+[0524/012054.808:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,244.25 to 771.812,230)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500126EA8:LayoutText #text moved from 885.562,244.25 92x17 to 885.562,230 92x17 (visible from 886,244 92x17 to 886,230 92x17)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,244.25 to 887.562,230)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500126F48:LayoutNGTableRow TR moved from 769.812,271 207.75x31.5 to 769.812,252 207.75x22 (visible from 770,271 208x32 to 770,252 208x22)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500127138:LayoutText #text moved from 769.812,277.75 113.75x17 to 769.812,254 113.75x17 (visible from 770,278 114x17 to 770,254 114x17)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,277.75 to 771.812,254)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C5001272E8:LayoutText #text moved from 885.562,277.75 92x17 to 885.562,254 92x17 (visible from 886,278 92x17 to 886,254 92x17)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,277.75 to 887.562,254)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500127388:LayoutNGTableRow TR moved from 769.812,304.5 207.75x31.5 to 769.812,276 207.75x22 (visible from 770,305 208x31 to 770,276 208x22)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500127578:LayoutText #text moved from 769.812,311.25 113.75x17 to 769.812,278 113.75x17 (visible from 770,311 114x17 to 770,278 114x17)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,311.25 to 771.812,278)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000005C500127728:LayoutText #text moved from 885.562,311.25 92x17 to 885.562,278 92x17 (visible from 886,311 92x17 to 886,278 92x17)
+[0524/012054.809:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,311.25 to 887.562,278)
+[0524/012054.810:VERBOSE1:layout_shift_tracker.cc(545)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", viewport was 2.05519% impacted with distance fraction 0.0263262 and subframe weighting factor 1
+[0524/012054.810:VERBOSE1:layout_shift_tracker.cc(627)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", layout shift of 0.000541053 reported; cumulative score is 0.000541053
+[0524/012055.004:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/012055.138:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/012055.374:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/012131.217:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005DC000617B8}, {new_limit=56})
+[0524/012132.227:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005DC000617B8}, {new_limit=59})
+[0524/012134.253:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000005DC000617B8}, {new_limit=100})
+[0524/012450.321:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005DC000D4200: set chrome proxy config service to 000005DC000A5500
+[0524/012450.337:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/012450.397:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/012450.491:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/012450.492:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0524/012450.492:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0524/012450.558:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000003F30020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/012450.560:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/012450.561:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/012450.580:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/012450.585:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/012450.587:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/012450.687:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F3001268B8:LayoutText #text moved from 769.812,210.75 113.75x17 to 769.812,206 113.75x17 (visible from 770,211 114x17 to 770,206 114x17)
+[0524/012450.689:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,210.75 to 771.812,206)
+[0524/012450.689:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300126A68:LayoutText #text moved from 885.562,210.75 92x17 to 885.562,206 92x17 (visible from 886,211 92x17 to 886,206 92x17)
+[0524/012450.689:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,210.75 to 887.562,206)
+[0524/012450.689:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300126B08:LayoutNGTableRow TR moved from 769.812,237.5 207.75x31.5 to 769.812,228 207.75x22 (visible from 770,238 208x31 to 770,228 208x22)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300126CF8:LayoutText #text moved from 769.812,244.25 113.75x17 to 769.812,230 113.75x17 (visible from 770,244 114x17 to 770,230 114x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,244.25 to 771.812,230)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300126EA8:LayoutText #text moved from 885.562,244.25 92x17 to 885.562,230 92x17 (visible from 886,244 92x17 to 886,230 92x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,244.25 to 887.562,230)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300126F48:LayoutNGTableRow TR moved from 769.812,271 207.75x31.5 to 769.812,252 207.75x22 (visible from 770,271 208x32 to 770,252 208x22)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300127138:LayoutText #text moved from 769.812,277.75 113.75x17 to 769.812,254 113.75x17 (visible from 770,278 114x17 to 770,254 114x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,277.75 to 771.812,254)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F3001272E8:LayoutText #text moved from 885.562,277.75 92x17 to 885.562,254 92x17 (visible from 886,278 92x17 to 886,254 92x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,277.75 to 887.562,254)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300127388:LayoutNGTableRow TR moved from 769.812,304.5 207.75x31.5 to 769.812,276 207.75x22 (visible from 770,305 208x31 to 770,276 208x22)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300127578:LayoutText #text moved from 769.812,311.25 113.75x17 to 769.812,278 113.75x17 (visible from 770,311 114x17 to 770,278 114x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 771.812,311.25 to 771.812,278)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000003F300127728:LayoutText #text moved from 885.562,311.25 92x17 to 885.562,278 92x17 (visible from 886,311 92x17 to 886,278 92x17)
+[0524/012450.690:VERBOSE1:layout_shift_tracker.cc(362)]  (starting point from 887.562,311.25 to 887.562,278)
+[0524/012450.691:VERBOSE1:layout_shift_tracker.cc(545)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", viewport was 2.05519% impacted with distance fraction 0.0263262 and subframe weighting factor 1
+[0524/012450.691:VERBOSE1:layout_shift_tracker.cc(627)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", layout shift of 0.000541053 reported; cumulative score is 0.000541053
+[0524/012450.814:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/012450.907:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/012451.073:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/145409.275:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000334000D0600: set chrome proxy config service to 00000334000A4380
+[0524/145409.316:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0524/145409.318:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000033400049680])
+[0524/145409.318:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0524/145409.318:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000033400049680]))
+[0524/145409.372:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0524/145409.414:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0524/145409.653:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/145411.880:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000334000D1500: set chrome proxy config service to 00000334000A5180
+[0524/145411.946:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/145412.085:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/145412.085:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/145412.443:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/145412.445:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0524/145412.445:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0524/145412.570:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000004A90020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/145412.572:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/145412.573:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/145412.607:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/145412.610:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/145412.613:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/145412.785:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000004A9001264F8:LayoutNGTable TABLE class='fatura-table' moved from 748.922,229 222.641x164 to 706.344,229 265.219x164 (visible from 749,229 223x164 to 706,229 266x164)
+[0524/145412.787:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000004A900126B08:LayoutNGTableRow TR moved from 750.922,271.5 218.641x38.5 to 708.344,258 261.219x25 (visible from 751,272 219x38 to 708,258 262x25)
+[0524/145412.787:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000004A900126F48:LayoutNGTableRow TR moved from 750.922,312 218.641x38.5 to 708.344,285 261.219x25 (visible from 751,312 219x39 to 708,285 262x25)
+[0524/145412.787:VERBOSE1:layout_shift_tracker.cc(353)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", 000004A900127388:LayoutNGTableRow TR moved from 750.922,352.5 218.641x38.5 to 708.344,312 261.219x25 (visible from 751,353 219x38 to 708,312 262x25)
+[0524/145412.788:VERBOSE1:layout_shift_tracker.cc(545)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", viewport was 3.32825% impacted with distance fraction 0.0332642 and subframe weighting factor 1
+[0524/145412.788:VERBOSE1:layout_shift_tracker.cc(627)] in "http://ironinternalfraqbc8wsa1xvpfvjcrg.com/", layout shift of 0.00110711 reported; cumulative score is 0.00110711
+[0524/145412.903:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/145413.034:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/145413.308:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/154406.199:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000764000D4600: set chrome proxy config service to 00000764000BC380
+[0524/154406.237:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0524/154406.239:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000007640006D680])
+[0524/154406.240:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0524/154406.240:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000007640006D680]))
+[0524/154406.325:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0524/154406.334:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0524/154406.460:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/154408.374:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000764000D7600: set chrome proxy config service to 00000764000BD180
+[0524/154408.420:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/154408.491:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/154408.521:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/154408.568:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/154408.569:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0524/154408.569:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0524/154408.582:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000037D0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/154408.583:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/154408.584:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/154408.596:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/154408.598:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/154408.599:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/154408.859:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/154408.969:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/154409.107:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/154547.848:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000764000D6D00: set chrome proxy config service to 00000764000BD500
+[0524/154547.877:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/154547.959:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/154547.978:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/154547.979:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0524/154547.979:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0524/154547.985:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000003CF0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/154547.985:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/154547.985:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/154547.992:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/154547.996:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/154547.997:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/154548.198:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/154548.290:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/154548.446:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/155644.614:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSuspend([this=000007640006D7B8])
+[0524/160422.881:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnResume([this=000007640006D7B8])
+[0524/160618.048:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000764000D7600: set chrome proxy config service to 00000764000BD340
+[0524/160618.075:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/160618.144:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/160618.167:VERBOSE1:frame_impl.cc(503)] frame 30064771073 [7,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/160618.167:VERBOSE1:frame_host_impl.cc(659)] frame 30064771073 [7,1] (main) connected
+[0524/160618.168:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=7, frame_id=1]
+[0524/160618.177:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000F0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/160618.178:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/160618.178:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/160618.183:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/160618.190:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/160618.191:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/160618.479:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/160618.583:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/160618.742:VERBOSE1:frame_host_impl.cc(492)] frame 30064771073 [7,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/160806.091:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000764000D8500: set chrome proxy config service to 00000764000BD180
+[0524/160806.113:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/160806.179:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/160806.198:VERBOSE1:frame_impl.cc(503)] frame 34359738369 [8,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/160806.199:VERBOSE1:frame_host_impl.cc(659)] frame 34359738369 [8,1] (main) connected
+[0524/160806.199:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=8, frame_id=1]
+[0524/160806.207:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000006F90020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/160806.207:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/160806.208:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/160806.214:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/160806.217:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/160806.218:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/160806.426:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/160806.515:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/160806.615:VERBOSE1:frame_host_impl.cc(492)] frame 34359738369 [8,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/162925.562:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000000D8000D4600: set chrome proxy config service to 000000D8000BC380
+[0524/162925.587:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0524/162925.588:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000000D800035680])
+[0524/162925.588:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0524/162925.588:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000000D800035680]))
+[0524/162925.614:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0524/162925.658:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0524/162925.753:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/162928.022:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000000D8000D7600: set chrome proxy config service to 000000D8000BD180
+[0524/162928.077:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/162928.162:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/162928.194:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/162928.194:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0524/162928.194:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/162928.195:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0524/162928.205:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000005910020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/162928.207:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/162928.207:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/162928.213:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/162928.326:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/162928.607:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/163128.736:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=61})
+[0524/163129.743:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=100})
+[0524/163224.079:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000000D8000D7600: set chrome proxy config service to 000000D8000BD500
+[0524/163224.102:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0524/163224.197:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0524/163224.214:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0524/163224.215:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0524/163224.215:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0524/163224.219:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000006C10020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0524/163224.220:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0524/163224.220:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0524/163224.228:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/163224.232:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0524/163224.234:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0524/163224.562:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0524/163224.674:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0524/163224.779:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0524/163735.600:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=53})
+[0524/163737.629:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=50})
+[0524/163738.631:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=100})

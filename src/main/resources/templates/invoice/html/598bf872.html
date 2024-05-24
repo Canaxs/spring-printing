@@ -6,6 +6,11 @@
         <title>E-ARŞİV</title>
     </head>
     <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
         html , body {
             width: 100%;
         }
@@ -29,10 +34,10 @@
             margin: 10px;
         }
         .inv-info {
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
             font-size: 13px;
-            font-weight: 500;
+            font-weight: 400;
         }
         .section-top {
             width: 100%;
@@ -49,13 +54,21 @@
             display: flex;
             justify-content: flex-end;
         }
-        .fatura-özel td, .fatura-özel th {
-            border: 1px solid black;
-            margin:0;
+        .hizmet-table , .fatura-table {
+            background-color: #f9f9f9;
+            font-size: 14px;
         }
-        .hizmet td , .hizmet th {
-            border: 1px solid black;
-            margin:0;
+        .hizmet-table td , .hizmet-table th {
+            padding: 8px;
+            line-height: 1.42;
+            vertical-align: top;
+            border-top: 1px solid #ddd;
+        }
+        .fatura-table td , .fatura-table th {
+            padding: 3px;
+            line-height: 1.1;
+            vertical-align: top;
+            border-top: 1px solid #ddd;
         }
     </style>
     <body>
@@ -96,11 +109,11 @@
                         <span>Vergi Dairesi: <br></span>
                         <span>TCKN: <span id="customerTCKN">00</span><br></span>
                     </div>
-                    <div class="kase-div">
+                    <div class="kase-div" style="font-weight: 500">
                         <p>KAŞE</p>
                     </div>
                     <div class="fatura-özel">
-                        <table>
+                        <table class="fatura-table">
                             <tr>
                                 <td>Özelleştirme No: </td>
                                 <td>TR0.0</td>
@@ -119,11 +132,11 @@
                             </tr>
                             <tr>
                                 <td>Fatura Tarihi</td>
-                                <td>0000000</td>
+                                <td id="createdDate">0000000</td>
                             </tr>
                             <tr>
                                 <td>Fatura Saati</td>
-                                <td>00:00:00</td>
+                                <td id="invoiceTime">00:00:00</td>
                             </tr>
                         </table>
                     </div>
@@ -133,10 +146,10 @@
         <section>
             <div class="section-div-bottom">
                 <div class="hizmet">
-                    <table id="products">
+                    <table id="products" class="hizmet-table">
                         <tr>
                             <td>Sıra No</td>
-                            <td width="500px">Malzeme / Hizmet Açıklaması</td>
+                            <td width="400px">Malzeme / Hizmet Açıklaması</td>
                             <td>Miktar</td>
                             <td>Birim Fiyatı</td>
                             <td>KDV Oranı</td>
@@ -146,22 +159,22 @@
                     </table>
                 </div>
                 <div style="display: flex;justify-content: flex-end;margin: 10px;margin-right: 5%">
-                    <table border="1">
+                    <table class="hizmet-table">
                         <tr>
                             <td>Mal Hizmet Toplam Tutarı </td>
-                            <td> 00,00 TL</td>
+                            <td id="serviceAmount">00,00 TL</td>
                         </tr>
                         <tr>
                             <td>Hesaplanan KDV(%00.00)</td>
-                            <td>00,00 TL</td>
+                            <td id="calculateKDV">00,00 TL</td>
                         </tr>
                         <tr>
                             <td>Vergiler Dahil Toplam Tutar</td>
-                            <td>00,00 TL</td>
+                            <td id="amountTaxes">00,00 TL</td>
                         </tr>
                         <tr>
                             <td>Ödenecek Tutar</td>
-                            <td>00,00 TL</td>
+                            <td id="amountPaid">00,00 TL</td>
                         </tr>
                     </table>
                 </div>
