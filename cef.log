@@ -807,3 +807,238 @@
 [0524/163735.600:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=53})
 [0524/163737.629:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=50})
 [0524/163738.631:VERBOSE1:media_stream_manager.cc(1113)] MSPL::OnSpeedLimitChange({this=000000D8000357B8}, {new_limit=100})
+[0525/034619.231:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000004F4000D0600: set chrome proxy config service to 000004F4000B4380
+[0525/034619.263:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0525/034619.264:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000004F400059680])
+[0525/034619.265:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0525/034619.265:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000004F400059680]))
+[0525/034619.323:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0525/034619.366:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0525/034619.591:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/034621.300:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000004F4000D1500: set chrome proxy config service to 000004F4000B5180
+[0525/034621.341:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/034621.427:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/034621.427:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/034621.776:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/034621.777:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0525/034621.778:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0525/034621.845:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000002A50020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/034621.846:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/034621.848:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/034621.874:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/034621.876:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/034621.879:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/034622.150:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/034622.300:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/034622.508:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/035038.491:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005D4000D0600: set chrome proxy config service to 000005D4000A4380
+[0525/035038.519:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0525/035038.521:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000005D400060F00])
+[0525/035038.521:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0525/035038.521:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000005D400060F00]))
+[0525/035038.567:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0525/035038.584:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0525/035038.672:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/035040.353:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000005D4000D1500: set chrome proxy config service to 000005D4001D4280
+[0525/035040.403:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/035040.495:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/035040.504:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/035040.590:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/035040.592:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0525/035040.592:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0525/035040.662:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000036F0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/035040.663:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/035040.665:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/035040.685:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/035040.687:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/035040.690:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/035040.929:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/035041.031:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/035041.207:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/035636.148:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000006A4000C4600: set chrome proxy config service to 000006A4000A8380
+[0525/035636.208:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0525/035636.211:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=000006A400041680])
+[0525/035636.212:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0525/035636.212:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=000006A400041680]))
+[0525/035636.294:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0525/035636.316:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0525/035636.523:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/035639.144:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 000006A4000C5500: set chrome proxy config service to 000006A4000A9180
+[0525/035639.192:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/035639.279:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/035639.282:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/035639.309:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/035639.310:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0525/035639.310:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0525/035639.318:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000004F70020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/035639.318:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/035639.319:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/035639.336:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/035639.338:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/035639.341:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/035639.591:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/035639.707:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/035640.098:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/040047.791:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000350000D4600: set chrome proxy config service to 00000350000BC380
+[0525/040047.806:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0525/040047.807:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000035000049680])
+[0525/040047.807:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0525/040047.807:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000035000049680]))
+[0525/040047.821:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0525/040047.849:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0525/040047.948:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040049.402:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000350000D7300: set chrome proxy config service to 00000350001E8280
+[0525/040049.423:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040049.513:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040049.534:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040049.542:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/040049.542:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0525/040049.542:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0525/040049.550:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000000E70020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/040049.551:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/040049.552:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/040049.559:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/040049.561:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/040049.562:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040049.777:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/040049.865:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040049.967:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/040117.732:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000350000D7900: set chrome proxy config service to 00000350000BD500
+[0525/040117.748:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040117.818:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040117.846:VERBOSE1:frame_impl.cc(503)] frame 25769803777 [6,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/040117.847:VERBOSE1:frame_host_impl.cc(659)] frame 25769803777 [6,1] (main) connected
+[0525/040117.847:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=6, frame_id=1]
+[0525/040117.856:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000002650020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/040117.857:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/040117.857:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/040117.862:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/040117.867:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/040117.868:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040118.076:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/040118.164:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040118.282:VERBOSE1:frame_host_impl.cc(492)] frame 25769803777 [6,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/040236.619:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000350000D9100: set chrome proxy config service to 00000350000BD180
+[0525/040236.638:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040236.731:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040236.742:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040236.761:VERBOSE1:frame_impl.cc(503)] frame 30064771073 [7,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/040236.761:VERBOSE1:frame_host_impl.cc(659)] frame 30064771073 [7,1] (main) connected
+[0525/040236.761:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=7, frame_id=1]
+[0525/040236.769:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000001230020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/040236.770:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/040236.770:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/040236.776:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/040236.780:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/040236.781:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040237.030:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/040237.132:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040237.214:VERBOSE1:frame_host_impl.cc(492)] frame 30064771073 [7,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)
+[0525/040404.169:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000318000D4600: set chrome proxy config service to 00000318000BC380
+[0525/040404.178:VERBOSE1:webrtc_internals.cc(120)] Could not get the download directory.
+[0525/040404.178:VERBOSE1:media_stream_manager.cc(1113)] MSM::InitializeMaybeAsync([this=0000031800035680])
+[0525/040404.178:VERBOSE1:media_stream_manager.cc(1113)] MDM::MediaDevicesManager()
+[0525/040404.178:VERBOSE1:media_stream_manager.cc(1113)] MSM::MediaStreamManager([this=0000031800035680]))
+[0525/040404.191:VERBOSE1:first_party_sets_handler_impl.cc(262)] Empty path. Failed initializing First-Party Sets database.
+[0525/040404.223:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0525/040404.285:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040405.217:VERBOSE1:pref_proxy_config_tracker_impl.cc(187)] 00000318000D4C00: set chrome proxy config service to 00000318001E8280
+[0525/040405.231:VERBOSE1:configured_proxy_resolution_service.cc(1095)] Failed configuring with PAC script, falling-back to manual proxy servers.
+[0525/040405.282:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040405.292:INFO:cpu_info.cc(53)] Available number of cores: 12
+[0525/040405.383:VERBOSE1:frame_impl.cc(503)] frame 17179869185 [4,1] connection request (reason=RENDER_FRAME_CREATED)
+[0525/040405.384:VERBOSE1:media_stream_manager.cc(1113)] RFAOSF::Core() [process_id=4, frame_id=1]
+[0525/040405.384:VERBOSE1:frame_host_impl.cc(659)] frame 17179869185 [4,1] (main) connected
+[0525/040405.449:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  000007ED0020CF90
+  URL:                    
+  context_type:           WEB_PAGE
+  effective extension id: (none)
+  effective context type: WEB_PAGE
+[0525/040405.450:VERBOSE1:script_context.cc(206)] Created context:
+  extension id:           (none)
+  frame:                  0000000000000000
+  URL:                    
+  context_type:           UNSPECIFIED
+  effective extension id: (none)
+  effective context type: UNSPECIFIED
+[0525/040405.451:VERBOSE1:dispatcher.cc(452)] Num tracked contexts: 1
+[0525/040405.465:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040405.466:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://www.cdnlogo.com/logos/j/2/java.svg
+[0525/040405.468:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg
+[0525/040405.728:VERBOSE1:network_delegate.cc(34)] NetworkDelegate::NotifyBeforeURLRequest: https://cdnlogo.com/logos/j/2/java.svg
+[0525/040405.826:WARNING:task_impl.cc(20)] No task runner for threadId 6
+[0525/040405.950:VERBOSE1:frame_host_impl.cc(492)] frame 17179869185 [4,1] (main) detached (reason=NEW_MAIN_FRAME, is_connected=1)

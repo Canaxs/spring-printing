@@ -2,6 +2,10 @@ package com.print.service.Impl;
 
 import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import com.ironsoftware.ironpdf.render.CssMediaType;
+import com.ironsoftware.ironpdf.render.PaperOrientation;
+import com.ironsoftware.ironpdf.render.PaperSize;
 import com.lowagie.text.pdf.BaseFont;
 import com.print.common.Constants;
 import com.print.common.exception.TemplateException;
@@ -170,8 +174,9 @@ public class TemplateServiceImpl implements TemplateService {
     public void printIronPdf(Document document,String templateType,String shortId) {
         try {
             System.out.println(License.getLicenseKey());
+            ChromePdfRenderOptions chromePdfRenderOptions = getChromePdfRenderOptions();
 
-            PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml());
+            PdfDocument myPdf = PdfDocument.renderHtmlAsPdf(document.outerHtml(),chromePdfRenderOptions);
 
             //Save the PdfDocument to a file
             myPdf.saveAs(Path.of(TemplateType.convertPathOf(templateType),shortId + ".pdf"));
@@ -181,6 +186,19 @@ public class TemplateServiceImpl implements TemplateService {
         catch (Exception e) {
             throw new TemplateException("Exception: "+e.getMessage());
         }
+    }
+
+    private static ChromePdfRenderOptions getChromePdfRenderOptions() {
+        ChromePdfRenderOptions chromePdfRenderOptions = new ChromePdfRenderOptions();
+        chromePdfRenderOptions.setMarginTop(0);
+        chromePdfRenderOptions.setMarginLeft(0);
+        chromePdfRenderOptions.setMarginRight(0);
+        chromePdfRenderOptions.setMarginBottom(0);
+        chromePdfRenderOptions.setPaperSize(PaperSize.A4);
+        chromePdfRenderOptions.setPrintHtmlBackgrounds(true);
+        chromePdfRenderOptions.setPaperOrientation(PaperOrientation.PORTRAIT);
+        chromePdfRenderOptions.setCssMediaType(CssMediaType.PRINT);
+        return chromePdfRenderOptions;
     }
 
     @Override
