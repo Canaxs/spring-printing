@@ -87,6 +87,8 @@ public class TemplateServiceImpl implements TemplateService {
                         }
                     }
                 }
+                timeHtml(document);
+
                 shortId = getRandomIdKey();
                 printIronPdf(document,"receipt",shortId);
                 //printFlyingPdf(document, shortId,"receipt");
@@ -402,6 +404,8 @@ public class TemplateServiceImpl implements TemplateService {
         Double serviceAmount = 0.0;
         Double calculateKDV = 0.0;
         Double amountTaxes = 0.0;
+
+        document.getElementById("vatRate").append("(%)"+Constants.KDVAmount.toString());
 
         for(InvoiceProduct product : products) {
             serviceAmount = serviceAmount + serviceAmount(product.getUnitPrice(),product.getAmount());

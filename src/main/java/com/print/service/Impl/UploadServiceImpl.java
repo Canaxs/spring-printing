@@ -13,6 +13,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
@@ -20,9 +21,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.print.Doc;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.file.Paths;
@@ -98,10 +97,12 @@ public class UploadServiceImpl implements UploadService {
             for (Method m : clz.getDeclaredMethods()) {
                 for (Parameter p : m.getParameters()) {
                     if(document.getElementById(p.getName()) == null && !Objects.equals(p.getName(), "other")
+                            && !Objects.equals(p.getName(), "step")
+                            && !Objects.equals(p.getName(), "templateName")
                             && !Objects.equals(p.getName(), "o")) {
                         if(!p.getName().contains("writingArea")) {
                             if(!p.getName().contains("products")) {
-                                fileControlBool = true;
+                                fileControlBool = false;
                             }
 
                         }
@@ -112,8 +113,10 @@ public class UploadServiceImpl implements UploadService {
         catch (Exception e) {
             throw new UploadException("The file does not match the principles of the application, please change it and try again: "+e.getMessage());
         }
-        deleteFile(fileIdKey,"html",fileType);
-        deleteFile(fileIdKey,"css",fileType);
+        deleteFile(fileIdKey,"html",Constants.fileTempName);
+        if(!cssFile.isEmpty()) {
+            deleteFile(fileIdKey, "css", Constants.fileTempName);
+        }
 
         return fileControlBool;
     }
@@ -125,14 +128,14 @@ public class UploadServiceImpl implements UploadService {
         String fileTypeAddress = getFileTypeAddress(fileType.toLowerCase());
         try {
             File htmlIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"html\\"+fileIdKey+".html");
-            File cssIdKeyFile = new File(new File(".").getCanonicalPath()+ fileTypeAddress+"css\\"+fileIdKey+".css");
-
             fileOutputWriting(htmlFile,htmlIdKeyFile);
-            fileOutputWriting(cssFile,cssIdKeyFile);
+            if(!cssFile.isEmpty() && !fileType.equals(Constants.fileTempName)) {
+                File cssIdKeyFile = new File(new File(".").getCanonicalPath() + fileTypeAddress + "css\\" + fileIdKey + ".css");
+                fileOutputWriting(cssFile,cssIdKeyFile);
+                Document htmlDocument = Jsoup.parse(htmlIdKeyFile, "UTF-8");
+                stylesheetAdd(htmlDocument,fileIdKey, htmlIdKeyFile);
+            }
 
-            //Document document = Jsoup.parse(htmlIdKeyFile, "UTF-8");
-            //Element head = document.getElementsByTag("head").get(0);
-            //head.append(stylesheetAdd(fileIdKey));
         }
         catch (Exception e) {
             throw new UploadException("There was a problem saving the files, please try again: "+e.getMessage());
@@ -250,8 +253,23 @@ public class UploadServiceImpl implements UploadService {
             default -> null;
         };
     }
-    public String stylesheetAdd(String shortId) {
-        return "<link rel=\"stylesheet\" href=\"../css/"+shortId+".css\"";
+    public void stylesheetAdd(Document document, String shortId, File htmlFile) {
+        String linkRel = "<link rel=\"stylesheet\" href=\"../css/"+shortId+".css\">";
+        Element head = document.head();
+        head.append(linkRel);
+        FileWriter fWriter = null;
+        BufferedWriter writer = null;
+
+        try {
+            fWriter = new FileWriter(htmlFile.getPath());
+            writer = new BufferedWriter(fWriter);
+            writer.write(document.outerHtml());
+            writer.close();
+
+        }
+        catch (Exception e) {
+
+        }
     }
 
 }
