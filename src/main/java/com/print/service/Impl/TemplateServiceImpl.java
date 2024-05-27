@@ -15,6 +15,7 @@ import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
 import com.print.models.response.ImageResponse;
+import com.print.models.response.TemplateAllResponse;
 import com.print.persistence.entity.InvoiceProduct;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
@@ -355,6 +356,33 @@ public class TemplateServiceImpl implements TemplateService {
             throw new TemplateException("An error occurred in the images template type service: "+e.getMessage());
         }
         return imageResponses;
+    }
+
+    @Override
+    public TemplateAllResponse getAllTemplateInfo() {
+        return TemplateAllResponse.builder()
+                .allTemplateNumber(templateRepository.getAllTemplateNumber())
+                .allReceiptNumber(templateRepository.getAllTemplateTypeNumber(TemplateType.RECEIPT))
+                .allInvoiceNumber(templateRepository.getAllTemplateTypeNumber(TemplateType.INVOICE))
+                .allExpiredTemplateNumber(templateRepository.getAllExpiredTemplateNumber(new Date()))
+                .build();
+    }
+
+    @Override
+    public String deleteTemplateId(Long templateId) {
+        try {
+            TemplateTable templateTable = templateRepository.getReferenceById(templateId);
+            templateRepository.delete(templateTable);
+        }
+        catch (Exception e) {
+            throw new TemplateException("An error occurred while deleting the template");
+        }
+        return "Successfully Deleted: "+templateId;
+    }
+
+    @Override
+    public List<TemplateTable> getAllTemplate() {
+        return templateRepository.findAll();
     }
 
     public String getPath(String shortId,String templateType) {
