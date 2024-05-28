@@ -5,6 +5,7 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.models.request.TempUpdateRequest;
 import com.print.models.response.ImageResponse;
 import com.print.models.response.TemplateAllResponse;
 import com.print.persistence.entity.TemplateTable;
@@ -38,4 +39,6 @@ public interface TemplateService {
     String deleteTemplateId(Long templateId);
 
     List<TemplateTable> getAllTemplate();
+
+    TemplateTable updateTemplate(TempUpdateRequest tempUpdateRequest);
 }

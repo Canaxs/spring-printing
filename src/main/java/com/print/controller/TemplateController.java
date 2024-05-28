@@ -1,5 +1,6 @@
 package com.print.controller;
 
+import com.print.models.request.TempUpdateRequest;
 import com.print.models.response.TemplateAllResponse;
 import com.print.persistence.entity.TemplateTable;
 import com.print.service.TemplateService;
@@ -31,5 +32,10 @@ public class TemplateController {
     @GetMapping("/all")
     private ResponseEntity<List<TemplateTable>> getAllTemplate() {
         return ResponseEntity.ok(templateService.getAllTemplate());
+    }
+
+    @PostMapping("/update")
+    private ResponseEntity<TemplateTable> updateTemplate(@RequestBody TempUpdateRequest tempUpdateRequest) {
+        return ResponseEntity.ok(templateService.updateTemplate(tempUpdateRequest));
     }
 }

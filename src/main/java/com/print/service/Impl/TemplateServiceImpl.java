@@ -14,6 +14,7 @@ import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
 import com.print.models.dto.ReceiptDTO;
 import com.print.models.request.CreatedPdfRequest;
+import com.print.models.request.TempUpdateRequest;
 import com.print.models.response.ImageResponse;
 import com.print.models.response.TemplateAllResponse;
 import com.print.persistence.entity.InvoiceProduct;
@@ -383,6 +384,21 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public List<TemplateTable> getAllTemplate() {
         return templateRepository.findAll();
+    }
+
+    @Override
+    public TemplateTable updateTemplate(TempUpdateRequest tempUpdateRequest) {
+        try {
+            TemplateTable templateTable = templateRepository.getReferenceById(tempUpdateRequest.getId());
+            templateTable.setTemplateName(tempUpdateRequest.getTemplateName());
+            templateTable.setIsActive(tempUpdateRequest.getIsActive());
+            templateTable.setEffectiveStartDate(tempUpdateRequest.getEffectiveStartDate());
+            templateTable.setEffectiveEndDate(tempUpdateRequest.getEffectiveEndDate());
+            return templateRepository.save(templateTable);
+        }
+        catch (Exception e) {
+            throw new TemplateException("An error occurred while updating the template");
+        }
     }
 
     public String getPath(String shortId,String templateType) {
