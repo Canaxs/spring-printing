@@ -10677,3 +10677,1145 @@ Max Header Height: 200, Max Footer Height : 200
 [2024-05-25 04:04:06] Chunking 25354 document bytes into 1 chunks
 [2024-05-25 04:04:33] Saving app analytics to file
 [2024-05-25 04:04:33] Caching api usage to file
+[2024-05-28 18:23:10] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-28 18:23:10] Initializing 'AppAnalytics' module
+[2024-05-28 18:23:10] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-28 18:23:10] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:23:10] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:23:10] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:23:11] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:23:11] Creating folder deployments for win-x64
+[2024-05-28 18:23:11] Creating embedded deployments for win-x64
+[2024-05-28 18:23:11] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:23:11] Using deployment instructions for 'default' v
+[2024-05-28 18:23:11] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:23:11] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:23:11] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:23:11] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Creating new job collection resource
+[2024-05-28 18:23:11] Creating new document collection resource
+[2024-05-28 18:23:11] Successfully initialized local pdf client
+[2024-05-28 18:23:11] Initializing local Chrome client...
+[2024-05-28 18:23:11] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:23:11] Creating folder deployments for win-x64
+[2024-05-28 18:23:11] Creating embedded deployments for win-x64
+[2024-05-28 18:23:11] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:11] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:23:11] Using deployment instructions for 'default' v
+[2024-05-28 18:23:11] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:23:12] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:23:12] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:23:12] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:12] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:12] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-28 18:23:12] 18:23:12 (5720): ~ Chrome renderer v2024.4.0.18~
+[2024-05-28 18:23:12] 18:23:12 (5720): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-28 18:23:12] 18:23:12 (5720): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:23:12] 18:23:12 (5720): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-28 18:23:12] 18:23:12 (5720): IsSingleProcess: 0
+[2024-05-28 18:23:12] 18:23:12 (5720): Creating Cef proxy controller
+[2024-05-28 18:23:12] 18:23:12 (5720): Creating Cef interface
+[2024-05-28 18:23:12] 18:23:12 (5720): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:23:12] 18:23:12 (5720): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:23:12] 18:23:12 (5720): Destroying Cef proxy event handler
+[2024-05-28 18:23:12] 18:23:12 (5720): Initializing Cef proxy controller
+[2024-05-28 18:23:12] 18:23:12 (5720): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-28 18:23:12] 18:23:12 (5720): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:12] 18:23:12 (5720): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-28 18:23:12] 18:23:12 (5720): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:23:12] 18:23:12 (5720): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-28 18:23:12] 18:23:12 (5720): gpu_mode: '0'
+[2024-05-28 18:23:12] 18:23:12 (18676): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-28 18:23:12] 18:23:12 (18676): gpu_mode: '0'
+[2024-05-28 18:23:12] 18:23:12 (5720): Cef initialization succeeded
+[2024-05-28 18:23:12] Successfully initialized local Chrome client
+[2024-05-28 18:23:12] 18:23:12 (18676): Cef context initialized
+[2024-05-28 18:23:12] 18:23:12 (18676): Registering custom scheme for rendering raw html
+[2024-05-28 18:23:12] 18:23:12 (18676): Successfully registered custom scheme
+[2024-05-28 18:23:12] 18:23:12 (18676): Cef engine initialization complete
+[2024-05-28 18:23:12] 18:23:12 (18676): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-28 18:23:12] 18:23:12 (18676): gpu_mode: '0'
+[2024-05-28 18:23:14] A valid license has been set
+[2024-05-28 18:23:14] 18:23:14 (10996): Generating pdf from html
+[2024-05-28 18:23:14] 18:23:14 (10996): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:23:14] 18:23:14 (10996): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:23:14] 18:23:14 (10996): Created new job group 0 for new document
+[2024-05-28 18:23:14] 18:23:14 (10996): Created job group 0
+[2024-05-28 18:23:14] 18:23:14 (10996): Queuing job 0
+[2024-05-28 18:23:14] 18:23:14 (10996): Checking for browser availability (0/30)
+[2024-05-28 18:23:14] 18:23:14 (10996): Creating new browser after waiting 0 seconds
+[2024-05-28 18:23:14] 18:23:14 (18676): Created browser id 1, 1 exist
+[2024-05-28 18:23:14] 18:23:14 (18676): Browser 1 created and ready for assignment
+[2024-05-28 18:23:14] 18:23:14 (18676): Assigning job 0 to browser 1
+[2024-05-28 18:23:14] 18:23:14 (18676): Processing job for html content on browser 1
+[2024-05-28 18:23:14] 18:23:14 (18676): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:23:14] 18:23:14 (18676): gpu_mode: '0'
+[2024-05-28 18:23:14] 18:23:14 (18676): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:23:14] 18:23:14 (18676): gpu_mode: '0'
+[2024-05-28 18:23:14] 18:23:14 (18676): Browser 1 loading state changed to 1 for url ''
+[2024-05-28 18:23:14] 18:23:14 (23288): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:23:14] 18:23:14 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:14] 18:23:14 (23288): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:23:14] 18:23:14 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:14] 18:23:14 (23288): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-28 18:23:14] 18:23:14 (18676): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-28 18:23:14] 18:23:14 (18676): Browser 1 status: 
+[2024-05-28 18:23:14] 18:23:14 (23288): Received resource request from [internal] for file:///C:/Users/meroc/Documents/GitHub/css/5999f1e3.css on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:23:14] 18:23:14 (23288): Resolved resource request using custom handler
+[2024-05-28 18:23:14] 18:23:14 (23288): OnBeforeResourceLoad for file:///C:/Users/meroc/Documents/GitHub/css/5999f1e3.css on browser 1
+[2024-05-28 18:23:14] 18:23:14 (23288): !!! Failed to resolve file path for url
+[2024-05-28 18:23:14] 18:23:14 (23288): Failed to resolve file path for url
+[2024-05-28 18:23:14] 18:23:14 (23288): Error (source 1): 'Failed to resolve file path for url'
+[2024-05-28 18:23:14] 18:23:14 (23288): Resource load complete for 'file:///C:/Users/meroc/Documents/GitHub/css/5999f1e3.css' on browser 1
+[2024-05-28 18:23:14] 18:23:14 (23288): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:23:14] 18:23:14 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:14] 18:23:14 (23288): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:23:14] 18:23:14 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:14] 18:23:14 (18676): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:23:14] 18:23:14 (18676): Received message from render process with 0 bytes
+[2024-05-28 18:23:14] 18:23:14 (18676): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-28 18:23:15] 18:23:15 (23288): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:23:15] 18:23:15 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:15] 18:23:15 (23288): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:23:15] 18:23:15 (23288): Resolved resource request using default handler
+[2024-05-28 18:23:15] 18:23:15 (18676): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-28 18:23:15] 18:23:15 (18676): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:23:15] 18:23:15 (18676): Frame loaded for job 0 on browser 1
+[2024-05-28 18:23:15] 18:23:15 (18676): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:23:15] 18:23:15 (18676): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-28 18:23:15] 18:23:15 (18676): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-28 18:23:15] 18:23:15 (18676): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-28 18:23:15] 18:23:15 (18676): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-28 18:23:15] 18:23:15 (18676): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:23:15] 18:23:15 (18676): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-28 18:23:15] 18:23:15 (18676): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-28 18:23:15] 18:23:15 (18676): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:23:15] 18:23:15 (18676): Received message from render process with 144 bytes
+[2024-05-28 18:23:15] 18:23:15 (18676): Processed html for browser 1
+[2024-05-28 18:23:15] 18:23:15 (18676): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-28 18:23:15] 18:23:15 (8004): Apply render delay for : 20 ms
+[2024-05-28 18:23:15] 18:23:15 (8004): Finished waiting for render delay
+[2024-05-28 18:23:15] 18:23:15 (8004): Scaling content to paper using a scale of 1
+[2024-05-28 18:23:15] 18:23:15 (8004): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\E9C3.tmp'
+[2024-05-28 18:23:15] 18:23:15 (18676): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\E9C3.tmp' (1)
+[2024-05-28 18:23:15] 18:23:15 (18676): Print finished for browser 1(success: 1)
+[2024-05-28 18:23:15] 18:23:15 (18676): Resolving job for browser 1 with 16801 bytes
+[2024-05-28 18:23:15] 18:23:15 (18892): Closing browser 1
+[2024-05-28 18:23:15] 18:23:15 (18676): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:23:15] 18:23:15 (18676): Destroying browser id 1, 0 remain
+[2024-05-28 18:23:15] 18:23:15 (18676): Browser 1 closed for job 0
+[2024-05-28 18:23:15] 18:23:15 (18676): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:23:15] 18:23:15 (18676): Job group 0 finished
+[2024-05-28 18:23:15] 18:23:15 (18676): CefMessagePumpStd::Quit()
+[2024-05-28 18:23:15] 18:23:15 (10996): Storing new job result 0
+[2024-05-28 18:23:15] Received job result 0
+[2024-05-28 18:23:15] 18:23:15 (10996): Opening document from job result 0
+[2024-05-28 18:23:15] 18:23:15 (10996): Releasing job result 0
+[2024-05-28 18:23:15] 18:23:15 (10996): PdfDocumentFactory created document 0000012ED97EC660 from 16801 bytes
+[2024-05-28 18:23:15] 18:23:15 (10996): Document opened from pointer
+[2024-05-28 18:23:15] 18:23:15 (10996): Storing new document 0
+[2024-05-28 18:23:15] Created document 0 from job result 0
+[2024-05-28 18:23:15] Document 0 has 1 references remaining (+1)
+[2024-05-28 18:23:15] Retrieving binary data for document 41db6cc7-43ed-464e-979f-0dcf0b140488 with 0 signatures
+[2024-05-28 18:23:15] In-memory object store fetching document 41db6cc7-43ed-464e-979f-0dcf0b140488
+[2024-05-28 18:23:15] 18:23:15 (10996): Generating bytes for document 0000012ED97EC660
+[2024-05-28 18:23:15] 18:23:15 (10996): Successfully generated 19552 bytes for document 0000012ED97EC660
+[2024-05-28 18:23:15] Chunking 19552 document bytes into 1 chunks
+[2024-05-28 18:23:40] Saving app analytics to file
+[2024-05-28 18:23:40] Caching api usage to file
+[2024-05-28 18:24:10] Saving app analytics to file
+[2024-05-28 18:24:10] Caching api usage to file
+[2024-05-28 18:24:19] In-memory object store disposing document 41db6cc7-43ed-464e-979f-0dcf0b140488
+[2024-05-28 18:24:19] 18:24:19 (10692): PdfDocumentFactory closed document 0000012ED97EC660
+[2024-05-28 18:24:19] 18:24:19 (10692): Erasing document 0
+[2024-05-28 18:24:19] Document 0 has 0 references remaining (-1)
+[2024-05-28 18:24:19] 18:24:19 (10692): !!! Failed to locate document 0
+[2024-05-28 18:24:19] 18:24:19 (10692): Failed to locate document 0
+[2024-05-28 18:24:40] Saving app analytics to file
+[2024-05-28 18:24:40] Caching api usage to file
+[2024-05-28 18:25:10] Saving app analytics to file
+[2024-05-28 18:25:10] Caching api usage to file
+[2024-05-28 18:25:40] Saving app analytics to file
+[2024-05-28 18:25:40] Caching api usage to file
+[2024-05-28 18:26:10] Saving app analytics to file
+[2024-05-28 18:26:10] Caching api usage to file
+[2024-05-28 18:26:40] Saving app analytics to file
+[2024-05-28 18:26:40] Caching api usage to file
+[2024-05-28 18:27:10] Saving app analytics to file
+[2024-05-28 18:27:10] Caching api usage to file
+[2024-05-28 18:37:16] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-28 18:37:16] Initializing 'AppAnalytics' module
+[2024-05-28 18:37:16] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-28 18:37:16] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:37:16] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:37:16] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:37:16] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:37:16] Creating folder deployments for win-x64
+[2024-05-28 18:37:16] Creating embedded deployments for win-x64
+[2024-05-28 18:37:16] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:37:16] Using deployment instructions for 'default' v
+[2024-05-28 18:37:16] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:37:16] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:37:16] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:37:16] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Creating new job collection resource
+[2024-05-28 18:37:16] Creating new document collection resource
+[2024-05-28 18:37:16] Successfully initialized local pdf client
+[2024-05-28 18:37:16] Initializing local Chrome client...
+[2024-05-28 18:37:16] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:37:16] Creating folder deployments for win-x64
+[2024-05-28 18:37:16] Creating embedded deployments for win-x64
+[2024-05-28 18:37:16] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:37:16] Using deployment instructions for 'default' v
+[2024-05-28 18:37:16] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:37:16] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:37:16] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:37:16] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-28 18:37:16] 18:37:16 (15544): ~ Chrome renderer v2024.4.0.18~
+[2024-05-28 18:37:16] 18:37:16 (15544): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-28 18:37:16] 18:37:16 (15544): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:37:16] 18:37:16 (15544): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-28 18:37:16] 18:37:16 (15544): IsSingleProcess: 0
+[2024-05-28 18:37:16] 18:37:16 (15544): Creating Cef proxy controller
+[2024-05-28 18:37:16] 18:37:16 (15544): Creating Cef interface
+[2024-05-28 18:37:16] 18:37:16 (15544): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:37:16] 18:37:16 (15544): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:37:16] 18:37:16 (15544): Destroying Cef proxy event handler
+[2024-05-28 18:37:16] 18:37:16 (15544): Initializing Cef proxy controller
+[2024-05-28 18:37:16] 18:37:16 (15544): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-28 18:37:16] 18:37:16 (15544): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] 18:37:16 (15544): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-28 18:37:16] 18:37:16 (15544): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:37:16] 18:37:16 (15544): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-28 18:37:16] 18:37:16 (15544): gpu_mode: '0'
+[2024-05-28 18:37:16] 18:37:16 (13584): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-28 18:37:16] 18:37:16 (13584): gpu_mode: '0'
+[2024-05-28 18:37:17] 18:37:17 (15544): Cef initialization succeeded
+[2024-05-28 18:37:17] Successfully initialized local Chrome client
+[2024-05-28 18:37:17] 18:37:17 (13584): Cef context initialized
+[2024-05-28 18:37:17] 18:37:17 (13584): Registering custom scheme for rendering raw html
+[2024-05-28 18:37:17] 18:37:17 (13584): Successfully registered custom scheme
+[2024-05-28 18:37:17] 18:37:17 (13584): Cef engine initialization complete
+[2024-05-28 18:37:17] 18:37:17 (13584): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-28 18:37:17] 18:37:17 (13584): gpu_mode: '0'
+[2024-05-28 18:37:19] A valid license has been set
+[2024-05-28 18:37:19] 18:37:19 (16836): Generating pdf from html
+[2024-05-28 18:37:19] 18:37:19 (16836): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:37:19] 18:37:19 (16836): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:37:19] 18:37:19 (16836): Created new job group 0 for new document
+[2024-05-28 18:37:19] 18:37:19 (16836): Created job group 0
+[2024-05-28 18:37:19] 18:37:19 (16836): Queuing job 0
+[2024-05-28 18:37:19] 18:37:19 (16836): Checking for browser availability (0/30)
+[2024-05-28 18:37:19] 18:37:19 (16836): Creating new browser after waiting 0 seconds
+[2024-05-28 18:37:19] 18:37:19 (13584): Created browser id 1, 1 exist
+[2024-05-28 18:37:19] 18:37:19 (13584): Browser 1 created and ready for assignment
+[2024-05-28 18:37:19] 18:37:19 (13584): Assigning job 0 to browser 1
+[2024-05-28 18:37:19] 18:37:19 (13584): Processing job for html content on browser 1
+[2024-05-28 18:37:19] 18:37:19 (13584): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:37:19] 18:37:19 (13584): gpu_mode: '0'
+[2024-05-28 18:37:19] 18:37:19 (13584): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:37:19] 18:37:19 (13584): gpu_mode: '0'
+[2024-05-28 18:37:19] 18:37:19 (13584): Browser 1 loading state changed to 1 for url ''
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:19] 18:37:19 (6604): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-28 18:37:19] 18:37:19 (13584): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-28 18:37:19] 18:37:19 (13584): Browser 1 status: 
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from [internal] for file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using custom handler
+[2024-05-28 18:37:19] 18:37:19 (6604): OnBeforeResourceLoad for file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css on browser 1
+[2024-05-28 18:37:19] 18:37:19 (6604): !!! Failed to resolve file path for url
+[2024-05-28 18:37:19] 18:37:19 (6604): Failed to resolve file path for url
+[2024-05-28 18:37:19] 18:37:19 (6604): Error (source 1): 'Failed to resolve file path for url'
+[2024-05-28 18:37:19] 18:37:19 (6604): Resource load complete for 'file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css' on browser 1
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:19] 18:37:19 (13584): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:37:19] 18:37:19 (13584): Received message from render process with 0 bytes
+[2024-05-28 18:37:19] 18:37:19 (13584): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:19] 18:37:19 (6604): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:37:19] 18:37:19 (6604): Resolved resource request using default handler
+[2024-05-28 18:37:20] 18:37:20 (13584): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-28 18:37:20] 18:37:20 (13584): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:37:20] 18:37:20 (13584): Frame loaded for job 0 on browser 1
+[2024-05-28 18:37:20] 18:37:20 (13584): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:37:20] 18:37:20 (13584): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-28 18:37:20] 18:37:20 (13584): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-28 18:37:20] 18:37:20 (13584): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-28 18:37:20] 18:37:20 (13584): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-28 18:37:20] 18:37:20 (13584): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:37:20] 18:37:20 (13584): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-28 18:37:20] 18:37:20 (13584): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-28 18:37:20] 18:37:20 (13584): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:37:20] 18:37:20 (13584): Received message from render process with 144 bytes
+[2024-05-28 18:37:20] 18:37:20 (13584): Processed html for browser 1
+[2024-05-28 18:37:20] 18:37:20 (13584): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-28 18:37:20] 18:37:20 (17328): Apply render delay for : 20 ms
+[2024-05-28 18:37:20] 18:37:20 (17328): Finished waiting for render delay
+[2024-05-28 18:37:20] 18:37:20 (17328): Scaling content to paper using a scale of 1
+[2024-05-28 18:37:20] 18:37:20 (17328): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\CE0E.tmp'
+[2024-05-28 18:37:20] 18:37:20 (13584): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\CE0E.tmp' (1)
+[2024-05-28 18:37:20] 18:37:20 (13584): Print finished for browser 1(success: 1)
+[2024-05-28 18:37:20] 18:37:20 (13584): Resolving job for browser 1 with 16439 bytes
+[2024-05-28 18:37:20] 18:37:20 (16808): Closing browser 1
+[2024-05-28 18:37:20] 18:37:20 (13584): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:37:20] 18:37:20 (13584): Destroying browser id 1, 0 remain
+[2024-05-28 18:37:20] 18:37:20 (13584): Browser 1 closed for job 0
+[2024-05-28 18:37:20] 18:37:20 (13584): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:37:20] 18:37:20 (13584): Job group 0 finished
+[2024-05-28 18:37:20] 18:37:20 (13584): CefMessagePumpStd::Quit()
+[2024-05-28 18:37:20] 18:37:20 (16836): Storing new job result 0
+[2024-05-28 18:37:20] Received job result 0
+[2024-05-28 18:37:20] 18:37:20 (16836): Opening document from job result 0
+[2024-05-28 18:37:20] 18:37:20 (16836): Releasing job result 0
+[2024-05-28 18:37:20] 18:37:20 (16836): PdfDocumentFactory created document 000002DE79BD3A60 from 16439 bytes
+[2024-05-28 18:37:20] 18:37:20 (16836): Document opened from pointer
+[2024-05-28 18:37:20] 18:37:20 (16836): Storing new document 0
+[2024-05-28 18:37:20] Created document 0 from job result 0
+[2024-05-28 18:37:20] Document 0 has 1 references remaining (+1)
+[2024-05-28 18:37:20] Retrieving binary data for document c2b04ccd-91db-42e3-bf96-cac231865352 with 0 signatures
+[2024-05-28 18:37:20] In-memory object store fetching document c2b04ccd-91db-42e3-bf96-cac231865352
+[2024-05-28 18:37:20] 18:37:20 (16836): Generating bytes for document 000002DE79BD3A60
+[2024-05-28 18:37:20] 18:37:20 (16836): Successfully generated 19190 bytes for document 000002DE79BD3A60
+[2024-05-28 18:37:20] Chunking 19190 document bytes into 1 chunks
+[2024-05-28 18:37:46] Saving app analytics to file
+[2024-05-28 18:37:46] Caching api usage to file
+[2024-05-28 18:38:16] Saving app analytics to file
+[2024-05-28 18:38:16] Caching api usage to file
+[2024-05-28 18:38:46] Saving app analytics to file
+[2024-05-28 18:38:46] Caching api usage to file
+[2024-05-28 18:39:16] Saving app analytics to file
+[2024-05-28 18:39:16] Caching api usage to file
+[2024-05-28 18:39:46] Saving app analytics to file
+[2024-05-28 18:39:46] Caching api usage to file
+[2024-05-28 18:40:16] Saving app analytics to file
+[2024-05-28 18:40:16] Caching api usage to file
+[2024-05-28 18:40:46] Saving app analytics to file
+[2024-05-28 18:40:46] Caching api usage to file
+[2024-05-28 18:41:16] Saving app analytics to file
+[2024-05-28 18:41:16] Caching api usage to file
+[2024-05-28 18:41:46] Saving app analytics to file
+[2024-05-28 18:41:46] Caching api usage to file
+[2024-05-28 18:42:16] Saving app analytics to file
+[2024-05-28 18:42:16] Caching api usage to file
+[2024-05-28 18:42:16] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:42:16] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:42:16] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:42:46] Saving app analytics to file
+[2024-05-28 18:42:46] Caching api usage to file
+[2024-05-28 18:43:16] Saving app analytics to file
+[2024-05-28 18:43:16] Caching api usage to file
+[2024-05-28 18:43:46] Saving app analytics to file
+[2024-05-28 18:43:46] Caching api usage to file
+[2024-05-28 18:44:16] Saving app analytics to file
+[2024-05-28 18:44:16] Caching api usage to file
+[2024-05-28 18:44:46] Saving app analytics to file
+[2024-05-28 18:44:46] Caching api usage to file
+[2024-05-28 18:45:16] Saving app analytics to file
+[2024-05-28 18:45:16] Caching api usage to file
+[2024-05-28 18:45:46] Saving app analytics to file
+[2024-05-28 18:45:46] Caching api usage to file
+[2024-05-28 18:46:16] Saving app analytics to file
+[2024-05-28 18:46:16] Caching api usage to file
+[2024-05-28 18:46:46] Saving app analytics to file
+[2024-05-28 18:46:46] Caching api usage to file
+[2024-05-28 18:47:16] Saving app analytics to file
+[2024-05-28 18:47:16] Caching api usage to file
+[2024-05-28 18:47:16] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:47:16] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:47:16] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:47:46] Saving app analytics to file
+[2024-05-28 18:47:46] Caching api usage to file
+[2024-05-28 18:48:16] Saving app analytics to file
+[2024-05-28 18:48:16] Caching api usage to file
+[2024-05-28 18:48:46] Saving app analytics to file
+[2024-05-28 18:48:46] Caching api usage to file
+[2024-05-28 18:49:16] Saving app analytics to file
+[2024-05-28 18:49:16] Caching api usage to file
+[2024-05-28 18:49:46] Saving app analytics to file
+[2024-05-28 18:49:46] Caching api usage to file
+[2024-05-28 18:50:16] Saving app analytics to file
+[2024-05-28 18:50:16] Caching api usage to file
+[2024-05-28 18:50:46] Saving app analytics to file
+[2024-05-28 18:50:46] Caching api usage to file
+[2024-05-28 18:51:16] Saving app analytics to file
+[2024-05-28 18:51:16] Caching api usage to file
+[2024-05-28 18:51:16] 18:51:16 (15780): Generating pdf from html
+[2024-05-28 18:51:16] 18:51:16 (15780): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:51:16] 18:51:16 (15780): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:51:16] 18:51:16 (15780): Created new job group 1 for new document
+[2024-05-28 18:51:16] 18:51:16 (15780): Created job group 1
+[2024-05-28 18:51:16] 18:51:16 (15780): Queuing job 1
+[2024-05-28 18:51:16] 18:51:16 (15780): Checking for browser availability (0/30)
+[2024-05-28 18:51:16] 18:51:16 (15780): Creating new browser after waiting 0 seconds
+[2024-05-28 18:51:16] 18:51:16 (13584): Created browser id 2, 1 exist
+[2024-05-28 18:51:16] 18:51:16 (13584): Browser 2 created and ready for assignment
+[2024-05-28 18:51:16] 18:51:16 (13584): Assigning job 1 to browser 2
+[2024-05-28 18:51:16] 18:51:16 (13584): Processing job for html content on browser 2
+[2024-05-28 18:51:16] 18:51:16 (13584): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:51:16] 18:51:16 (13584): gpu_mode: '0'
+[2024-05-28 18:51:16] 18:51:16 (13584): Browser 2 loading state changed to 1 for url ''
+[2024-05-28 18:51:16] 18:51:16 (6604): Received resource request from null for [internal] on browser 2 (nav: 1, dl: 0)
+[2024-05-28 18:51:16] 18:51:16 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:16] 18:51:16 (6604): Received resource request from null for [internal] on browser 2 (nav: 1, dl: 0)
+[2024-05-28 18:51:16] 18:51:16 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:16] 18:51:16 (6604): Creating resource handler for scheme http using url [internal] on browser 2
+[2024-05-28 18:51:16] 18:51:16 (13584): Browser 2 frame 25769803777 started loading [internal]
+[2024-05-28 18:51:16] 18:51:16 (13584): Browser 2 status: 
+[2024-05-28 18:51:16] 18:51:16 (6604): Received resource request from [internal] for file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:51:16] 18:51:16 (6604): Resolved resource request using custom handler
+[2024-05-28 18:51:16] 18:51:16 (6604): OnBeforeResourceLoad for file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css on browser 2
+[2024-05-28 18:51:16] 18:51:16 (6604): !!! Failed to resolve file path for url
+[2024-05-28 18:51:16] 18:51:16 (6604): Failed to resolve file path for url
+[2024-05-28 18:51:16] 18:51:16 (6604): Error (source 2): 'Failed to resolve file path for url'
+[2024-05-28 18:51:16] 18:51:16 (6604): Resource load complete for 'file:///C:/Users/meroc/Documents/GitHub/css/9dddee8e.css' on browser 2
+[2024-05-28 18:51:16] 18:51:16 (6604): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:51:16] 18:51:16 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:16] 18:51:16 (6604): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:51:16] 18:51:16 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:16] 18:51:16 (13584): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:51:16] 18:51:16 (13584): Received message from render process with 0 bytes
+[2024-05-28 18:51:16] 18:51:16 (13584): [IPAER] (Browser process) message received from upstream CEF: browserId=2, message name=OnBrowserCreated
+[2024-05-28 18:51:17] 18:51:17 (6604): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:51:17] 18:51:17 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:17] 18:51:17 (6604): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:51:17] 18:51:17 (6604): Resolved resource request using default handler
+[2024-05-28 18:51:17] 18:51:17 (13584): Browser 2 frame 25769803777 ended loading [internal]
+[2024-05-28 18:51:17] 18:51:17 (13584): Browser 2 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:51:17] 18:51:17 (13584): Frame loaded for job 1 on browser 2
+[2024-05-28 18:51:17] 18:51:17 (13584): Found job 1 in group 1 (of 1 groups)
+[2024-05-28 18:51:17] 18:51:17 (13584): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 2
+[2024-05-28 18:51:17] 18:51:17 (13584): Executing dev tools method 'Page.getLayoutMetrics' for browser 2
+[2024-05-28 18:51:17] 18:51:17 (13584): Received dev tools message on browser 2: '{"id":3,"result":{}}' (size: 20)
+[2024-05-28 18:51:17] 18:51:17 (13584): Finished dev tools method on browser 2 (message ID: 3)
+[2024-05-28 18:51:17] 18:51:17 (13584): Received dev tools message on browser 2: '{"id":4,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:51:17] 18:51:17 (13584): Finished dev tools method on browser 2 (message ID: 4)
+[2024-05-28 18:51:17] 18:51:17 (13584): Sending DOM-visit process message for browser 2 (job ID: 1)
+[2024-05-28 18:51:17] 18:51:17 (13584): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:51:17] 18:51:17 (13584): Received message from render process with 144 bytes
+[2024-05-28 18:51:17] 18:51:17 (13584): Processed html for browser 2
+[2024-05-28 18:51:17] 18:51:17 (13584): [IPAER] (Browser process) message received from upstream CEF: browserId=2, message name=OnDomVisited
+[2024-05-28 18:51:17] 18:51:17 (15796): Apply render delay for : 20 ms
+[2024-05-28 18:51:17] 18:51:17 (15796): Finished waiting for render delay
+[2024-05-28 18:51:17] 18:51:17 (15796): Scaling content to paper using a scale of 1
+[2024-05-28 18:51:17] 18:51:17 (15796): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\93D5.tmp'
+[2024-05-28 18:51:17] 18:51:17 (13584): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\93D5.tmp' (1)
+[2024-05-28 18:51:17] 18:51:17 (13584): Print finished for browser 2(success: 1)
+[2024-05-28 18:51:17] 18:51:17 (13584): Resolving job for browser 2 with 16439 bytes
+[2024-05-28 18:51:17] 18:51:17 (16808): Closing browser 2
+[2024-05-28 18:51:17] 18:51:17 (13584): Received dev tools message on browser 2: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:51:17] 18:51:17 (13584): Destroying browser id 2, 0 remain
+[2024-05-28 18:51:17] 18:51:17 (13584): Browser 2 closed for job 1
+[2024-05-28 18:51:17] 18:51:17 (13584): Found job 1 in group 1 (of 1 groups)
+[2024-05-28 18:51:17] 18:51:17 (13584): Job group 1 finished
+[2024-05-28 18:51:17] 18:51:17 (13584): CefMessagePumpStd::Quit()
+[2024-05-28 18:51:17] 18:51:17 (15780): Storing new job result 1
+[2024-05-28 18:51:17] Received job result 1
+[2024-05-28 18:51:17] 18:51:17 (15780): Opening document from job result 1
+[2024-05-28 18:51:17] 18:51:17 (15780): Releasing job result 1
+[2024-05-28 18:51:17] 18:51:17 (15780): PdfDocumentFactory created document 000002DE79BD44E0 from 16439 bytes
+[2024-05-28 18:51:17] 18:51:17 (15780): Document opened from pointer
+[2024-05-28 18:51:17] 18:51:17 (15780): Storing new document 1
+[2024-05-28 18:51:17] Created document 1 from job result 1
+[2024-05-28 18:51:17] Document 1 has 1 references remaining (+1)
+[2024-05-28 18:51:17] Retrieving binary data for document 5aa32976-47a4-420f-8301-2dbf93d493f8 with 0 signatures
+[2024-05-28 18:51:17] In-memory object store fetching document 5aa32976-47a4-420f-8301-2dbf93d493f8
+[2024-05-28 18:51:17] 18:51:17 (18068): Generating bytes for document 000002DE79BD44E0
+[2024-05-28 18:51:17] 18:51:17 (18068): Successfully generated 19190 bytes for document 000002DE79BD44E0
+[2024-05-28 18:51:17] Chunking 19190 document bytes into 1 chunks
+[2024-05-28 18:51:46] Saving app analytics to file
+[2024-05-28 18:51:46] Caching api usage to file
+[2024-05-28 18:52:16] Saving app analytics to file
+[2024-05-28 18:52:16] Caching api usage to file
+[2024-05-28 18:52:16] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:52:16] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:52:16] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:52:46] Saving app analytics to file
+[2024-05-28 18:52:46] Caching api usage to file
+[2024-05-28 18:53:16] Saving app analytics to file
+[2024-05-28 18:53:16] Caching api usage to file
+[2024-05-28 18:53:57] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-28 18:53:57] Initializing 'AppAnalytics' module
+[2024-05-28 18:53:57] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-28 18:53:57] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:53:57] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:53:57] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:53:57] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:53:57] Creating folder deployments for win-x64
+[2024-05-28 18:53:57] Creating embedded deployments for win-x64
+[2024-05-28 18:53:57] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:53:57] Using deployment instructions for 'default' v
+[2024-05-28 18:53:57] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:53:57] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:53:57] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:53:57] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Creating new job collection resource
+[2024-05-28 18:53:57] Creating new document collection resource
+[2024-05-28 18:53:57] Successfully initialized local pdf client
+[2024-05-28 18:53:57] Initializing local Chrome client...
+[2024-05-28 18:53:57] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:53:57] Creating folder deployments for win-x64
+[2024-05-28 18:53:57] Creating embedded deployments for win-x64
+[2024-05-28 18:53:57] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:53:57] Using deployment instructions for 'default' v
+[2024-05-28 18:53:57] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:53:57] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:53:57] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:53:57] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-28 18:53:57] 18:53:57 (1500): ~ Chrome renderer v2024.4.0.18~
+[2024-05-28 18:53:57] 18:53:57 (1500): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-28 18:53:57] 18:53:57 (1500): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:53:57] 18:53:57 (1500): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-28 18:53:57] 18:53:57 (1500): IsSingleProcess: 0
+[2024-05-28 18:53:57] 18:53:57 (1500): Creating Cef proxy controller
+[2024-05-28 18:53:57] 18:53:57 (1500): Creating Cef interface
+[2024-05-28 18:53:57] 18:53:57 (1500): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:53:57] 18:53:57 (1500): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:53:57] 18:53:57 (1500): Destroying Cef proxy event handler
+[2024-05-28 18:53:57] 18:53:57 (1500): Initializing Cef proxy controller
+[2024-05-28 18:53:57] 18:53:57 (1500): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-28 18:53:57] 18:53:57 (1500): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] 18:53:57 (1500): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-28 18:53:57] 18:53:57 (1500): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:53:57] 18:53:57 (1500): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-28 18:53:57] 18:53:57 (1500): gpu_mode: '0'
+[2024-05-28 18:53:57] 18:53:57 (8904): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-28 18:53:57] 18:53:57 (8904): gpu_mode: '0'
+[2024-05-28 18:53:57] 18:53:57 (1500): Cef initialization succeeded
+[2024-05-28 18:53:57] Successfully initialized local Chrome client
+[2024-05-28 18:53:57] 18:53:57 (8904): Cef context initialized
+[2024-05-28 18:53:57] 18:53:57 (8904): Registering custom scheme for rendering raw html
+[2024-05-28 18:53:57] 18:53:57 (8904): Successfully registered custom scheme
+[2024-05-28 18:53:57] 18:53:57 (8904): Cef engine initialization complete
+[2024-05-28 18:53:57] 18:53:57 (8904): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-28 18:53:57] 18:53:57 (8904): gpu_mode: '0'
+[2024-05-28 18:53:59] A valid license has been set
+[2024-05-28 18:53:59] 18:53:59 (20300): Generating pdf from html
+[2024-05-28 18:53:59] 18:53:59 (20300): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:53:59] 18:53:59 (20300): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:53:59] 18:53:59 (20300): Created new job group 0 for new document
+[2024-05-28 18:53:59] 18:53:59 (20300): Created job group 0
+[2024-05-28 18:53:59] 18:53:59 (20300): Queuing job 0
+[2024-05-28 18:53:59] 18:53:59 (20300): Checking for browser availability (0/30)
+[2024-05-28 18:53:59] 18:53:59 (20300): Creating new browser after waiting 0 seconds
+[2024-05-28 18:53:59] 18:53:59 (8904): Created browser id 1, 1 exist
+[2024-05-28 18:53:59] 18:53:59 (8904): Browser 1 created and ready for assignment
+[2024-05-28 18:53:59] 18:53:59 (8904): Assigning job 0 to browser 1
+[2024-05-28 18:53:59] 18:53:59 (8904): Processing job for html content on browser 1
+[2024-05-28 18:53:59] 18:53:59 (8904): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:53:59] 18:53:59 (8904): gpu_mode: '0'
+[2024-05-28 18:53:59] 18:53:59 (8904): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:53:59] 18:53:59 (8904): gpu_mode: '0'
+[2024-05-28 18:53:59] 18:53:59 (8904): Browser 1 loading state changed to 1 for url ''
+[2024-05-28 18:53:59] 18:53:59 (19592): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:53:59] 18:53:59 (19592): Resolved resource request using default handler
+[2024-05-28 18:53:59] 18:53:59 (19592): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:53:59] 18:53:59 (19592): Resolved resource request using default handler
+[2024-05-28 18:53:59] 18:53:59 (19592): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-28 18:53:59] 18:53:59 (8904): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-28 18:53:59] 18:53:59 (8904): Browser 1 status: 
+[2024-05-28 18:53:59] 18:53:59 (19592): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:53:59] 18:53:59 (19592): Resolved resource request using default handler
+[2024-05-28 18:53:59] 18:53:59 (19592): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:53:59] 18:53:59 (19592): Resolved resource request using default handler
+[2024-05-28 18:53:59] 18:53:59 (8904): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:53:59] 18:53:59 (8904): Received message from render process with 0 bytes
+[2024-05-28 18:53:59] 18:53:59 (8904): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-28 18:54:00] 18:54:00 (19592): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:54:00] 18:54:00 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:00] 18:54:00 (19592): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:54:00] 18:54:00 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:00] 18:54:00 (8904): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-28 18:54:00] 18:54:00 (8904): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:54:00] 18:54:00 (8904): Frame loaded for job 0 on browser 1
+[2024-05-28 18:54:00] 18:54:00 (8904): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:54:00] 18:54:00 (8904): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-28 18:54:00] 18:54:00 (8904): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-28 18:54:00] 18:54:00 (8904): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-28 18:54:00] 18:54:00 (8904): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-28 18:54:00] 18:54:00 (8904): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:54:00] 18:54:00 (8904): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-28 18:54:00] 18:54:00 (8904): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-28 18:54:00] 18:54:00 (8904): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:54:00] 18:54:00 (8904): Received message from render process with 144 bytes
+[2024-05-28 18:54:00] 18:54:00 (8904): Processed html for browser 1
+[2024-05-28 18:54:00] 18:54:00 (8904): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-28 18:54:00] 18:54:00 (23264): Apply render delay for : 20 ms
+[2024-05-28 18:54:00] 18:54:00 (23264): Finished waiting for render delay
+[2024-05-28 18:54:00] 18:54:00 (23264): Scaling content to paper using a scale of 1
+[2024-05-28 18:54:00] 18:54:00 (23264): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\10BB.tmp'
+[2024-05-28 18:54:00] 18:54:00 (8904): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\10BB.tmp' (1)
+[2024-05-28 18:54:00] 18:54:00 (8904): Print finished for browser 1(success: 1)
+[2024-05-28 18:54:00] 18:54:00 (8904): Resolving job for browser 1 with 16586 bytes
+[2024-05-28 18:54:00] 18:54:00 (19348): Closing browser 1
+[2024-05-28 18:54:00] 18:54:00 (8904): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:54:00] 18:54:00 (8904): Destroying browser id 1, 0 remain
+[2024-05-28 18:54:00] 18:54:00 (8904): Browser 1 closed for job 0
+[2024-05-28 18:54:00] 18:54:00 (8904): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:54:00] 18:54:00 (8904): Job group 0 finished
+[2024-05-28 18:54:00] 18:54:00 (8904): CefMessagePumpStd::Quit()
+[2024-05-28 18:54:00] 18:54:00 (20300): Storing new job result 0
+[2024-05-28 18:54:00] Received job result 0
+[2024-05-28 18:54:00] 18:54:00 (20300): Opening document from job result 0
+[2024-05-28 18:54:00] 18:54:00 (20300): Releasing job result 0
+[2024-05-28 18:54:00] 18:54:00 (20300): PdfDocumentFactory created document 00000245A1099E80 from 16586 bytes
+[2024-05-28 18:54:00] 18:54:00 (20300): Document opened from pointer
+[2024-05-28 18:54:00] 18:54:00 (20300): Storing new document 0
+[2024-05-28 18:54:00] Created document 0 from job result 0
+[2024-05-28 18:54:00] Document 0 has 1 references remaining (+1)
+[2024-05-28 18:54:00] Retrieving binary data for document ccb25901-77b9-4217-a5fd-89ee01fbbf01 with 0 signatures
+[2024-05-28 18:54:00] In-memory object store fetching document ccb25901-77b9-4217-a5fd-89ee01fbbf01
+[2024-05-28 18:54:00] 18:54:00 (20300): Generating bytes for document 00000245A1099E80
+[2024-05-28 18:54:00] 18:54:00 (20300): Successfully generated 19337 bytes for document 00000245A1099E80
+[2024-05-28 18:54:00] Chunking 19337 document bytes into 1 chunks
+[2024-05-28 18:54:27] Saving app analytics to file
+[2024-05-28 18:54:27] Caching api usage to file
+[2024-05-28 18:54:28] 18:54:28 (1008): Generating pdf from html
+[2024-05-28 18:54:28] 18:54:28 (1008): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:54:28] 18:54:28 (1008): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:54:28] 18:54:28 (1008): Created new job group 1 for new document
+[2024-05-28 18:54:28] 18:54:28 (1008): Created job group 1
+[2024-05-28 18:54:28] 18:54:28 (1008): Queuing job 1
+[2024-05-28 18:54:28] 18:54:28 (1008): Checking for browser availability (0/30)
+[2024-05-28 18:54:28] 18:54:28 (1008): Creating new browser after waiting 0 seconds
+[2024-05-28 18:54:28] 18:54:28 (8904): Created browser id 2, 1 exist
+[2024-05-28 18:54:28] 18:54:28 (8904): Browser 2 created and ready for assignment
+[2024-05-28 18:54:28] 18:54:28 (8904): Assigning job 1 to browser 2
+[2024-05-28 18:54:28] 18:54:28 (8904): Processing job for html content on browser 2
+[2024-05-28 18:54:28] 18:54:28 (8904): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:54:28] 18:54:28 (8904): gpu_mode: '0'
+[2024-05-28 18:54:28] 18:54:28 (8904): Browser 2 loading state changed to 1 for url ''
+[2024-05-28 18:54:28] 18:54:28 (19592): Received resource request from null for [internal] on browser 2 (nav: 1, dl: 0)
+[2024-05-28 18:54:28] 18:54:28 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:28] 18:54:28 (19592): Received resource request from null for [internal] on browser 2 (nav: 1, dl: 0)
+[2024-05-28 18:54:28] 18:54:28 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:28] 18:54:28 (19592): Creating resource handler for scheme http using url [internal] on browser 2
+[2024-05-28 18:54:28] 18:54:28 (8904): Browser 2 frame 25769803777 started loading [internal]
+[2024-05-28 18:54:28] 18:54:28 (8904): Browser 2 status: 
+[2024-05-28 18:54:29] 18:54:29 (19592): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:54:29] 18:54:29 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:29] 18:54:29 (19592): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:54:29] 18:54:29 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:29] 18:54:29 (8904): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:54:29] 18:54:29 (8904): Received message from render process with 0 bytes
+[2024-05-28 18:54:29] 18:54:29 (8904): [IPAER] (Browser process) message received from upstream CEF: browserId=2, message name=OnBrowserCreated
+[2024-05-28 18:54:29] 18:54:29 (19592): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:54:29] 18:54:29 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:29] 18:54:29 (19592): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 2 (nav: 0, dl: 0)
+[2024-05-28 18:54:29] 18:54:29 (19592): Resolved resource request using default handler
+[2024-05-28 18:54:29] 18:54:29 (8904): Browser 2 frame 25769803777 ended loading [internal]
+[2024-05-28 18:54:29] 18:54:29 (8904): Browser 2 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:54:29] 18:54:29 (8904): Frame loaded for job 1 on browser 2
+[2024-05-28 18:54:29] 18:54:29 (8904): Found job 1 in group 1 (of 1 groups)
+[2024-05-28 18:54:29] 18:54:29 (8904): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 2
+[2024-05-28 18:54:29] 18:54:29 (8904): Executing dev tools method 'Page.getLayoutMetrics' for browser 2
+[2024-05-28 18:54:29] 18:54:29 (8904): Received dev tools message on browser 2: '{"id":3,"result":{}}' (size: 20)
+[2024-05-28 18:54:29] 18:54:29 (8904): Finished dev tools method on browser 2 (message ID: 3)
+[2024-05-28 18:54:29] 18:54:29 (8904): Received dev tools message on browser 2: '{"id":4,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:54:29] 18:54:29 (8904): Finished dev tools method on browser 2 (message ID: 4)
+[2024-05-28 18:54:29] 18:54:29 (8904): Sending DOM-visit process message for browser 2 (job ID: 1)
+[2024-05-28 18:54:29] 18:54:29 (8904): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:54:29] 18:54:29 (8904): Received message from render process with 144 bytes
+[2024-05-28 18:54:29] 18:54:29 (8904): Processed html for browser 2
+[2024-05-28 18:54:29] 18:54:29 (8904): [IPAER] (Browser process) message received from upstream CEF: browserId=2, message name=OnDomVisited
+[2024-05-28 18:54:29] 18:54:29 (16848): Apply render delay for : 20 ms
+[2024-05-28 18:54:29] 18:54:29 (16848): Finished waiting for render delay
+[2024-05-28 18:54:29] 18:54:29 (16848): Scaling content to paper using a scale of 1
+[2024-05-28 18:54:29] 18:54:29 (16848): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\8243.tmp'
+[2024-05-28 18:54:29] 18:54:29 (8904): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\8243.tmp' (1)
+[2024-05-28 18:54:29] 18:54:29 (8904): Print finished for browser 2(success: 1)
+[2024-05-28 18:54:29] 18:54:29 (8904): Resolving job for browser 2 with 16586 bytes
+[2024-05-28 18:54:29] 18:54:29 (19348): Closing browser 2
+[2024-05-28 18:54:29] 18:54:29 (8904): Received dev tools message on browser 2: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:54:29] 18:54:29 (8904): Destroying browser id 2, 0 remain
+[2024-05-28 18:54:29] 18:54:29 (8904): Browser 2 closed for job 1
+[2024-05-28 18:54:29] 18:54:29 (8904): Found job 1 in group 1 (of 1 groups)
+[2024-05-28 18:54:29] 18:54:29 (8904): Job group 1 finished
+[2024-05-28 18:54:29] 18:54:29 (8904): CefMessagePumpStd::Quit()
+[2024-05-28 18:54:29] 18:54:29 (1008): Storing new job result 1
+[2024-05-28 18:54:29] Received job result 1
+[2024-05-28 18:54:29] 18:54:29 (1008): Opening document from job result 1
+[2024-05-28 18:54:29] 18:54:29 (1008): Releasing job result 1
+[2024-05-28 18:54:29] 18:54:29 (1008): PdfDocumentFactory created document 00000245A10994E0 from 16586 bytes
+[2024-05-28 18:54:29] 18:54:29 (1008): Document opened from pointer
+[2024-05-28 18:54:29] 18:54:29 (1008): Storing new document 1
+[2024-05-28 18:54:29] Created document 1 from job result 1
+[2024-05-28 18:54:29] Document 1 has 1 references remaining (+1)
+[2024-05-28 18:54:29] Retrieving binary data for document 28365e45-35e5-4109-9f27-2956c2748985 with 0 signatures
+[2024-05-28 18:54:29] In-memory object store fetching document 28365e45-35e5-4109-9f27-2956c2748985
+[2024-05-28 18:54:29] 18:54:29 (12912): Generating bytes for document 00000245A10994E0
+[2024-05-28 18:54:29] 18:54:29 (12912): Successfully generated 19337 bytes for document 00000245A10994E0
+[2024-05-28 18:54:29] Chunking 19337 document bytes into 1 chunks
+[2024-05-28 18:54:57] Saving app analytics to file
+[2024-05-28 18:54:57] Caching api usage to file
+[2024-05-28 18:55:50] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-28 18:55:50] Initializing 'AppAnalytics' module
+[2024-05-28 18:55:50] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-28 18:55:50] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:55:50] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:55:50] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:55:50] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:55:50] Creating folder deployments for win-x64
+[2024-05-28 18:55:50] Creating embedded deployments for win-x64
+[2024-05-28 18:55:50] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:55:50] Using deployment instructions for 'default' v
+[2024-05-28 18:55:50] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:55:50] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:55:50] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:55:50] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Creating new job collection resource
+[2024-05-28 18:55:50] Creating new document collection resource
+[2024-05-28 18:55:50] Successfully initialized local pdf client
+[2024-05-28 18:55:50] Initializing local Chrome client...
+[2024-05-28 18:55:50] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:55:50] Creating folder deployments for win-x64
+[2024-05-28 18:55:50] Creating embedded deployments for win-x64
+[2024-05-28 18:55:50] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:55:50] Using deployment instructions for 'default' v
+[2024-05-28 18:55:50] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:55:50] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:55:50] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:55:50] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-28 18:55:50] 18:55:50 (7944): ~ Chrome renderer v2024.4.0.18~
+[2024-05-28 18:55:50] 18:55:50 (7944): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-28 18:55:50] 18:55:50 (7944): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:55:50] 18:55:50 (7944): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-28 18:55:50] 18:55:50 (7944): IsSingleProcess: 0
+[2024-05-28 18:55:50] 18:55:50 (7944): Creating Cef proxy controller
+[2024-05-28 18:55:50] 18:55:50 (7944): Creating Cef interface
+[2024-05-28 18:55:50] 18:55:50 (7944): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:55:50] 18:55:50 (7944): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:55:50] 18:55:50 (7944): Destroying Cef proxy event handler
+[2024-05-28 18:55:50] 18:55:50 (7944): Initializing Cef proxy controller
+[2024-05-28 18:55:50] 18:55:50 (7944): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-28 18:55:50] 18:55:50 (7944): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] 18:55:50 (7944): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-28 18:55:50] 18:55:50 (7944): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:55:50] 18:55:50 (7944): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-28 18:55:50] 18:55:50 (7944): gpu_mode: '0'
+[2024-05-28 18:55:50] 18:55:50 (9468): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-28 18:55:50] 18:55:50 (9468): gpu_mode: '0'
+[2024-05-28 18:55:50] 18:55:50 (7944): Cef initialization succeeded
+[2024-05-28 18:55:50] Successfully initialized local Chrome client
+[2024-05-28 18:55:50] 18:55:50 (9468): Cef context initialized
+[2024-05-28 18:55:50] 18:55:50 (9468): Registering custom scheme for rendering raw html
+[2024-05-28 18:55:50] 18:55:50 (9468): Successfully registered custom scheme
+[2024-05-28 18:55:50] 18:55:50 (9468): Cef engine initialization complete
+[2024-05-28 18:55:50] 18:55:50 (9468): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-28 18:55:50] 18:55:50 (9468): gpu_mode: '0'
+[2024-05-28 18:55:52] A valid license has been set
+[2024-05-28 18:55:52] 18:55:52 (23396): Generating pdf from html
+[2024-05-28 18:55:52] 18:55:52 (23396): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:55:52] 18:55:52 (23396): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:55:52] 18:55:52 (23396): Created new job group 0 for new document
+[2024-05-28 18:55:52] 18:55:52 (23396): Created job group 0
+[2024-05-28 18:55:52] 18:55:52 (23396): Queuing job 0
+[2024-05-28 18:55:52] 18:55:52 (23396): Checking for browser availability (0/30)
+[2024-05-28 18:55:52] 18:55:52 (23396): Creating new browser after waiting 0 seconds
+[2024-05-28 18:55:52] 18:55:52 (9468): Created browser id 1, 1 exist
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 created and ready for assignment
+[2024-05-28 18:55:52] 18:55:52 (9468): Assigning job 0 to browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Processing job for html content on browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:55:52] 18:55:52 (9468): gpu_mode: '0'
+[2024-05-28 18:55:52] 18:55:52 (9468): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:55:52] 18:55:52 (9468): gpu_mode: '0'
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 loading state changed to 1 for url ''
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (13740): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 status: 
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (9468): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:55:52] 18:55:52 (9468): Received message from render process with 0 bytes
+[2024-05-28 18:55:52] 18:55:52 (9468): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (13740): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:55:52] 18:55:52 (13740): Resolved resource request using default handler
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:55:52] 18:55:52 (9468): Frame loaded for job 0 on browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:55:52] 18:55:52 (9468): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-28 18:55:52] 18:55:52 (9468): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-28 18:55:52] 18:55:52 (9468): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:55:52] 18:55:52 (9468): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-28 18:55:52] 18:55:52 (9468): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-28 18:55:52] 18:55:52 (9468): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:55:52] 18:55:52 (9468): Received message from render process with 144 bytes
+[2024-05-28 18:55:52] 18:55:52 (9468): Processed html for browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-28 18:55:52] 18:55:52 (5108): Apply render delay for : 20 ms
+[2024-05-28 18:55:52] 18:55:52 (5108): Finished waiting for render delay
+[2024-05-28 18:55:52] 18:55:52 (5108): Scaling content to paper using a scale of 1
+[2024-05-28 18:55:52] 18:55:52 (5108): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\C82F.tmp'
+[2024-05-28 18:55:52] 18:55:52 (9468): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\C82F.tmp' (1)
+[2024-05-28 18:55:52] 18:55:52 (9468): Print finished for browser 1(success: 1)
+[2024-05-28 18:55:52] 18:55:52 (9468): Resolving job for browser 1 with 16475 bytes
+[2024-05-28 18:55:52] 18:55:52 (22744): Closing browser 1
+[2024-05-28 18:55:52] 18:55:52 (9468): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:55:52] 18:55:52 (9468): Destroying browser id 1, 0 remain
+[2024-05-28 18:55:52] 18:55:52 (9468): Browser 1 closed for job 0
+[2024-05-28 18:55:52] 18:55:52 (9468): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:55:52] 18:55:52 (9468): Job group 0 finished
+[2024-05-28 18:55:52] 18:55:52 (9468): CefMessagePumpStd::Quit()
+[2024-05-28 18:55:52] 18:55:52 (23396): Storing new job result 0
+[2024-05-28 18:55:52] Received job result 0
+[2024-05-28 18:55:52] 18:55:52 (23396): Opening document from job result 0
+[2024-05-28 18:55:52] 18:55:52 (23396): Releasing job result 0
+[2024-05-28 18:55:52] 18:55:52 (23396): PdfDocumentFactory created document 000001ABD7849370 from 16475 bytes
+[2024-05-28 18:55:52] 18:55:52 (23396): Document opened from pointer
+[2024-05-28 18:55:52] 18:55:52 (23396): Storing new document 0
+[2024-05-28 18:55:52] Created document 0 from job result 0
+[2024-05-28 18:55:52] Document 0 has 1 references remaining (+1)
+[2024-05-28 18:55:52] Retrieving binary data for document a9239843-62a8-4267-b6d2-3edd2fdb94ae with 0 signatures
+[2024-05-28 18:55:52] In-memory object store fetching document a9239843-62a8-4267-b6d2-3edd2fdb94ae
+[2024-05-28 18:55:52] 18:55:52 (23396): Generating bytes for document 000001ABD7849370
+[2024-05-28 18:55:52] 18:55:52 (23396): Successfully generated 19226 bytes for document 000001ABD7849370
+[2024-05-28 18:55:52] Chunking 19226 document bytes into 1 chunks
+[2024-05-28 18:56:20] Saving app analytics to file
+[2024-05-28 18:56:20] Caching api usage to file
+[2024-05-28 18:56:36] ---------- Microsoft Windows NT 10.0.19045.0 (C:\Users\meroc\Documents\GitHub\spring-printing\ironpdfengine.log) ----------
+[2024-05-28 18:56:36] Initializing 'AppAnalytics' module
+[2024-05-28 18:56:36] Initializing 'ApiUsageDataHandler' for 'IronPdf'. Save interval: 30 seconds; upload interval: 300 seconds; timeout for 'IronAppInsights' upload: 10 seconds
+[2024-05-28 18:56:36] Uploading usage data to 'IronAppInsights' server
+[2024-05-28 18:56:36] Attempting to load all 'ApiUsage' caches
+[2024-05-28 18:56:36] Loaded 0 'ApiUsage' caches, out of 0 files
+[2024-05-28 18:56:36] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:56:36] Creating folder deployments for win-x64
+[2024-05-28 18:56:36] Creating embedded deployments for win-x64
+[2024-05-28 18:56:36] Successfully located 'IronPdfInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:56:36] Using deployment instructions for 'default' v
+[2024-05-28 18:56:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:56:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:56:36] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfInterop.dll'
+[2024-05-28 18:56:36] Successfully loaded 'IronPdfInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Successfully deployed 'Pdfium' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Creating new job collection resource
+[2024-05-28 18:56:36] Creating new document collection resource
+[2024-05-28 18:56:36] Successfully initialized local pdf client
+[2024-05-28 18:56:36] Initializing local Chrome client...
+[2024-05-28 18:56:36] Using deployment directory 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Creating deployment candidates using root path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\' (download: False)
+[2024-05-28 18:56:36] Creating folder deployments for win-x64
+[2024-05-28 18:56:36] Creating embedded deployments for win-x64
+[2024-05-28 18:56:36] Successfully located 'IronInterop' at 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Determining deployment commands for platform 'Windows' v10.0.19045.0
+[2024-05-28 18:56:36] Using deployment instructions for 'default' v
+[2024-05-28 18:56:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:56:36] Attempting to load Windows library 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:56:36] Successfully loaded native library from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronInterop.dll'
+[2024-05-28 18:56:36] Successfully loaded 'IronInterop' version '2024.4.0.18' from 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Successfully deployed 'Chrome' using 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] Initializing Chrome renderer for OS Name: Windows, Identifier: win, Version: 10.0.19045.0, VersionName: , Domain: IronPdfEngineConsole, Thread: , Path: C:\Users\meroc\Documents\GitHub\spring-printing
+[2024-05-28 18:56:36] 18:56:36 (14624): ~ Chrome renderer v2024.4.0.18~
+[2024-05-28 18:56:36] 18:56:36 (14624): Debugging enabled for Chrome renderer using log path 'IronSoftware.ChromeRenderer.log'
+[2024-05-28 18:56:36] 18:56:36 (14624): register JobManager as publisher for event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:56:36] 18:56:36 (14624): [EventRegistry] Register event_readyToInitializeNetworkEventsDevToolsHandler for a publisher
+[2024-05-28 18:56:36] 18:56:36 (14624): IsSingleProcess: 0
+[2024-05-28 18:56:36] 18:56:36 (14624): Creating Cef proxy controller
+[2024-05-28 18:56:36] 18:56:36 (14624): Creating Cef interface
+[2024-05-28 18:56:36] 18:56:36 (14624): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:56:36] 18:56:36 (14624): JobManager subscribes a new sub, eventStr=event_readyToInitializeNetworkEventsDevToolsHandler
+[2024-05-28 18:56:36] 18:56:36 (14624): Destroying Cef proxy event handler
+[2024-05-28 18:56:36] 18:56:36 (14624): Initializing Cef proxy controller
+[2024-05-28 18:56:36] 18:56:36 (14624): Using subprocess path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe'
+[2024-05-28 18:56:36] 18:56:36 (14624): Using framework path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] 18:56:36 (14624): Using locales path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales'
+[2024-05-28 18:56:36] 18:56:36 (14624): Using resources path 'C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\'
+[2024-05-28 18:56:36] 18:56:36 (14624): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronPdfEngineConsole.exe" --browser-subprocess-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --no-sandbox --lang=en-US --log-file=cef.log --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --disable-features=CalculateNativeWinOcclusion,WinUseBrowserSpellChecker,BackForwardCache host=127.0.0.1 port=33350 enable_debug=false log_path=ironpdfengine.log programming_language=java single_process=false docker_build=false linux_and_docker_auto_config=true skip_initialization=false chrome_browser_limit=30 chrome_gpu_mode=0 license_key=IRONSUITE.NETFLIXCREYTOB.GMAIL.COM.14892-BFD3CB80AE-BMZ7DZBMXANTXVLZ-T7BYYSCT5D4U-M6I3CU4HRMSB-4MTIDVMTRBTT-ZPVJTCU7R2DJ-DTI27PTXCUGL-VPHAUM-TDKWVUDV4OWMUA-DEPLOYMENT.TRIAL-3DK6AW.TRIAL.EXPIRES.17.JUN.2024'
+[2024-05-28 18:56:36] 18:56:36 (14624): gpu_mode: '0'
+[2024-05-28 18:56:36] 18:56:36 (15340): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=gpu-process --no-sandbox --headless --enable-gpu-service-logging --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:2'
+[2024-05-28 18:56:36] 18:56:36 (15340): gpu_mode: '0'
+[2024-05-28 18:56:36] 18:56:36 (14624): Cef initialization succeeded
+[2024-05-28 18:56:36] Successfully initialized local Chrome client
+[2024-05-28 18:56:36] 18:56:36 (15340): Cef context initialized
+[2024-05-28 18:56:36] 18:56:36 (15340): Registering custom scheme for rendering raw html
+[2024-05-28 18:56:36] 18:56:36 (15340): Successfully registered custom scheme
+[2024-05-28 18:56:36] 18:56:36 (15340): Cef engine initialization complete
+[2024-05-28 18:56:36] 18:56:36 (15340): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --ignore-urlfetcher-cert-requests --no-sandbox --ignore-certificate-errors --mute-audio --ignore-certificate-errors --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --lang=en-US --user-data-dir="C:\Users\meroc\AppData\Local\Temp" /prefetch:8'
+[2024-05-28 18:56:36] 18:56:36 (15340): gpu_mode: '0'
+[2024-05-28 18:56:37] A valid license has been set
+[2024-05-28 18:56:37] 18:56:37 (9736): Generating pdf from html
+[2024-05-28 18:56:37] 18:56:37 (9736): BROWSER SETTINGS:
+View: 1024x1280
+Enable Javascript: 1
+Username: 
+Cookies len: 0
+
+[2024-05-28 18:56:37] 18:56:37 (9736): RENDER SETTINGS:
+Backgrounds: 1, Emulate Screen: 0, Forms: 1, Landscape : 0, GrayScale : 0
+WaitForType: RenderDelay, Timeout: 10000, NetworkIdle duration: 500, Num allowed inflight: 0, Html Query Str: 
+Scale: 1
+Page Size Type: A4
+Custom Page Size: 210x297
+Actual Page Size: 210x297
+Page Margin Type: 2
+Margin Top: 0, Right: 0, Bottom: 0, Left: 0
+Header Html: 
+Footer Html: 
+Javascript: 
+Autosize Screen: 0, PPI: 96
+Title: 
+First Page Number: 1
+Save Path: 
+Render Delay: 20
+Max Header Height: 200, Max Footer Height : 200
+
+[2024-05-28 18:56:37] 18:56:37 (9736): Created new job group 0 for new document
+[2024-05-28 18:56:37] 18:56:37 (9736): Created job group 0
+[2024-05-28 18:56:37] 18:56:37 (9736): Queuing job 0
+[2024-05-28 18:56:37] 18:56:37 (9736): Checking for browser availability (0/30)
+[2024-05-28 18:56:37] 18:56:37 (9736): Creating new browser after waiting 0 seconds
+[2024-05-28 18:56:37] 18:56:37 (15340): Created browser id 1, 1 exist
+[2024-05-28 18:56:37] 18:56:37 (15340): Browser 1 created and ready for assignment
+[2024-05-28 18:56:37] 18:56:37 (15340): Assigning job 0 to browser 1
+[2024-05-28 18:56:37] 18:56:37 (15340): Processing job for html content on browser 1
+[2024-05-28 18:56:37] 18:56:37 (15340): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:56:37] 18:56:37 (15340): gpu_mode: '0'
+[2024-05-28 18:56:37] 18:56:37 (15340): Launching child process '"C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\IronCefSubprocess.exe" --type=renderer --locales-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64\\locales" --log-severity=verbose --resources-dir-path="C:\Users\meroc\Documents\GitHub\spring-printing\IronPdfEngine.2024.4.2.Windows.x64" --user-data-dir="C:\Users\meroc\AppData\Local\Temp"'
+[2024-05-28 18:56:37] 18:56:37 (15340): gpu_mode: '0'
+[2024-05-28 18:56:37] 18:56:37 (15340): Browser 1 loading state changed to 1 for url ''
+[2024-05-28 18:56:37] 18:56:37 (23132): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:56:37] 18:56:37 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:37] 18:56:37 (23132): Received resource request from null for [internal] on browser 1 (nav: 1, dl: 0)
+[2024-05-28 18:56:37] 18:56:37 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:37] 18:56:37 (23132): Creating resource handler for scheme http using url [internal] on browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): Browser 1 frame 17179869185 started loading [internal]
+[2024-05-28 18:56:38] 18:56:38 (15340): Browser 1 status: 
+[2024-05-28 18:56:38] 18:56:38 (23132): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:56:38] 18:56:38 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:38] 18:56:38 (23132): Received resource request from [internal] for https://www.cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:56:38] 18:56:38 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:38] 18:56:38 (15340): Received IPC message 'OnBrowserCreated' from Renderer process: 'OnBrowserCreated'
+[2024-05-28 18:56:38] 18:56:38 (15340): Received message from render process with 0 bytes
+[2024-05-28 18:56:38] 18:56:38 (15340): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnBrowserCreated
+[2024-05-28 18:56:38] 18:56:38 (23132): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:56:38] 18:56:38 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:38] 18:56:38 (23132): Received resource request from [internal] for https://cdnlogo.com/logos/j/2/java.svg on browser 1 (nav: 0, dl: 0)
+[2024-05-28 18:56:38] 18:56:38 (23132): Resolved resource request using default handler
+[2024-05-28 18:56:38] 18:56:38 (15340): Browser 1 frame 17179869185 ended loading [internal]
+[2024-05-28 18:56:38] 18:56:38 (15340): Browser 1 loading state changed to 0 for url '[internal]'
+[2024-05-28 18:56:38] 18:56:38 (15340): Frame loaded for job 0 on browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:56:38] 18:56:38 (15340): Executing dev tools method 'Emulation.setEmulatedMedia' for browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): Executing dev tools method 'Page.getLayoutMetrics' for browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): Received dev tools message on browser 1: '{"id":1,"result":{}}' (size: 20)
+[2024-05-28 18:56:38] 18:56:38 (15340): Finished dev tools method on browser 1 (message ID: 1)
+[2024-05-28 18:56:38] 18:56:38 (15340): Received dev tools message on browser 1: '{"id":2,"result":{"layoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"visualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"contentSize":{"x":0,"y":0,"width":1024,"height":1280},"cssLayoutViewport":{"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280},"cssVisualViewport":{"offsetX":0,"offsetY":0,"pageX":0,"pageY":0,"clientWidth":1024,"clientHeight":1280,"scale":1,"zoom":1},"cssContentSize":{"x":0,"y":0,"width":1024,"height":1280}}}' (size: 536)
+[2024-05-28 18:56:38] 18:56:38 (15340): Finished dev tools method on browser 1 (message ID: 2)
+[2024-05-28 18:56:38] 18:56:38 (15340): Sending DOM-visit process message for browser 1 (job ID: 0)
+[2024-05-28 18:56:38] 18:56:38 (15340): Received IPC message 'OnDomVisited' from Renderer process: 'OnDomVisited'
+[2024-05-28 18:56:38] 18:56:38 (15340): Received message from render process with 144 bytes
+[2024-05-28 18:56:38] 18:56:38 (15340): Processed html for browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): [IPAER] (Browser process) message received from upstream CEF: browserId=1, message name=OnDomVisited
+[2024-05-28 18:56:38] 18:56:38 (4216): Apply render delay for : 20 ms
+[2024-05-28 18:56:38] 18:56:38 (4216): Finished waiting for render delay
+[2024-05-28 18:56:38] 18:56:38 (4216): Scaling content to paper using a scale of 1
+[2024-05-28 18:56:38] 18:56:38 (4216): Printing from browser to 'C:\Users\meroc\AppData\Local\Temp\7A87.tmp'
+[2024-05-28 18:56:38] 18:56:38 (15340): Received browser print callback for path 'C:\Users\meroc\AppData\Local\Temp\7A87.tmp' (1)
+[2024-05-28 18:56:38] 18:56:38 (15340): Print finished for browser 1(success: 1)
+[2024-05-28 18:56:38] 18:56:38 (15340): Resolving job for browser 1 with 16475 bytes
+[2024-05-28 18:56:38] 18:56:38 (14052): Closing browser 1
+[2024-05-28 18:56:38] 18:56:38 (15340): Received dev tools message on browser 1: '{"method":"Inspector.detached","params":{"reason":"Render process gone."}}' (size: 74)
+[2024-05-28 18:56:38] 18:56:38 (15340): Destroying browser id 1, 0 remain
+[2024-05-28 18:56:38] 18:56:38 (15340): Browser 1 closed for job 0
+[2024-05-28 18:56:38] 18:56:38 (15340): Found job 0 in group 0 (of 1 groups)
+[2024-05-28 18:56:38] 18:56:38 (15340): Job group 0 finished
+[2024-05-28 18:56:38] 18:56:38 (15340): CefMessagePumpStd::Quit()
+[2024-05-28 18:56:38] 18:56:38 (9736): Storing new job result 0
+[2024-05-28 18:56:38] Received job result 0
+[2024-05-28 18:56:38] 18:56:38 (9736): Opening document from job result 0
+[2024-05-28 18:56:38] 18:56:38 (9736): Releasing job result 0
+[2024-05-28 18:56:38] 18:56:38 (9736): PdfDocumentFactory created document 000002094E0D8D60 from 16475 bytes
+[2024-05-28 18:56:38] 18:56:38 (9736): Document opened from pointer
+[2024-05-28 18:56:38] 18:56:38 (9736): Storing new document 0
+[2024-05-28 18:56:38] Created document 0 from job result 0
+[2024-05-28 18:56:38] Document 0 has 1 references remaining (+1)
+[2024-05-28 18:56:38] Retrieving binary data for document 034755ab-e0ad-4a5b-af5e-8e4d7c79ee9c with 0 signatures
+[2024-05-28 18:56:38] In-memory object store fetching document 034755ab-e0ad-4a5b-af5e-8e4d7c79ee9c
+[2024-05-28 18:56:38] 18:56:38 (9736): Generating bytes for document 000002094E0D8D60
+[2024-05-28 18:56:38] 18:56:38 (9736): Successfully generated 19226 bytes for document 000002094E0D8D60
+[2024-05-28 18:56:38] Chunking 19226 document bytes into 1 chunks
+[2024-05-28 18:57:06] Saving app analytics to file
+[2024-05-28 18:57:06] Caching api usage to file
