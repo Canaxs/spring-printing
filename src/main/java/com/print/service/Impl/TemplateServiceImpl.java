@@ -79,8 +79,7 @@ public class TemplateServiceImpl implements TemplateService {
         if(templateRepository.existsByTemplateNameAndTemplateType(receiptDTO.getTemplateName().toLowerCase(),TemplateType.RECEIPT)) {
             String templateShortId = getBringSuitableTemplate(receiptDTO.getTemplateName().toLowerCase() , TemplateType.RECEIPT);
             try {
-                Resource template = resourceLoader.getResource(Constants.folderReceiptAddress + templateShortId + ".html");
-                File file = new File(template.getURI());
+                File file = new File(getHtmlCanonicalPath(templateShortId,TemplateType.RECEIPT));
                 Document document = Jsoup.parse(file, "UTF-8");
 
                 Class<?> clz = TemplateType.convertClass(TemplateType.convertString(TemplateType.RECEIPT));
@@ -116,8 +115,7 @@ public class TemplateServiceImpl implements TemplateService {
         if(templateRepository.existsByTemplateNameAndTemplateType(invoiceDTO.getTemplateName().toLowerCase(),TemplateType.INVOICE)) {
             String templateShortId = getBringSuitableTemplate(invoiceDTO.getTemplateName().toLowerCase() , TemplateType.INVOICE);
             try {
-                Resource template = resourceLoader.getResource(Constants.folderInvoiceAddress + templateShortId + ".html");
-                File file = new File(template.getURI());
+                File file = new File(getHtmlCanonicalPath(templateShortId,TemplateType.INVOICE));
                 Document document = Jsoup.parse(file, "UTF-8");
 
                 Class<?> clz = TemplateType.convertClass(TemplateType.convertString(TemplateType.INVOICE));
@@ -490,6 +488,16 @@ public class TemplateServiceImpl implements TemplateService {
         if(document.getElementById("amountPaid") != null) {
             Element div = document.getElementById("amountPaid");
             div.html(amountTaxes.toString());
+        }
+    }
+
+    public String getHtmlCanonicalPath(String templateShortId,TemplateType templateType) {
+        String folderAddress = templateType == TemplateType.INVOICE ? Constants.folderInvoiceAddress2 : Constants.folderReceiptAddress2;
+        try {
+            return new File(".").getCanonicalPath() + folderAddress + "html\\" + templateShortId + ".html";
+        }
+        catch (Exception e) {
+            throw new TemplateException("getHtmlCanonicalPath Error: "+e.getMessage());
         }
     }
 }
