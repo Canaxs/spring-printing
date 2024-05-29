@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Canaxs/dotnet-blog-api">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="https://www.cdnlogo.com/logos/j/22/java.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Spring Printing</h3>
@@ -15,12 +15,42 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+It allows printing of invoice or receipt templates uploaded into the application in pdf format.
 
+
+### What does the project do?
+
+It allows you to easily fill out the template you want and print it in pdf format.
 
 ### Built With
 
+First of all, you need to install the docker-compose file that I prepared for PostreSQL installation.
+---> Open Terminal in the spring-printing directory and run the docker-compose up command
+---> You can use it when it is ready for connection. You can use the Docker desktop application to perform Docker container control.
+
+## Getting Started
+
+Follow these steps to get the Printing project up and running:
+---> New -> Project From Existing Sources -> src/spring-printing -> Maven -> OK (Intellij Idea)
+---> Maven Clean -> Maven Install
 
 
+## Packages I use
+
+[Spring Boot Starters]
+
+* [Data-Jpa]
+* [Security]
+* [Web]
+
+[Other Addictions]
+
+* [PostgreSQL]
+* [Lombok]
+* [Jsoup]
+* [FlyingSaucerPDF]
+* [IronPdf]
+* [AsposeWords]
 
 <!-- LICENSE -->
 ## License
