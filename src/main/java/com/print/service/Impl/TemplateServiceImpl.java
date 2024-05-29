@@ -2,6 +2,8 @@ package com.print.service.Impl;
 
 import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.edit.PageSelection;
+import com.ironsoftware.ironpdf.image.DrawImageOptions;
 import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
 import com.ironsoftware.ironpdf.render.CssMediaType;
 import com.ironsoftware.ironpdf.render.PaperOrientation;
@@ -344,7 +346,7 @@ public class TemplateServiceImpl implements TemplateService {
             for (String templateName : templateNames) {
                 ImageResponse imageResponse = new ImageResponse();
                 String suitableTemplate = getBringSuitableTemplate(templateName, TemplateType.convert(templateType.toLowerCase()));
-                File file = new File(new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType.toLowerCase()) + suitableTemplate + ".jpg");
+                File file = new File(new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType.toLowerCase()) + suitableTemplate + ".png");
                 imageResponse.setImageByte(FileUtils.readFileToByteArray(file));
                 imageResponse.setTemplateName(templateName);
                 imageResponse.setShortId(suitableTemplate);

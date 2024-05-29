@@ -1,5 +1,8 @@
 package com.print.service.Impl;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.edit.PageSelection;
+import com.ironsoftware.ironpdf.image.ToImageOptions;
 import com.print.common.Constants;
 import com.print.common.exception.UploadException;
 import com.print.enums.TemplateType;
@@ -7,6 +10,7 @@ import com.print.models.dto.UploadDBDTO;
 import com.print.persistence.entity.Receipt;
 import com.print.persistence.entity.TemplateTable;
 import com.print.persistence.repository.TemplateRepository;
+import com.print.service.TemplateService;
 import com.print.service.UploadService;
 import gui.ava.html.image.generator.HtmlImageGenerator;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -20,13 +24,16 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.imageio.ImageIO;
 import javax.print.Doc;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -41,8 +48,11 @@ public class UploadServiceImpl implements UploadService {
 
     private final TemplateRepository templateRepository;
 
-    public UploadServiceImpl(TemplateRepository templateRepository) {
+    private final TemplateService templateService;
+
+    public UploadServiceImpl(TemplateRepository templateRepository, TemplateService templateService) {
         this.templateRepository = templateRepository;
+        this.templateService = templateService;
     }
 
     @Override
@@ -160,15 +170,34 @@ public class UploadServiceImpl implements UploadService {
 
     @Override
     public void saveImage(String shortId,String templateType)  {
+
         try {
             String path = new File(".").getCanonicalPath() + TemplateType.convertPath(templateType);
             String path2 = new File(".").getCanonicalPath() + TemplateType.convertImagePath(templateType);
             File file = new File(path+"html\\"+shortId+".html");
-            com.aspose.words.Document document = new com.aspose.words.Document(file.getPath());
+            Document documentIron = Jsoup.parse(file,"UTF-8");
+            templateService.printIronPdf(documentIron,templateType,shortId);
+            File pdfFile = new File(path+"pdf\\"+shortId+".pdf");
+
+            PdfDocument instance = PdfDocument.fromFile(Paths.get(pdfFile.getPath()));
+            List<BufferedImage> extractedImages = instance.toBufferedImages();
+            ToImageOptions rasterOptions = new ToImageOptions();
+            rasterOptions.setImageMaxHeight(800);
+            rasterOptions.setImageMaxWidth(500);
+
+            List<BufferedImage> sizedExtractedImages = instance.toBufferedImages(rasterOptions, PageSelection.allPages());
+            int pageIndex = 1;
+            for (BufferedImage extractedImage : sizedExtractedImages) {
+                String fileName = path2+shortId+".png";
+                ImageIO.write(extractedImage, "PNG", new File(fileName));
+            }
+
+            /*com.aspose.words.Document document = new com.aspose.words.Document(pdfFile.getPath());
             for(int page=0;page < document.getPageCount();page++) {
                 com.aspose.words.Document extractedPage = document.extractPages(page,1);
                 extractedPage.save(path2+shortId+".jpg");
             }
+             */
         }
         catch (Exception e) {
             throw new UploadException("There was a problem saving image: "+e.getMessage());
