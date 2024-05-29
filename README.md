@@ -24,14 +24,14 @@ It allows you to easily fill out the template you want and print it in pdf forma
 
 ### Built With
 
-First of all, you need to install the docker-compose file that I prepared for PostreSQL installation.
----> Open Terminal in the spring-printing directory and run the docker-compose up command
+First of all, you need to install the docker-compose file that I prepared for PostreSQL installation.<br/>
+---> Open Terminal in the spring-printing directory and run the docker-compose up command<br/>
 ---> You can use it when it is ready for connection. You can use the Docker desktop application to perform Docker container control.
 
 ## Getting Started
 
-Follow these steps to get the Printing project up and running:
----> New -> Project From Existing Sources -> src/spring-printing -> Maven -> OK (Intellij Idea)
+Follow these steps to get the Printing project up and running: <br/>
+---> New -> Project From Existing Sources -> src/spring-printing -> Maven -> OK (Intellij Idea)<br/>
 ---> Maven Clean -> Maven Install
 
 
