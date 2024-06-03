@@ -68,20 +68,6 @@ public class PrintController {
         return response;
     }
 
-    @PostMapping("/getCreatedPdf")
-    public ResponseEntity<byte[]> getCreatedPdf(@RequestBody CreatedPdfRequest createdPdfRequest) {
-        GuestPdfDTO guestPdfDTO= templateService.getCreatedPdf(createdPdfRequest);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_PDF);
-        // Here you have to set the actual filename of your pdf
-        headers.setContentDispositionFormData(guestPdfDTO.getFilename(), guestPdfDTO.getFilename());
-        headers.add("Accept-Encoding", "UTF-8");
-        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
-        ResponseEntity<byte[]> response = new ResponseEntity<>(guestPdfDTO.getArray(), headers, HttpStatus.OK);
-        return response;
-    }
-
     @GetMapping("/getImages/{templateType}")
     public List<ImageResponse> getImagesTemplateType(@PathVariable("templateType") String templateType) {
         return templateService.getImagesTemplateType(templateType.toLowerCase());

@@ -157,22 +157,6 @@ public class TemplateServiceImpl implements TemplateService {
     }
 
     @Override
-    public GuestPdfDTO getCreatedPdf(CreatedPdfRequest createdPdfRequest) {
-        ReceiptDTO receiptDTO;
-        try {
-            switch (createdPdfRequest.getTemplateType().toLowerCase()) {
-                case "receipt" : {
-
-                }
-            }
-        }
-        catch (Exception e) {
-            throw new TemplateException("An error occurred: "+e.getMessage());
-        }
-        return GuestPdfDTO.builder().build();
-    }
-
-    @Override
     public void printIronPdf(Document document,String templateType,String shortId) {
         try {
             System.out.println(License.getLicenseKey());
