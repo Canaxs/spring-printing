@@ -32,6 +32,7 @@ public class Invoice extends BaseEntity implements Serializable {
     private String customerAddressCounty;
     private String customerAddress;
     private String customerPhoneNumber;
+    private String customerMailAddress;
     private String customerTCKN;
 
     @OneToMany
