@@ -226,12 +226,7 @@ public class UploadServiceImpl implements UploadService {
     @Override
     public boolean deleteFile(String randomIdKey,String fileExtension,String fileType) {
 
-        String fileTypeAddress = switch (fileType.toLowerCase()) {
-            case "receipt" ->  Constants.folderReceiptUploadAddress;
-            case "invoice" -> Constants.folderInvoiceUploadAddress;
-            case "temp" -> Constants.folderTempUploadAddress;
-            default -> null;
-        };
+        String fileTypeAddress = TemplateType.convertUpload(fileType.toLowerCase());
         try {
             String filePath = new File(".").getCanonicalPath() + fileTypeAddress + fileExtension +"\\" + randomIdKey + "."+fileExtension;
             File myObject = new File(filePath);

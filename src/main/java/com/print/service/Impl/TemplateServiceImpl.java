@@ -11,6 +11,7 @@ import com.ironsoftware.ironpdf.render.PaperSize;
 import com.lowagie.text.pdf.BaseFont;
 import com.print.common.Constants;
 import com.print.common.exception.TemplateException;
+import com.print.common.exception.UploadException;
 import com.print.enums.TemplateType;
 import com.print.models.dto.GuestPdfDTO;
 import com.print.models.dto.InvoiceDTO;
@@ -103,10 +104,12 @@ public class TemplateServiceImpl implements TemplateService {
                 System.out.println("Exception:e " + e.getMessage());
             }
         }
-        return GuestPdfDTO.builder()
+        GuestPdfDTO guestPdfDTO = GuestPdfDTO.builder()
                 .filename(getPath(shortId,"receipt"))
                 .array(printPDF(shortId,"receipt")).
                 build();
+        deletePDFFile("receipt",shortId);
+        return guestPdfDTO;
     }
 
     @Override
@@ -150,10 +153,12 @@ public class TemplateServiceImpl implements TemplateService {
                 throw new TemplateException("Exception: "+e.getMessage());
             }
         }
-        return GuestPdfDTO.builder()
+        GuestPdfDTO guestPdfDTO = GuestPdfDTO.builder()
                 .filename(getPath(shortId,"invoice"))
                 .array(printPDF(shortId,"invoice")).
                 build();
+        deletePDFFile("invoice",shortId);
+        return guestPdfDTO;
     }
 
     @Override
@@ -254,6 +259,7 @@ public class TemplateServiceImpl implements TemplateService {
             FileInputStream fis = new FileInputStream(new File(getPath(shortId,templateType)));
             byte[] targetArray = new byte[fis.available()];
             fis.read(targetArray);
+            fis.close();
             return targetArray;
         }
         catch (Exception e) {
@@ -484,6 +490,20 @@ public class TemplateServiceImpl implements TemplateService {
         }
         catch (Exception e) {
             throw new TemplateException("getHtmlCanonicalPath Error: "+e.getMessage());
+        }
+    }
+
+    public void deletePDFFile(String fileType,String shortId) {
+        String fileTypeAddress = TemplateType.convertPdf2(fileType.toLowerCase());
+        try {
+            String filePath = new File(".").getCanonicalPath() + fileTypeAddress + shortId + ".pdf";
+            File myObject = new File(filePath);
+            if(myObject.exists()) {
+                Files.delete(myObject.toPath());
+            }
+        }
+        catch (Exception e) {
+            throw new UploadException("Error occurred while deleting file: "+e.getMessage());
         }
     }
 }

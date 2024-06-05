@@ -54,4 +54,19 @@ public enum TemplateType {
             default -> null;
         };
     }
+    public static String convertPdf2(String step) {
+        return switch (step) {
+            case "receipt" -> Constants.folderReceiptPdfAddress2;
+            case "invoice" -> Constants.folderInvoicePdfAddress2;
+            default -> null;
+        };
+    }
+    public static String convertUpload(String step) {
+        return switch (step) {
+            case "receipt" -> Constants.folderReceiptUploadAddress;
+            case "invoice" -> Constants.folderInvoiceUploadAddress;
+            case "temp" -> Constants.folderTempUploadAddress;
+            default -> null;
+        };
+    }
 }
