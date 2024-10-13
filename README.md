@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Canaxs/dotnet-blog-api">
-    <img src="https://www.cdnlogo.com/logos/j/22/java.svg" alt="Logo" width="80" height="80">
+    <img src="https://www.cdnlogo.com/logos/j/22/java.svg" alt="Logo" width="150" height="150">
   </a>
 
 <h3 align="center">Spring Printing</h3>
