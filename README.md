@@ -17,6 +17,8 @@
 
 It allows printing of invoice or receipt templates uploaded into the application in pdf format.
 
+[@Spring Printing App Medium](https://medium.com/@mericcana/spring-printing-uygulamas%C4%B1-9c8152f77051)
+
 
 ### What does the project do?
 
